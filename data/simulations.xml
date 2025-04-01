@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <simulations>
  <simulation>
   <id>
@@ -7,7 +7,7 @@
   <title>
    Using a Vernier Scale
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/PxFdhgEk/ItUZwos5WzsKWPvJ/material-PxFdhgEk-thumb.png
   </image>
@@ -28,7 +28,7 @@
   <title>
    Vernier Calipers
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/b67besak/ld1orXIRLtIZbBnh/material-b67besak-thumb.png
   </image>
@@ -49,7 +49,7 @@
   <title>
    Vernier calipers with zero error
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jybrnwgp/fNHZPKStikvfsuPb/material-jybrnwgp-thumb.png
   </image>
@@ -70,7 +70,7 @@
   <title>
    Micrometer with zero error
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qedrwymk/rSDzrgkXrVgZUncg/material-qedrwymk-thumb.png
   </image>
@@ -91,7 +91,7 @@
   <title>
    Standard Form and Prefixes
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qxjun83v/cYOqGtot7nXLSxHT/material-qxjun83v-thumb.png
   </image>
@@ -112,7 +112,7 @@
   <title>
    Accuracy and Precision
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/JPWSCM3W/hvYIUlrAzaP8D0EX/material-JPWSCM3W-thumb.png
   </image>
@@ -133,7 +133,7 @@
   <title>
    Vector Addition
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/FCknj7c3/zpUfDEUpSRypfwUv/material-FCknj7c3-thumb.png
   </image>
@@ -154,7 +154,7 @@
   <title>
    Relative Velocity: Boat Crossing a River
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jgA3FrVk/gqsl3bzpLEWgQBpR/material-jgA3FrVk-thumb.png
   </image>
@@ -175,7 +175,7 @@
   <title>
    Vector Addition
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/p2yvdsvs/mhFFf0DgeLFuuJKh/material-p2yvdsvs-thumb.png
   </image>
@@ -196,7 +196,7 @@
   <title>
    Relative velocity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/b9ehq8ua/oafNBAaZT1L7o3uX/material-b9ehq8ua-thumb.png
   </image>
@@ -240,7 +240,7 @@
   <title>
    Displacement-time graph: average and instantaneous velocity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mctbbgzn/7V0SIcQoGrV1ARvM/material-mctbbgzn-thumb.png
   </image>
@@ -261,7 +261,7 @@
   <title>
    Position, Velocity, and Acceleration vs. Time Graphs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pdNj3DgD/GzSrA2achtsxUgI5/material-pdNj3DgD-thumb.png
   </image>
@@ -282,7 +282,7 @@
   <title>
    Acceleration Interaction Animation
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/eHCme87U/Bx8KUnZsvbJqYfop/material-eHCme87U-thumb.png
   </image>
@@ -303,7 +303,7 @@
   <title>
    Parachute Applet by Abdul Latiff
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wavar9bx/9aiVQduewxxZ2SZN/material-wavar9bx-thumb.png
   </image>
@@ -324,7 +324,7 @@
   <title>
    Vertical Throw
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zvsydy9f/t5Pj4VaEc6byURTn/material-zvsydy9f-thumb.png
   </image>
@@ -345,7 +345,7 @@
   <title>
    Equations of Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mfvvhjrj/95vTEnsmySAcQtHr/material-mfvvhjrj-thumb.png
   </image>
@@ -366,7 +366,7 @@
   <title>
    Bouncing Ball
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dfb53dps/VXNSIAPtweP1sUow/material-dfb53dps-thumb.png
   </image>
@@ -387,7 +387,7 @@
   <title>
    Graphs of Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tsn4x2jp/5qWaW6agovhawpXe/material-tsn4x2jp-thumb.png
   </image>
@@ -408,7 +408,7 @@
   <title>
    Motion in a Straight Line Animation (with velocity)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/vhgwfrkj/gczQvKJeVLaAke5P/material-vhgwfrkj-thumb.png
   </image>
@@ -429,7 +429,7 @@
   <title>
    Acceleration, velocity and displacement graphs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qpxcs6vb/in6MAwOxRT2onkzp/material-qpxcs6vb-thumb.png
   </image>
@@ -450,7 +450,7 @@
   <title>
    Projectile Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/BXBMnZPS/gOcRuTnhQ3N0QxY4/material-BXBMnZPS-thumb.png
   </image>
@@ -471,7 +471,7 @@
   <title>
    Projectile Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ysf6yxw4/zk212gNtI63FYigl/material-ysf6yxw4-thumb.png
   </image>
@@ -492,7 +492,7 @@
   <title>
    Kinematics of rectilinear motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mW8xdnQf/pNzzOwyMoCyXiSeP/material-mW8xdnQf-thumb.png
   </image>
@@ -513,7 +513,7 @@
   <title>
    Velocity and displacement graphs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/a5nzhx4r/nACuFWMoT8FiTojk/material-a5nzhx4r-thumb.png
   </image>
@@ -534,7 +534,7 @@
   <title>
    Acceleration and velocity graphs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ynwtuvf5/VAHZtWAfwL51SYFe/material-ynwtuvf5-thumb.png
   </image>
@@ -555,7 +555,7 @@
   <title>
    Resolution of Vectors
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/j63uznk7/73IiDmismDbFCZaw/material-j63uznk7-thumb.png
   </image>
@@ -576,7 +576,7 @@
   <title>
    Parachute V3
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wytxsyrd/VPcTCMTCfCF7qhY1/material-wytxsyrd-thumb.png
   </image>
@@ -597,7 +597,7 @@
   <title>
    Change in Velocity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/vb2fcque/gg5ftJXxtkGnbD8O/material-vb2fcque-thumb.png
   </image>
@@ -618,7 +618,7 @@
   <title>
    Displacement time graph
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rxpukb8d/MXwhL5IQxFLDbIBp/material-rxpukb8d-thumb.png
   </image>
@@ -708,7 +708,7 @@
   <title>
    Resultant Force on a Point Mass
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/w7jdq8tp/bg06wkbYUKIJxMWS/material-w7jdq8tp-thumb.png
   </image>
@@ -729,7 +729,7 @@
   <title>
    Forces in Equilibrium
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ac6cjzfe/frLmPV326C6tUVlt/material-ac6cjzfe-thumb.png
   </image>
@@ -750,7 +750,7 @@
   <title>
    Forces on a Box on a Slope
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pkpukanq/potqicDslpsCefc3/material-pkpukanq-thumb.png
   </image>
@@ -771,7 +771,7 @@
   <title>
    Dynamics Problem
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kbkabucg/WKp0bLijedY6Arx0/material-kbkabucg-thumb.png
   </image>
@@ -792,7 +792,7 @@
   <title>
    Inclined Plane with Two Masses and a Pulley
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/MQpSdK2A/PB0xnzYDXyo1epSq/material-MQpSdK2A-thumb.png
   </image>
@@ -813,7 +813,7 @@
   <title>
    Elastic  Inelastic Collisions
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ezZ2wrGG/JM7MJ1riOuJjaXkQ/material-ezZ2wrGG-thumb.png
   </image>
@@ -834,7 +834,7 @@
   <title>
    Two Mass Problem
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/fh5pwc37/6N6ccW1btzM1ySKN/material-fh5pwc37-thumb.png
   </image>
@@ -855,7 +855,7 @@
   <title>
    Inclined Plane with Friction, Two Masses, and a Pulley
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kZ4H4C7v/uCgLCd0DMRYkKnH1/material-kZ4H4C7v-thumb.png
   </image>
@@ -922,7 +922,7 @@
   <title>
    Mass, Volume, and Density
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kr9cNFgJ/wncEauiUYLgEbut7/material-kr9cNFgJ-thumb.png
   </image>
@@ -943,7 +943,7 @@
   <title>
    Moments
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Qnb2Tzcc/2aoPUhQ1zVkrkgWZ/material-Qnb2Tzcc-thumb.png
   </image>
@@ -964,7 +964,7 @@
   <title>
    Moment of a Force
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qzyczffy/kqa3qk5u7zLklS5Y/material-qzyczffy-thumb.png
   </image>
@@ -985,7 +985,7 @@
   <title>
    No Title
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xmx55cj5/BhUbVgHGsWyzl3Na/material-xmx55cj5-thumb.png
   </image>
@@ -1006,7 +1006,7 @@
   <title>
    Stability with varying centre of gravity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wdjjugwz/e5wFpGMGe0pIJM6I/material-wdjjugwz-thumb.png
   </image>
@@ -1027,7 +1027,7 @@
   <title>
    Equilibrium of a Wall Shelf
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/fysec9eh/4twKzH7LiOZoIHwV/material-fysec9eh-thumb.png
   </image>
@@ -1048,7 +1048,7 @@
   <title>
    Girl on suspended plank
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ndjxzry9/Th621NgsP3jy544f/material-ndjxzry9-thumb.png
   </image>
@@ -1069,7 +1069,7 @@
   <title>
    Fluid Pressure in a Reservoir
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/XEnWjMEU/t5fZZO8XHfb8peRA/material-XEnWjMEU-thumb.png
   </image>
@@ -1090,7 +1090,7 @@
   <title>
    Pressure in a U Tube
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/MrqUXY4h/0SmzKjGEKbkbn1Va/material-MrqUXY4h-thumb.png
   </image>
@@ -1111,7 +1111,7 @@
   <title>
    Pascal's Principle in a Hydraulic Lift
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/geryzgax/j5hg48ArPe76rlaV/material-geryzgax-thumb.png
   </image>
@@ -1132,7 +1132,7 @@
   <title>
    Hydraulic Press
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/egyer7nk/TOztO1ZDJw22aUFJ/material-egyer7nk-thumb.png
   </image>
@@ -1153,7 +1153,7 @@
   <title>
    U Tube Manometer
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qyuncz3h/egGyAcflGJDaraaw/material-qyuncz3h-thumb.png
   </image>
@@ -1174,7 +1174,7 @@
   <title>
    Work Done
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mpgu7qa3/Sv72EDuo0ZlzRtQ6/material-mpgu7qa3-thumb.png
   </image>
@@ -1195,7 +1195,7 @@
   <title>
    Graphs of Energy II
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dnusrn83/KIzndYF22Ch3aEe8/material-dnusrn83-thumb.png
   </image>
@@ -1216,7 +1216,7 @@
   <title>
    Conservation of Mechanical Energy: Mass on a Vertical Spring
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/TxXK2dnq/AJWrdVtpfpNSOyp4/material-TxXK2dnq-thumb.png
   </image>
@@ -1237,7 +1237,7 @@
   <title>
    Simple Harmonic Oscillation of Mass-Spring System
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/aebg46df/KPpy348ReIEgX36p/material-aebg46df-thumb.png
   </image>
@@ -1281,7 +1281,7 @@
   <title>
    Angular Displacement
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/x7dmuarh/jOiGNEXVLAE6PO5s/material-x7dmuarh-thumb.png
   </image>
@@ -1302,7 +1302,7 @@
   <title>
    Angular Velocity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zfw87g5b/8fqeMuvAlNzuWgPj/material-zfw87g5b-thumb.png
   </image>
@@ -1323,7 +1323,7 @@
   <title>
    Uniform Circular Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rjza5pwy/R2XHQpUDvtRoQZ1d/material-rjza5pwy-thumb.png
   </image>
@@ -1344,7 +1344,7 @@
   <title>
    Aircraft in Circular Motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jxee2cwd/5BSXMewUCHndQvnn/material-jxee2cwd-thumb.png
   </image>
@@ -1365,7 +1365,7 @@
   <title>
    Conical Pendulum
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zdd3qbkm/OSYmd4WtcB22whDF/material-zdd3qbkm-thumb.png
   </image>
@@ -1386,7 +1386,7 @@
   <title>
    Friction as a Centripetal Force:
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mzhmhgua/rgjvGnx0rDOfnQG5/material-mzhmhgua-thumb.png
   </image>
@@ -1407,7 +1407,7 @@
   <title>
    Vertical circular motion (uniform)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/m28vcnbz/yNXvLh4XIbVy1L4F/material-m28vcnbz-thumb.png
   </image>
@@ -1428,7 +1428,7 @@
   <title>
    Vertical non-uniform circular motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ny3jhhsp/hVrsnSPV1Qtt3d24/material-ny3jhhsp-thumb.png
   </image>
@@ -1449,7 +1449,7 @@
   <title>
    Centripetal Acceleration
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rnkrmcx8/88Uaj5CW1SS3ZSYg/material-rnkrmcx8-thumb.png
   </image>
@@ -1470,7 +1470,7 @@
   <title>
    Circular motion 3d for IGCSE Physics
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/s4fpkqz2/vVHFzYMUUp3sG3sG/material-s4fpkqz2-thumb.png
   </image>
@@ -1491,7 +1491,7 @@
   <title>
    Gravitational Potential between Two Planets
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ff55x6vr/72NrjDONYigPgiPc/material-ff55x6vr-thumb.png
   </image>
@@ -1512,7 +1512,7 @@
   <title>
    Satellite in Orbit
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kqvkegxj/KbvzzENM0dWiEsQ4/material-kqvkegxj-thumb.png
   </image>
@@ -1533,7 +1533,7 @@
   <title>
    Escape Velocity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/va3dbqyd/076sObWjkSURWUtj/material-va3dbqyd-thumb.png
   </image>
@@ -1554,7 +1554,7 @@
   <title>
    Gravitational Field Strength between two masses
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/yfhyxdm4/T2VUgGr2klfxhBsP/material-yfhyxdm4-thumb.png
   </image>
@@ -1575,7 +1575,7 @@
   <title>
    Pluto and Charon
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/angpz9uu/Ry2ixlJ5UhRsnQ3A/material-angpz9uu-thumb.png
   </image>
@@ -1620,7 +1620,7 @@
   <title>
    Simple model of heating a metal
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/QDdSsy8t/n7uk34ERzD5zZp8c/material-QDdSsy8t-thumb.png
   </image>
@@ -1664,7 +1664,7 @@
   <title>
    Velocity vs Displacement of Simple Harmonic Oscillation
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xwx3skfd/LLQOceYM3eP2ifiT/material-xwx3skfd-thumb.png
   </image>
@@ -1685,7 +1685,7 @@
   <title>
    Box Losing Contact with Spring Oscillator
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pbqtmbfn/QO7MSdk7JHJWEAaQ/material-pbqtmbfn-thumb.png
   </image>
@@ -1706,7 +1706,7 @@
   <title>
    Resonance with Masses on Springs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/JCyp4bYH/OnDBFJBOn6yHGoJA/material-JCyp4bYH-thumb.png
   </image>
@@ -1727,7 +1727,7 @@
   <title>
    Accelaration-time graph of simple harmonic motion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/vrqf9hyj/FJ0uUz0S0p8Pg7sl/material-vrqf9hyj-thumb.png
   </image>
@@ -1748,7 +1748,7 @@
   <title>
    Oscillations
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/CdBu65h4/iKwucBVIlGsrVYUm/material-CdBu65h4-thumb.png
   </image>
@@ -1769,7 +1769,7 @@
   <title>
    SHM graphs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xwcfqwya/PaKxcVEgC6sMnyPW/material-xwcfqwya-thumb.png
   </image>
@@ -1790,7 +1790,7 @@
   <title>
    SHM graphs with energy
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/h7jzv58z/sjE4oADlYvUn2Wv3/material-h7jzv58z-thumb.png
   </image>
@@ -1811,7 +1811,7 @@
   <title>
    SHM in 3D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tsz95u6p/2rbxBt45uwLLVwyq/material-tsz95u6p-thumb.png
   </image>
@@ -1832,7 +1832,7 @@
   <title>
    Linear Wavefront
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rbjcszuc/aGf6cdA4xlerbish/material-rbjcszuc-thumb.png
   </image>
@@ -1853,7 +1853,7 @@
   <title>
    Circular Wavefronts
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/gwffcn7c/rx5vkPillpB1RQpO/material-gwffcn7c-thumb.png
   </image>
@@ -1874,7 +1874,7 @@
   <title>
    Measuring Speed of a Wave
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rfhhusft/eMEUljshY2geRHGu/material-rfhhusft-thumb.png
   </image>
@@ -1895,7 +1895,7 @@
   <title>
    Graphs of a Progressive Wave
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/f7faw3r6/FdEFtuiyldDbo0mP/material-f7faw3r6-thumb.png
   </image>
@@ -1916,7 +1916,7 @@
   <title>
    Progressive wave particle movement
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jnjsgsd5/GER8QIivIgKEknKJ/material-jnjsgsd5-thumb.png
   </image>
@@ -1937,7 +1937,7 @@
   <title>
    Transverse and Longitudinal Progressive Waves
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/auyft2pd/fY1Dn0pSH1hseTqi/material-auyft2pd-thumb.png
   </image>
@@ -1958,7 +1958,7 @@
   <title>
    Longitudinal Waves as Displacement-Distance Graph
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xbsehq6s/SBnLgt3H1If1xpZT/material-xbsehq6s-thumb.png
   </image>
@@ -1979,7 +1979,7 @@
   <title>
    Graph of Longitudinal Wave
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kq3e2qjk/jDnhWTZ43lPHofW0/material-kq3e2qjk-thumb.png
   </image>
@@ -2069,7 +2069,7 @@
   <title>
    Conditions for Formation of Stationary Waves
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wse5hvmj/nVoVtpY5qbeALN4Y/material-wse5hvmj-thumb.png
   </image>
@@ -2090,7 +2090,7 @@
   <title>
    Phase Difference on a Stationary Wave
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xm5mnfyq/WVHXGPnmWuYqd4PR/material-xm5mnfyq-thumb.png
   </image>
@@ -2111,7 +2111,7 @@
   <title>
    Phase Difference on a Stationary Wave (fixed positions)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zg4spztb/mxoDrCZEygqtPc7a/material-zg4spztb-thumb.png
   </image>
@@ -2132,7 +2132,7 @@
   <title>
    Standing Waves on Strings
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qYX5eakP/72tltbgYvZk2xE87/material-qYX5eakP-thumb.png
   </image>
@@ -2153,7 +2153,7 @@
   <title>
    Resonant Frequency of Standing Waves on a Stretched String
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/bpnejfsv/Ww1IW7bcc4uBHHWI/material-bpnejfsv-thumb.png
   </image>
@@ -2174,7 +2174,7 @@
   <title>
    Single Slit Diffraction Relative Intensity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wanct2nt/cWRj1LM0T8D6hVhy/material-wanct2nt-thumb.png
   </image>
@@ -2195,7 +2195,7 @@
   <title>
    Two source path difference
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Dh7SDHa8/o4jxjMzBKwwUIoIL/material-Dh7SDHa8-thumb.png
   </image>
@@ -2216,7 +2216,7 @@
   <title>
    Double Slit Interference
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/quqcv8pe/ml2plujUnRcT8xJf/material-quqcv8pe-thumb.png
   </image>
@@ -2237,7 +2237,7 @@
   <title>
    Wave Interference in 3D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/uXF5HM4h/OAO0sNNo3JJZM3tz/material-uXF5HM4h-thumb.png
   </image>
@@ -2258,7 +2258,7 @@
   <title>
    Optical Diffraction Grating
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/p5m34MKj/kKyIQuhZIoekUrbx/material-p5m34MKj-thumb.png
   </image>
@@ -2279,7 +2279,7 @@
   <title>
    Resolution and the Rayleigh Criterion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/er2sravh/lZnIYV6toLg2iOZI/material-er2sravh-thumb.png
   </image>
@@ -2300,7 +2300,7 @@
   <title>
    Wave Pulse Interference and Superposition
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dJrTcxYd/JNPRIgAQMJNFG2P4/material-dJrTcxYd-thumb.png
   </image>
@@ -2321,7 +2321,7 @@
   <title>
    Wave Interference
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dnbpbvz7/Lc7zSM8l64qgLxss/material-dnbpbvz7-thumb.png
   </image>
@@ -2342,7 +2342,7 @@
   <title>
    Path difference
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jkqmuvne/erb63WH5Hf2w6RH6/material-jkqmuvne-thumb.png
   </image>
@@ -2363,7 +2363,7 @@
   <title>
    Stationary Sound Wave (Displacement and Pressure)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xbknrstt/80Y4YE9ghJo79s1y/material-xbknrstt-thumb.png
   </image>
@@ -2384,7 +2384,7 @@
   <title>
    Harmonics of Open Pipes
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tsufws72/gHeq0K3tFWixehAG/material-tsufws72-thumb.png
   </image>
@@ -2405,7 +2405,7 @@
   <title>
    Harmonics for Closed Pipe
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/gm9k6hkg/iY5R5OPvsUot2iQW/material-gm9k6hkg-thumb.png
   </image>
@@ -2426,7 +2426,7 @@
   <title>
    Reflection from a Plane Mirror
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/KdaXessn/aTCccLUL7haYUdmq/material-KdaXessn-thumb.png
   </image>
@@ -2447,7 +2447,7 @@
   <title>
    Snell's Law
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/KUchQNVQ/p1i8B6Z2cJFFNy63/material-KUchQNVQ-thumb.png
   </image>
@@ -2468,7 +2468,7 @@
   <title>
    Ray diagram for converging lens
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/J8Xv8ZB3/1vyWh3Jpz8tgMJ1f/material-J8Xv8ZB3-thumb.png
   </image>
@@ -2489,7 +2489,7 @@
   <title>
    Copy of Optics of the Human Eye
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ux9ke25p/zA5aS8r2lQBqIidM/material-ux9ke25p-thumb.png
   </image>
@@ -2510,7 +2510,7 @@
   <title>
    Converging Lens
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qxsu8jy5/qi2FSfbxfJtPMDa0/material-qxsu8jy5-thumb.png
   </image>
@@ -2531,7 +2531,7 @@
   <title>
    Concave Mirror
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Dk34GZUA/F6fXowoLzwafsfHd/material-Dk34GZUA-thumb.png
   </image>
@@ -2552,7 +2552,7 @@
   <title>
    Apparent Depth V1
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/bgts4zkc/6SrFKqKpZi2dNNlk/material-bgts4zkc-thumb.png
   </image>
@@ -2573,7 +2573,7 @@
   <title>
    Thin Converging Lens (Movable)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dp6tastr/V121foSMbUnei914/material-dp6tastr-thumb.png
   </image>
@@ -2594,7 +2594,7 @@
   <title>
    Critical Angle for Total Internal Reflection
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/DHmnJnHh/0GYrxZ4a3I7Eys8q/material-DHmnJnHh-thumb.png
   </image>
@@ -2615,7 +2615,7 @@
   <title>
    Reflection visible or not
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/rjpb2dv7/nrPvIAaKLhFyKJZS/material-rjpb2dv7-thumb.png
   </image>
@@ -2636,7 +2636,7 @@
   <title>
    Reflection and Refraction
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tvstqv47/BpdBNDKShXDKJR3T/material-tvstqv47-thumb.png
   </image>
@@ -2657,7 +2657,7 @@
   <title>
    Where is the Fish? A Refraction Simulation
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kdszgpfg/WXVdXn2dVZxuoMGI/material-kdszgpfg-thumb.png
   </image>
@@ -2678,7 +2678,7 @@
   <title>
    Apparent Depth V2
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/hu3pcnex/qQKCP4DG4FwrSHan/material-hu3pcnex-thumb.png
   </image>
@@ -2699,7 +2699,7 @@
   <title>
    Refraction Self-Test
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/fhmmuhbg/lvX9x9P04v0wZKW1/material-fhmmuhbg-thumb.png
   </image>
@@ -2720,7 +2720,7 @@
   <title>
    Electromagnetic Waves
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xhYwXSsH/CFASb2HdylssjiA4/material-xhYwXSsH-thumb.png
   </image>
@@ -2741,7 +2741,7 @@
   <title>
    Frequency and Amplitude of Sound
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/afg2t74v/M5GLAekn6oK81HdA/material-afg2t74v-thumb.png
   </image>
@@ -2762,7 +2762,7 @@
   <title>
    Sound Wave (Displacement and Pressure)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dfh2jjxy/DEnk8LeFB2Vpyed4/material-dfh2jjxy-thumb.png
   </image>
@@ -2783,7 +2783,7 @@
   <title>
    Electric Potential
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/bPexk3Uw/eXYbhCTa0DgeBNHr/material-bPexk3Uw-thumb.png
   </image>
@@ -2804,7 +2804,7 @@
   <title>
    Electric Potential for Multiple Point Charges
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/PC6SsyaT/ZNcbsWn1xSkSykUO/material-PC6SsyaT-thumb.png
   </image>
@@ -2825,7 +2825,7 @@
   <title>
    Charged Particle in an Electric Field
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/R6UGrg6n/Dqr2E2zSYfeXDyta/material-R6UGrg6n-thumb.png
   </image>
@@ -2846,7 +2846,7 @@
   <title>
    Electrostatic Forces of Two Charges on a Third
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Z4qkqpYu/KxBHDiTY8R4naHTR/material-Z4qkqpYu-thumb.png
   </image>
@@ -2867,7 +2867,7 @@
   <title>
    Potential of Two Point Charges
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/z8cr66wb/f9TDo9tlE5UnxkZ9/material-z8cr66wb-thumb.png
   </image>
@@ -2913,7 +2913,7 @@
   <title>
    I-V characteristics (resistor)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/K2gh8kfM/3j5Ec4vrQzMx7l8Y/material-K2gh8kfM-thumb.png
   </image>
@@ -2934,7 +2934,7 @@
   <title>
    Voltmeter
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/watavkq8/Lhwi7a3W3E1V4HG9/material-watavkq8-thumb.png
   </image>
@@ -2955,7 +2955,7 @@
   <title>
    Internal Resistance
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xmnmqedn/jPLLveuHLJw4wx1H/material-xmnmqedn-thumb.png
   </image>
@@ -2976,7 +2976,7 @@
   <title>
    Maximum Power Theorem
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/hscshcj8/JQTWvK7Rh7TlDNEp/material-hscshcj8-thumb.png
   </image>
@@ -2997,7 +2997,7 @@
   <title>
    Potentiometer
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/m7tc5szx/EoFuayA8a8v76TcE/material-m7tc5szx-thumb.png
   </image>
@@ -3018,7 +3018,7 @@
   <title>
    Combination Electric Circuit with Four Identical Bulbs
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Vq8jv86K/k5bOiIonhG8TyKOX/material-Vq8jv86K-thumb.png
   </image>
@@ -3039,7 +3039,7 @@
   <title>
    Current and Voltage in a Parallel Circuit
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pHHxZrAf/So73k8C7q1R2V80k/material-pHHxZrAf-thumb.png
   </image>
@@ -3060,7 +3060,7 @@
   <title>
    Electric Circuits
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/etszj23m/gjnoj8EharcAwsrh/material-etszj23m-thumb.png
   </image>
@@ -3081,7 +3081,7 @@
   <title>
    DC Motor 3D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/z9prvqrq/L0DMWChd7GaOB2IU/material-z9prvqrq-thumb.png
   </image>
@@ -3102,7 +3102,7 @@
   <title>
    Resistors in Circuits
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/cukmcvxf/vGagoI6URM6lek73/material-cukmcvxf-thumb.png
   </image>
@@ -3123,7 +3123,7 @@
   <title>
    Internal Resistance
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/puvfjxk5/agkSwqxRkq0j5xFs/material-puvfjxk5-thumb.png
   </image>
@@ -3144,7 +3144,7 @@
   <title>
    Practical Electricity
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pmatpapk/5raZJNXHAwYGZsVA/material-pmatpapk-thumb.png
   </image>
@@ -3165,7 +3165,7 @@
   <title>
    3D Magnetic field from magnet
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/reNCF9Sz/HQzAydkHN6nCQ5ZU/material-reNCF9Sz-thumb.png
   </image>
@@ -3186,7 +3186,7 @@
   <title>
    DC Motor
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/UqPD6ax7/CvSMUruwiX0R8eRK/material-UqPD6ax7-thumb.png
   </image>
@@ -3207,7 +3207,7 @@
   <title>
    B field around a wire
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Xr65rR3b/FFkexKVEvdl4GxtQ/material-Xr65rR3b-thumb.png
   </image>
@@ -3228,7 +3228,7 @@
   <title>
    Fleming's left hand rule
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/h3kxv53w/i63znZBDkv5UhSW7/material-h3kxv53w-thumb.png
   </image>
@@ -3249,7 +3249,7 @@
   <title>
    Fleming's left hand rule
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jax9jwxc/MKQvXfORA3uaZ70N/material-jax9jwxc-thumb.png
   </image>
@@ -3270,7 +3270,7 @@
   <title>
    DC Motor 2D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/eayhekjz/l1wIHzmuD2POpGh0/material-eayhekjz-thumb.png
   </image>
@@ -3291,7 +3291,7 @@
   <title>
    Forces Between Two Current-Carrying Wires
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/gc39y5hc/p5LRqBtQaN2WY51V/material-gc39y5hc-thumb.png
   </image>
@@ -3312,7 +3312,7 @@
   <title>
    Charged Particles in a Magnetic Field
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/k9yrhsst/IUrBxGLRDl3yDQOs/material-k9yrhsst-thumb.png
   </image>
@@ -3333,7 +3333,7 @@
   <title>
    3D Force on current in Magnetic field
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/egdpjrpc/GuakwmomXkNF1GGa/material-egdpjrpc-thumb.png
   </image>
@@ -3354,7 +3354,7 @@
   <title>
    Charged Particle in a Magnetic Field 3D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qajRP2O4/nBJa7i53VdoPZsJe/material-qajRP2O4-thumb.png
   </image>
@@ -3375,7 +3375,7 @@
   <title>
    Charged Particles in a Magnetic Field
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/mkem6b9y/5XbUacxSB7eWyPPH/material-mkem6b9y-thumb.png
   </image>
@@ -3396,7 +3396,7 @@
   <title>
    Charged Particles in Parallel Magnetic and Electric Fields
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/erehat7n/tLDUdQVSiDl0sTNT/material-erehat7n-thumb.png
   </image>
@@ -3417,7 +3417,7 @@
   <title>
    Helical movement
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/gg6zhevd/SjEFhrCOosKBfAmC/material-gg6zhevd-thumb.png
   </image>
@@ -3438,7 +3438,7 @@
   <title>
    Magnetic Induction
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/w2jp2Jsy/fQRkDrxBR7F7UVA3/material-w2jp2Jsy-thumb.png
   </image>
@@ -3459,7 +3459,7 @@
   <title>
    3D Rotating coil
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/QJdqdmbR/EUZsG5FIo71iJEQb/material-QJdqdmbR-thumb.png
   </image>
@@ -3480,7 +3480,7 @@
   <title>
    AC Generator 3D
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xpm5s7wz/lDG5mEPSHBx1XrVq/material-xpm5s7wz-thumb.png
   </image>
@@ -3503,7 +3503,7 @@
   <title>
    Root-Mean-Squared Current (Sinusoidal)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/btx3uzec/FSv3YTkq4cXWLZtX/material-btx3uzec-thumb.png
   </image>
@@ -3524,7 +3524,7 @@
   <title>
    Root-Mean-Squared Rectified Current
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/pmdfkamh/eKHcBx5jF2M8MRB1/material-pmdfkamh-thumb.png
   </image>
@@ -3545,7 +3545,7 @@
   <title>
    AC Transformer
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tc7mxwgs/SVdsi2X3DgdJl6BN/material-tc7mxwgs-thumb.png
   </image>
@@ -3566,7 +3566,7 @@
   <title>
    AC Power
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xmta8sud/fmoBjESIm7oL1Nvx/material-xmta8sud-thumb.png
   </image>
@@ -3587,7 +3587,7 @@
   <title>
    Root mean square
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/tdxdmfzf/DsJIrPHvXzfkHl1M/material-tdxdmfzf-thumb.png
   </image>
@@ -3609,7 +3609,7 @@
   <title>
    First Law of Thermodynamics
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/wttrxzje/D8jj8gsqlvQmnP0B/material-wttrxzje-thumb.png
   </image>
@@ -3630,7 +3630,7 @@
   <title>
    PV diagram for an Ideal Gas
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dvtxwp4g/wsDLIqNwVT3DXGRE/material-dvtxwp4g-thumb.png
   </image>
@@ -3651,7 +3651,7 @@
   <title>
    Idealized Stirling Cycle
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ckayaykx/Xv2ihenl1jnazS2E/material-ckayaykx-thumb.png
   </image>
@@ -3672,7 +3672,7 @@
   <title>
    Buoyancy
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/uM5fD5KD/QoZDFHHIT01CXAv6/material-uM5fD5KD-thumb.png
   </image>
@@ -3693,7 +3693,7 @@
   <title>
    Friction: Pulling a Box on a Horizontal Surface
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ynATf9QU/8zWOmIVvuFrOSHcI/material-ynATf9QU-thumb.png
   </image>
@@ -3714,7 +3714,7 @@
   <title>
    Hydrostatic Pressure and Upthrust
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xxeyzkqq/UqONLnF0PRTx81bt/material-xxeyzkqq-thumb.png
   </image>
@@ -3735,7 +3735,7 @@
   <title>
    Coplanar concurrent forces
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/vw8grewc/dotpbgHX3qbXKjPH/material-vw8grewc-thumb.png
   </image>
@@ -3756,7 +3756,7 @@
   <title>
    Torque of a Couple
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/prmucjp6/kRbobVon28iJ7Bwq/material-prmucjp6-thumb.png
   </image>
@@ -3777,7 +3777,7 @@
   <title>
    Upthrust
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/qvsp9ny9/6D1B0GqRFKSzLD0K/material-qvsp9ny9-thumb.png
   </image>
@@ -3798,7 +3798,7 @@
   <title>
    Forces in Equilibirum (Photoframe)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/jqp9z9qc/8HNXPHvGLXkSy678/material-jqp9z9qc-thumb.png
   </image>
@@ -3819,7 +3819,7 @@
   <title>
    Equilibrium of a Wall Shelf
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xdbr7qr5/oxL0SnbXFugZ4dxV/material-xdbr7qr5-thumb.png
   </image>
@@ -3840,7 +3840,7 @@
   <title>
    Resultant Force on a Point Mass
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/w7jdq8tp/bg06wkbYUKIJxMWS/material-w7jdq8tp-thumb.png
   </image>
@@ -3863,7 +3863,7 @@
   <title>
    Half-Life Action!!!
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/Ym5NQWJp/YKLkxk6Ea1IAcJ1o/material-Ym5NQWJp-thumb.png
   </image>
@@ -3887,7 +3887,7 @@
   <title>
    Polarisation Malus' Law
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/x5w3XjJs/I155X6JqV20Emh58/material-x5w3XjJs-thumb.png
   </image>
@@ -3908,7 +3908,7 @@
   <title>
    Amplitude nach lineare Polarisation
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/nxqRUBJm/zZDMLe6jm02pXKPv/material-nxqRUBJm-thumb.png
   </image>
@@ -3929,7 +3929,7 @@
   <title>
    Phase difference between two particles on a wave
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/kmpdntk6/NglCdzDbL7iLR83X/material-kmpdntk6-thumb.png
   </image>
@@ -3950,7 +3950,7 @@
   <title>
    Phase Difference between two waves
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/ymyxaejr/bKyzYYQ6W60edNXx/material-ymyxaejr-thumb.png
   </image>
@@ -3971,7 +3971,7 @@
   <title>
    Work done
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zhjhx9d9/Daxr7qC1kRSArY0E/material-zhjhx9d9-thumb.png
   </image>
@@ -3992,7 +3992,7 @@
   <title>
    Work done (with initial v)
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/vgqsdsqz/zcvLIguxLSCFjAsP/material-vgqsdsqz-thumb.png
   </image>
@@ -4013,7 +4013,7 @@
   <title>
    Bungee Jumping With Energy Conservation
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/dTAq6KaN/NWmH7HV7DXFay05P/material-dTAq6KaN-thumb.png
   </image>
@@ -4034,7 +4034,7 @@
   <title>
    Work Done by Two Forces
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/bpdmqepv/p7VRPYKgOJi9yv1c/material-bpdmqepv-thumb.png
   </image>
@@ -4102,7 +4102,7 @@
   <title>
    Photoelectric Effect
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/fUAMmQjq/Tlx6yfoJtkw8Bqoe/material-fUAMmQjq-thumb.png
   </image>
@@ -4123,7 +4123,7 @@
   <title>
    Photoelectric effect
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/c6ZmnCQD/qNDmOSLcejgWLjJu/material-c6ZmnCQD-thumb.png
   </image>
@@ -4144,7 +4144,7 @@
   <title>
    Energy Level Diagrams
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/RRFMyuxE/BZ7SjRRBJ7wR4rm7/material-RRFMyuxE-thumb.png
   </image>
@@ -4165,7 +4165,7 @@
   <title>
    Hydrogen Atom Electron Energy Levels
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/xzsjvm4q/KtdyDMa1LUiulMk0/material-xzsjvm4q-thumb.png
   </image>
@@ -4255,7 +4255,7 @@
   <title>
    Line of Best Fit
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/f96zyayz/s6ydE5EhIvlm4nsd/material-f96zyayz-thumb.png
   </image>
@@ -4276,7 +4276,7 @@
   <title>
    Least Squares Criterion
   </title>
-  <description />
+  <description/>
   <image>
    https://www.geogebra.org/resource/zHwQNvpW/UI4ZvgXeUVUGjnOC/material-zHwQNvpW-thumb.png
   </image>
@@ -4290,4 +4290,4 @@
    <topic>graphing-technique</topic>
   </topics>
  </simulation>
-</simulations>
+<simulation><id>js-019</id><title>Sound Level Meter</title><description>Use this sound level meter to measure the noise level in your class. The slider allows you to change the sensitivity of the meter. The sensitivity value ranges from -20 dB to 20 dB.</description><image>https://physicstjc.github.io/sls/sound-level-meter/sound-level-meter.png</image><url>https://physicstjc.github.io/sls/sound-level-meter/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation><simulation><id>js-020</id><title>Sound Frequency Analyser</title><description>This sound frequency analyser is able to pick up the dominant frequency from the microphone. Students can use it to investigate the effect on the frequency of sound by factors such as length or tension of a guitar string. For higher level Physics students, they can observe the frequencies of higher harmonics.</description><image>https://physicstjc.github.io/sls/sound-frequency-analyser/sound-frequency-analyser.png</image><url>https://physicstjc.github.io/sls/sound-frequency-analyser/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation><simulation><id>js-021</id><title>Sound Generator</title><description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description><image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image><url>https://physicstjc.github.io/sls/sound-generator/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation></simulations>
