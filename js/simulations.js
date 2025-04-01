@@ -24,33 +24,52 @@ document.addEventListener('DOMContentLoaded', function() {
 function processSimulations(xmlDoc) {
     const simulations = xmlDoc.querySelectorAll('simulation');
     const container = document.getElementById('simulations-container');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Create ordered topics map while preserving XML order
+    const topicsMap = new Map();
+    const seenTopics = new Set();
+    const orderedTopics = [];
+    const topics = {};  // Define topics object
     
-    // Group by topic first
-    const topics = {};
     simulations.forEach(sim => {
-        const topicNodes = sim.querySelectorAll('topic');
-        topicNodes.forEach(topicNode => {
-            const topic = topicNode.textContent.trim(); // Keep the original topic name from XML
-            if (!topics[topic]) {
-                topics[topic] = [];
+        sim.querySelectorAll('topic').forEach(topicNode => {
+            const rawTopic = topicNode.textContent.trim();
+            const id = rawTopic.toLowerCase().replace(/[,\s]+/g, '-');
+            // Initialize topics array if not exists
+            if (!topics[id]) topics[id] = [];
+            topics[id].push(sim);
+            
+            if (!seenTopics.has(id)) {
+                const displayText = rawTopic
+                    .replace(/-/g, ' ')
+                    .split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                    .join(' ');
+                topicsMap.set(id, displayText);
+                seenTopics.add(id);
+                orderedTopics.push([id, displayText]);
             }
-            topics[topic].push(sim);
         });
     });
-    
-    // Render each topic section
-    for (const [topic, sims] of Object.entries(topics)) {
-        const section = document.createElement('section');
-        section.id = topic; // Use the exact topic name as ID
-        section.innerHTML = `<h2>${topic.replace(/-/g, ' ')}</h2><div class="simulation-grid"></div>`;
-        
-        const grid = section.querySelector('.simulation-grid');
-        sims.forEach(sim => {
-            grid.appendChild(createSimulationCard(sim));
-        });
-        
-        container.appendChild(section);
-    }
+
+    // Generate nav items in original order
+    navMenu.innerHTML = orderedTopics
+        .map(([id, topic]) => `<li><a href="#${id}">${topic}</a></li>`)
+        .join('');
+
+    // Render sections in the same order as navigation
+    orderedTopics.forEach(([id]) => {
+        if (topics[id]) {
+            const section = document.createElement('section');
+            section.id = id;
+            section.innerHTML = `<h2>${topicsMap.get(id)}</h2><div class="simulation-grid"></div>`;
+            
+            const grid = section.querySelector('.simulation-grid');
+            topics[id].forEach(sim => grid.appendChild(createSimulationCard(sim)));
+            container.appendChild(section);
+        }
+    });
 }
 
 function createSimulationCard(sim) {

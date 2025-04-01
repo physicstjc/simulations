@@ -18,7 +18,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>physical-quantities,-units-and-measurement</topic>
+   <topic>measurement</topic>
   </topics>
  </simulation>
  <simulation>
@@ -39,7 +39,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>physical-quantities,-units-and-measurement</topic>
+   <topic>measurement</topic>
   </topics>
  </simulation>
  <simulation>
@@ -60,7 +60,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>physical-quantities,-units-and-measurement</topic>
+   <topic>measurement</topic>
   </topics>
  </simulation>
  <simulation>
@@ -81,7 +81,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>physical-quantities,-units-and-measurement</topic>
+   <topic>measurement</topic>
   </topics>
  </simulation>
  <simulation>
@@ -102,7 +102,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>physical-quantities,-units-and-measurement</topic>
+   <topic>measurement</topic>
   </topics>
  </simulation>
  <simulation>
@@ -933,7 +933,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>mass,-weight-and-density</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -954,7 +954,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -975,7 +975,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -996,7 +996,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1017,7 +1017,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1038,7 +1038,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1059,7 +1059,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>turning-effect-of-forces</topic>
+   <topic>forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1274,6 +1274,322 @@
    <topic>energy-work-power</topic>
   </topics>
  </simulation>
+    <simulation>
+  <id>
+   sim-044
+  </id>
+  <title>
+   Angular Displacement
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/x7dmuarh/jOiGNEXVLAE6PO5s/material-x7dmuarh-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/x7dmuarh
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-045
+  </id>
+  <title>
+   Angular Velocity
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/zfw87g5b/8fqeMuvAlNzuWgPj/material-zfw87g5b-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/zfw87g5b
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-046
+  </id>
+  <title>
+   Uniform Circular Motion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/rjza5pwy/R2XHQpUDvtRoQZ1d/material-rjza5pwy-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/rjza5pwy
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-047
+  </id>
+  <title>
+   Aircraft in Circular Motion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/jxee2cwd/5BSXMewUCHndQvnn/material-jxee2cwd-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/jxee2cwd
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-048
+  </id>
+  <title>
+   Conical Pendulum
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/zdd3qbkm/OSYmd4WtcB22whDF/material-zdd3qbkm-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/zdd3qbkm
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-049
+  </id>
+  <title>
+   Friction as a Centripetal Force:
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/mzhmhgua/rgjvGnx0rDOfnQG5/material-mzhmhgua-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/SQNtuDDj
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-050
+  </id>
+  <title>
+   Vertical circular motion (uniform)
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/m28vcnbz/yNXvLh4XIbVy1L4F/material-m28vcnbz-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/m28vcnbz
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-051
+  </id>
+  <title>
+   Vertical non-uniform circular motion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/ny3jhhsp/hVrsnSPV1Qtt3d24/material-ny3jhhsp-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/ny3jhhsp
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-052
+  </id>
+  <title>
+   Centripetal Acceleration
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/rnkrmcx8/88Uaj5CW1SS3ZSYg/material-rnkrmcx8-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/rnkrmcx8
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-053
+  </id>
+  <title>
+   Circular motion 3d for IGCSE Physics
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/s4fpkqz2/vVHFzYMUUp3sG3sG/material-s4fpkqz2-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/s4fpkqz2
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>motion-in-a-circle</topic>
+  </topics>
+ </simulation>
+    <simulation>
+  <id>
+   sim-054
+  </id>
+  <title>
+   Gravitational Potential between Two Planets
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/ff55x6vr/72NrjDONYigPgiPc/material-ff55x6vr-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/hzfyjejx
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>gravitational-field</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-055
+  </id>
+  <title>
+   Satellite in Orbit
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/kqvkegxj/KbvzzENM0dWiEsQ4/material-kqvkegxj-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/jmqytcsc
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>gravitational-field</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-056
+  </id>
+  <title>
+   Escape Velocity
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/va3dbqyd/076sObWjkSURWUtj/material-va3dbqyd-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/va3dbqyd
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>gravitational-field</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-057
+  </id>
+  <title>
+   Gravitational Field Strength between two masses
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/yfhyxdm4/T2VUgGr2klfxhBsP/material-yfhyxdm4-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/yfhyxdm4
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>gravitational-field</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-058
+  </id>
+  <title>
+   Pluto and Charon
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/angpz9uu/Ry2ixlJ5UhRsnQ3A/material-angpz9uu-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/angpz9uu
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>gravitational-field</topic>
+  </topics>
+ </simulation>
+ 
  <simulation>
   <id>
    js-014
@@ -1341,6 +1657,174 @@
    <topic>kinetic-model-of-matter</topic>
   </topics>
  </simulation>
+<simulation>
+  <id>
+   sim-063
+  </id>
+  <title>
+   Velocity vs Displacement of Simple Harmonic Oscillation
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/xwx3skfd/LLQOceYM3eP2ifiT/material-xwx3skfd-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/xwx3skfd
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-064
+  </id>
+  <title>
+   Box Losing Contact with Spring Oscillator
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/pbqtmbfn/QO7MSdk7JHJWEAaQ/material-pbqtmbfn-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/ev62ku7w
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-065
+  </id>
+  <title>
+   Resonance with Masses on Springs
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/JCyp4bYH/OnDBFJBOn6yHGoJA/material-JCyp4bYH-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/JCyp4bYH
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-066
+  </id>
+  <title>
+   Accelaration-time graph of simple harmonic motion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/vrqf9hyj/FJ0uUz0S0p8Pg7sl/material-vrqf9hyj-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/vrqf9hyj
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-067
+  </id>
+  <title>
+   Oscillations
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/CdBu65h4/iKwucBVIlGsrVYUm/material-CdBu65h4-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/CdBu65h4
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-068
+  </id>
+  <title>
+   SHM graphs
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/xwcfqwya/PaKxcVEgC6sMnyPW/material-xwcfqwya-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/xwcfqwya
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-069
+  </id>
+  <title>
+   SHM graphs with energy
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/h7jzv58z/sjE4oADlYvUn2Wv3/material-h7jzv58z-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/h7jzv58z
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-070
+  </id>
+  <title>
+   SHM in 3D
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/tsz95u6p/2rbxBt45uwLLVwyq/material-tsz95u6p-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/tsz95u6p
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
  <simulation>
   <id>
    sim-035
@@ -1359,7 +1843,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1380,7 +1864,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1401,7 +1885,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1422,7 +1906,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1443,7 +1927,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1464,7 +1948,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1485,7 +1969,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1506,7 +1990,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1529,7 +2013,7 @@
    JavaScript
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1552,7 +2036,7 @@
    JavaScript
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1575,7 +2059,364 @@
    JavaScript
   </platform>
   <topics>
-   <topic>general-wave-properties</topic>
+   <topic>waves</topic>
+  </topics>
+ </simulation>
+<simulation>
+  <id>
+   sim-078
+  </id>
+  <title>
+   Conditions for Formation of Stationary Waves
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/wse5hvmj/nVoVtpY5qbeALN4Y/material-wse5hvmj-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/wse5hvmj
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-079
+  </id>
+  <title>
+   Phase Difference on a Stationary Wave
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/xm5mnfyq/WVHXGPnmWuYqd4PR/material-xm5mnfyq-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/xm5mnfyq
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-080
+  </id>
+  <title>
+   Phase Difference on a Stationary Wave (fixed positions)
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/zg4spztb/mxoDrCZEygqtPc7a/material-zg4spztb-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/zg4spztb
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-081
+  </id>
+  <title>
+   Standing Waves on Strings
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/qYX5eakP/72tltbgYvZk2xE87/material-qYX5eakP-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/qYX5eakP
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-082
+  </id>
+  <title>
+   Resonant Frequency of Standing Waves on a Stretched String
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/bpnejfsv/Ww1IW7bcc4uBHHWI/material-bpnejfsv-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/bpnejfsv
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-083
+  </id>
+  <title>
+   Single Slit Diffraction Relative Intensity
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/wanct2nt/cWRj1LM0T8D6hVhy/material-wanct2nt-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/g6m4dh9s
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-084
+  </id>
+  <title>
+   Two source path difference
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/Dh7SDHa8/o4jxjMzBKwwUIoIL/material-Dh7SDHa8-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/ayECjetm
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-085
+  </id>
+  <title>
+   Double Slit Interference
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/quqcv8pe/ml2plujUnRcT8xJf/material-quqcv8pe-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/nxkcffkd
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-086
+  </id>
+  <title>
+   Wave Interference in 3D
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/uXF5HM4h/OAO0sNNo3JJZM3tz/material-uXF5HM4h-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/XdW2SjQ8
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-087
+  </id>
+  <title>
+   Optical Diffraction Grating
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/p5m34MKj/kKyIQuhZIoekUrbx/material-p5m34MKj-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/p5m34MKj
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-088
+  </id>
+  <title>
+   Resolution and the Rayleigh Criterion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/er2sravh/lZnIYV6toLg2iOZI/material-er2sravh-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/er2sravh
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-089
+  </id>
+  <title>
+   Wave Pulse Interference and Superposition
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/dJrTcxYd/JNPRIgAQMJNFG2P4/material-dJrTcxYd-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/dJrTcxYd
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-090
+  </id>
+  <title>
+   Wave Interference
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/dnbpbvz7/Lc7zSM8l64qgLxss/material-dnbpbvz7-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/dnbpbvz7
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-091
+  </id>
+  <title>
+   Path difference
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/jkqmuvne/erb63WH5Hf2w6RH6/material-jkqmuvne-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/jkqmuvne
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-092
+  </id>
+  <title>
+   Stationary Sound Wave (Displacement and Pressure)
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/xbknrstt/80Y4YE9ghJo79s1y/material-xbknrstt-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/xbknrstt
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-093
+  </id>
+  <title>
+   Harmonics of Open Pipes
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/tsufws72/gHeq0K3tFWixehAG/material-tsufws72-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/tsufws72
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-094
+  </id>
+  <title>
+   Harmonics for Closed Pipe
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/gm9k6hkg/iY5R5OPvsUot2iQW/material-gm9k6hkg-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/gm9k6hkg
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>superposition</topic>
   </topics>
  </simulation>
  <simulation>
@@ -1935,6 +2776,112 @@
    <topic>sound</topic>
   </topics>
  </simulation>
+<simulation>
+  <id>
+   sim-095
+  </id>
+  <title>
+   Electric Potential
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/bPexk3Uw/eXYbhCTa0DgeBNHr/material-bPexk3Uw-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/bPexk3Uw
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electric-fields</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-096
+  </id>
+  <title>
+   Electric Potential for Multiple Point Charges
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/PC6SsyaT/ZNcbsWn1xSkSykUO/material-PC6SsyaT-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/zpdbqgKy
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electric-fields</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-097
+  </id>
+  <title>
+   Charged Particle in an Electric Field
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/R6UGrg6n/Dqr2E2zSYfeXDyta/material-R6UGrg6n-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/R6UGrg6n
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electric-fields</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-098
+  </id>
+  <title>
+   Electrostatic Forces of Two Charges on a Third
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/Z4qkqpYu/KxBHDiTY8R4naHTR/material-Z4qkqpYu-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/RgQdcNuD
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electric-fields</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-099
+  </id>
+  <title>
+   Potential of Two Point Charges
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/z8cr66wb/f9TDo9tlE5UnxkZ9/material-z8cr66wb-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/z8cr66wb
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electric-fields</topic>
+  </topics>
+ </simulation>
+    
  <simulation>
   <id>
    js-003
@@ -1955,9 +2902,10 @@
    JavaScript
   </platform>
   <topics>
-   <topic>electricity</topic>
+   <topic>electric-fields</topic>
   </topics>
  </simulation>
+    
  <simulation>
   <id>
    sim-060
@@ -2144,7 +3092,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>electricity</topic>
+   <topic>electromagnetism</topic>
   </topics>
  </simulation>
  <simulation>
@@ -2546,121 +3494,8 @@
    <topic>electromagnetic-induction</topic>
   </topics>
  </simulation>
- <simulation>
-  <id>
-   js-013
-  </id>
-  <title>
-   Radioactive Decay
-  </title>
-  <description>
-   Observe radioactive decay and plot decay curves with variable half-life.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/radioactive-decay/radioactive-decay.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/radioactive-decay/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>radioactivity</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   js-016
-  </id>
-  <title>
-   Geiger-Muller Counter
-  </title>
-  <description>
-   Explore background radiation and compare count rates with various sources.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/gm-counter/gm-counter.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/gm-counter/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>radioactivity</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   js-004
-  </id>
-  <title>
-   Earth-Moon System
-  </title>
-  <description>
-   Shows how the Moon's rotation matches its revolution around Earth.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/earth-moon-system/earth-moon-system.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/earth-moon-system/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>general</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   js-007
-  </id>
-  <title>
-   Bohr's Model of the Atom
-  </title>
-  <description>
-   Interactive Bohr model of atoms up to atomic number 20. Change element to view shell configuration.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/bohr-model/bohr-model.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/bohr-model/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>general</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   js-008
-  </id>
-  <title>
-   Dice Simulator
-  </title>
-  <description>
-   Math-based probability simulator for rolling one or two dice, with charts and result tracking.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/dice/dice.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/dice/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>general</topic>
-  </topics>
- </simulation>
+ 
+ 
  <simulation>
   <id>
    sim-121
@@ -2766,111 +3601,7 @@
    <topic>alternating-current</topic>
   </topics>
  </simulation>
- <simulation>
-  <id>
-   sim-095
-  </id>
-  <title>
-   Electric Potential
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/bPexk3Uw/eXYbhCTa0DgeBNHr/material-bPexk3Uw-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/bPexk3Uw
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electric-fields</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-096
-  </id>
-  <title>
-   Electric Potential for Multiple Point Charges
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/PC6SsyaT/ZNcbsWn1xSkSykUO/material-PC6SsyaT-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/zpdbqgKy
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electric-fields</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-097
-  </id>
-  <title>
-   Charged Particle in an Electric Field
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/R6UGrg6n/Dqr2E2zSYfeXDyta/material-R6UGrg6n-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/R6UGrg6n
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electric-fields</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-098
-  </id>
-  <title>
-   Electrostatic Forces of Two Charges on a Third
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/Z4qkqpYu/KxBHDiTY8R4naHTR/material-Z4qkqpYu-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/RgQdcNuD
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electric-fields</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-099
-  </id>
-  <title>
-   Potential of Two Point Charges
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/z8cr66wb/f9TDo9tlE5UnxkZ9/material-z8cr66wb-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/z8cr66wb
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electric-fields</topic>
-  </topics>
- </simulation>
+ 
  <simulation>
   <id>
    sim-059
@@ -2889,7 +3620,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>first-law-of-thermodynamics</topic>
+   <topic>thermal-physics</topic>
   </topics>
  </simulation>
  <simulation>
@@ -2910,7 +3641,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>first-law-of-thermodynamics</topic>
+   <topic>thermal-physics</topic>
   </topics>
  </simulation>
  <simulation>
@@ -2931,7 +3662,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>first-law-of-thermodynamics</topic>
+   <topic>thermal-physics</topic>
   </topics>
  </simulation>
  <simulation>
@@ -3123,363 +3854,8 @@
    <topic>forces</topic>
   </topics>
  </simulation>
- <simulation>
-  <id>
-   sim-131
-  </id>
-  <title>
-   Line of Best Fit
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/f96zyayz/s6ydE5EhIvlm4nsd/material-f96zyayz-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/f96zyayz
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>graphing-technique</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-132
-  </id>
-  <title>
-   Least Squares Criterion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/zHwQNvpW/UI4ZvgXeUVUGjnOC/material-zHwQNvpW-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/zHwQNvpW
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>graphing-technique</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-054
-  </id>
-  <title>
-   Gravitational Potential between Two Planets
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/ff55x6vr/72NrjDONYigPgiPc/material-ff55x6vr-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/hzfyjejx
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>gravitational-field</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-055
-  </id>
-  <title>
-   Satellite in Orbit
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/kqvkegxj/KbvzzENM0dWiEsQ4/material-kqvkegxj-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/jmqytcsc
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>gravitational-field</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-056
-  </id>
-  <title>
-   Escape Velocity
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/va3dbqyd/076sObWjkSURWUtj/material-va3dbqyd-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/va3dbqyd
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>gravitational-field</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-057
-  </id>
-  <title>
-   Gravitational Field Strength between two masses
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/yfhyxdm4/T2VUgGr2klfxhBsP/material-yfhyxdm4-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/yfhyxdm4
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>gravitational-field</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-058
-  </id>
-  <title>
-   Pluto and Charon
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/angpz9uu/Ry2ixlJ5UhRsnQ3A/material-angpz9uu-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/angpz9uu
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>gravitational-field</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-044
-  </id>
-  <title>
-   Angular Displacement
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/x7dmuarh/jOiGNEXVLAE6PO5s/material-x7dmuarh-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/x7dmuarh
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-045
-  </id>
-  <title>
-   Angular Velocity
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/zfw87g5b/8fqeMuvAlNzuWgPj/material-zfw87g5b-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/zfw87g5b
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-046
-  </id>
-  <title>
-   Uniform Circular Motion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/rjza5pwy/R2XHQpUDvtRoQZ1d/material-rjza5pwy-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/rjza5pwy
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-047
-  </id>
-  <title>
-   Aircraft in Circular Motion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/jxee2cwd/5BSXMewUCHndQvnn/material-jxee2cwd-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/jxee2cwd
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-048
-  </id>
-  <title>
-   Conical Pendulum
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/zdd3qbkm/OSYmd4WtcB22whDF/material-zdd3qbkm-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/zdd3qbkm
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-049
-  </id>
-  <title>
-   Friction as a Centripetal Force:
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/mzhmhgua/rgjvGnx0rDOfnQG5/material-mzhmhgua-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/SQNtuDDj
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-050
-  </id>
-  <title>
-   Vertical circular motion (uniform)
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/m28vcnbz/yNXvLh4XIbVy1L4F/material-m28vcnbz-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/m28vcnbz
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-051
-  </id>
-  <title>
-   Vertical non-uniform circular motion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/ny3jhhsp/hVrsnSPV1Qtt3d24/material-ny3jhhsp-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/ny3jhhsp
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-052
-  </id>
-  <title>
-   Centripetal Acceleration
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/rnkrmcx8/88Uaj5CW1SS3ZSYg/material-rnkrmcx8-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/rnkrmcx8
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-053
-  </id>
-  <title>
-   Circular motion 3d for IGCSE Physics
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/s4fpkqz2/vVHFzYMUUp3sG3sG/material-s4fpkqz2-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/s4fpkqz2
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>motion-in-a-circle</topic>
-  </topics>
- </simulation>
+ 
+ 
  <simulation>
   <id>
    sim-130
@@ -3498,618 +3874,12 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>nuclear-physics</topic>
+   <topic>nuclear physics</topic>
   </topics>
  </simulation>
- <simulation>
-  <id>
-   sim-063
-  </id>
-  <title>
-   Velocity vs Displacement of Simple Harmonic Oscillation
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/xwx3skfd/LLQOceYM3eP2ifiT/material-xwx3skfd-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xwx3skfd
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-064
-  </id>
-  <title>
-   Box Losing Contact with Spring Oscillator
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/pbqtmbfn/QO7MSdk7JHJWEAaQ/material-pbqtmbfn-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/ev62ku7w
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-065
-  </id>
-  <title>
-   Resonance with Masses on Springs
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/JCyp4bYH/OnDBFJBOn6yHGoJA/material-JCyp4bYH-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/JCyp4bYH
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-066
-  </id>
-  <title>
-   Accelaration-time graph of simple harmonic motion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/vrqf9hyj/FJ0uUz0S0p8Pg7sl/material-vrqf9hyj-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/vrqf9hyj
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-067
-  </id>
-  <title>
-   Oscillations
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/CdBu65h4/iKwucBVIlGsrVYUm/material-CdBu65h4-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/CdBu65h4
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-068
-  </id>
-  <title>
-   SHM graphs
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/xwcfqwya/PaKxcVEgC6sMnyPW/material-xwcfqwya-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xwcfqwya
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-069
-  </id>
-  <title>
-   SHM graphs with energy
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/h7jzv58z/sjE4oADlYvUn2Wv3/material-h7jzv58z-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/h7jzv58z
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-070
-  </id>
-  <title>
-   SHM in 3D
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/tsz95u6p/2rbxBt45uwLLVwyq/material-tsz95u6p-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/tsz95u6p
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>oscillations</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-126
-  </id>
-  <title>
-   Photoelectric Effect
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/fUAMmQjq/Tlx6yfoJtkw8Bqoe/material-fUAMmQjq-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/CNjjqZq9
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>quantum-physics</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-127
-  </id>
-  <title>
-   Photoelectric effect
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/c6ZmnCQD/qNDmOSLcejgWLjJu/material-c6ZmnCQD-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/c6ZmnCQD
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>quantum-physics</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-128
-  </id>
-  <title>
-   Energy Level Diagrams
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/RRFMyuxE/BZ7SjRRBJ7wR4rm7/material-RRFMyuxE-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/XY2K8htr
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>quantum-physics</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-129
-  </id>
-  <title>
-   Hydrogen Atom Electron Energy Levels
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/xzsjvm4q/KtdyDMa1LUiulMk0/material-xzsjvm4q-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/awfut3uv
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>quantum-physics</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-078
-  </id>
-  <title>
-   Conditions for Formation of Stationary Waves
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/wse5hvmj/nVoVtpY5qbeALN4Y/material-wse5hvmj-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/wse5hvmj
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-079
-  </id>
-  <title>
-   Phase Difference on a Stationary Wave
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/xm5mnfyq/WVHXGPnmWuYqd4PR/material-xm5mnfyq-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xm5mnfyq
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-080
-  </id>
-  <title>
-   Phase Difference on a Stationary Wave (fixed positions)
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/zg4spztb/mxoDrCZEygqtPc7a/material-zg4spztb-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/zg4spztb
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-081
-  </id>
-  <title>
-   Standing Waves on Strings
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/qYX5eakP/72tltbgYvZk2xE87/material-qYX5eakP-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/qYX5eakP
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-082
-  </id>
-  <title>
-   Resonant Frequency of Standing Waves on a Stretched String
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/bpnejfsv/Ww1IW7bcc4uBHHWI/material-bpnejfsv-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/bpnejfsv
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-083
-  </id>
-  <title>
-   Single Slit Diffraction Relative Intensity
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/wanct2nt/cWRj1LM0T8D6hVhy/material-wanct2nt-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/g6m4dh9s
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-084
-  </id>
-  <title>
-   Two source path difference
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/Dh7SDHa8/o4jxjMzBKwwUIoIL/material-Dh7SDHa8-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/ayECjetm
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-085
-  </id>
-  <title>
-   Double Slit Interference
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/quqcv8pe/ml2plujUnRcT8xJf/material-quqcv8pe-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/nxkcffkd
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-086
-  </id>
-  <title>
-   Wave Interference in 3D
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/uXF5HM4h/OAO0sNNo3JJZM3tz/material-uXF5HM4h-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/XdW2SjQ8
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-087
-  </id>
-  <title>
-   Optical Diffraction Grating
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/p5m34MKj/kKyIQuhZIoekUrbx/material-p5m34MKj-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/p5m34MKj
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-088
-  </id>
-  <title>
-   Resolution and the Rayleigh Criterion
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/er2sravh/lZnIYV6toLg2iOZI/material-er2sravh-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/er2sravh
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-089
-  </id>
-  <title>
-   Wave Pulse Interference and Superposition
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/dJrTcxYd/JNPRIgAQMJNFG2P4/material-dJrTcxYd-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/dJrTcxYd
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-090
-  </id>
-  <title>
-   Wave Interference
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/dnbpbvz7/Lc7zSM8l64qgLxss/material-dnbpbvz7-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/dnbpbvz7
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-091
-  </id>
-  <title>
-   Path difference
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/jkqmuvne/erb63WH5Hf2w6RH6/material-jkqmuvne-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/jkqmuvne
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-092
-  </id>
-  <title>
-   Stationary Sound Wave (Displacement and Pressure)
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/xbknrstt/80Y4YE9ghJo79s1y/material-xbknrstt-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xbknrstt
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-093
-  </id>
-  <title>
-   Harmonics of Open Pipes
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/tsufws72/gHeq0K3tFWixehAG/material-tsufws72-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/tsufws72
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
-   sim-094
-  </id>
-  <title>
-   Harmonics for Closed Pipe
-  </title>
-  <description />
-  <image>
-   https://www.geogebra.org/resource/gm9k6hkg/iY5R5OPvsUot2iQW/material-gm9k6hkg-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/gm9k6hkg
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>superposition</topic>
-  </topics>
- </simulation>
+ 
+ 
+
  <simulation>
   <id>
    sim-072
@@ -4128,7 +3898,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>wave-motion</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -4149,7 +3919,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>wave-motion</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -4170,7 +3940,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>wave-motion</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -4191,7 +3961,7 @@
    GeoGebra
   </platform>
   <topics>
-   <topic>wave-motion</topic>
+   <topic>waves</topic>
   </topics>
  </simulation>
  <simulation>
@@ -4276,6 +4046,248 @@
   </platform>
   <topics>
    <topic>energy-work-power</topic>
+  </topics>
+ </simulation>
+
+    <simulation>
+  <id>
+   js-013
+  </id>
+  <title>
+   Radioactive Decay
+  </title>
+  <description>
+   Observe radioactive decay and plot decay curves with variable half-life.
+  </description>
+  <image>
+   https://physicstjc.github.io/sls/radioactive-decay/radioactive-decay.png
+  </image>
+  <url>
+   https://physicstjc.github.io/sls/radioactive-decay/index.html
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>nuclear physics</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   js-016
+  </id>
+  <title>
+   Geiger-Muller Counter
+  </title>
+  <description>
+   Explore background radiation and compare count rates with various sources.
+  </description>
+  <image>
+   https://physicstjc.github.io/sls/gm-counter/gm-counter.png
+  </image>
+  <url>
+   https://physicstjc.github.io/sls/gm-counter/index.html
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>nuclear physics</topic>
+  </topics>
+ </simulation>
+<simulation>
+  <id>
+   sim-126
+  </id>
+  <title>
+   Photoelectric Effect
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/fUAMmQjq/Tlx6yfoJtkw8Bqoe/material-fUAMmQjq-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/CNjjqZq9
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>quantum-physics</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-127
+  </id>
+  <title>
+   Photoelectric effect
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/c6ZmnCQD/qNDmOSLcejgWLjJu/material-c6ZmnCQD-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/c6ZmnCQD
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>quantum-physics</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-128
+  </id>
+  <title>
+   Energy Level Diagrams
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/RRFMyuxE/BZ7SjRRBJ7wR4rm7/material-RRFMyuxE-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/XY2K8htr
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>quantum-physics</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-129
+  </id>
+  <title>
+   Hydrogen Atom Electron Energy Levels
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/xzsjvm4q/KtdyDMa1LUiulMk0/material-xzsjvm4q-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/awfut3uv
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>quantum-physics</topic>
+  </topics>
+ </simulation>
+<simulation>
+  <id>
+   js-004
+  </id>
+  <title>
+   Earth-Moon System
+  </title>
+  <description>
+   Shows how the Moon's rotation matches its revolution around Earth.
+  </description>
+  <image>
+   https://physicstjc.github.io/sls/earth-moon-system/earth-moon-system.png
+  </image>
+  <url>
+   https://physicstjc.github.io/sls/earth-moon-system/index.html
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>general</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   js-007
+  </id>
+  <title>
+   Bohr's Model of the Atom
+  </title>
+  <description>
+   Interactive Bohr model of atoms up to atomic number 20. Change element to view shell configuration.
+  </description>
+  <image>
+   https://physicstjc.github.io/sls/bohr-model/bohr-model.png
+  </image>
+  <url>
+   https://physicstjc.github.io/sls/bohr-model/index.html
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>general</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   js-008
+  </id>
+  <title>
+   Dice Simulator
+  </title>
+  <description>
+   Math-based probability simulator for rolling one or two dice, with charts and result tracking.
+  </description>
+  <image>
+   https://physicstjc.github.io/sls/dice/dice.png
+  </image>
+  <url>
+   https://physicstjc.github.io/sls/dice/index.html
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>general</topic>
+  </topics>
+ </simulation>
+    <simulation>
+  <id>
+   sim-131
+  </id>
+  <title>
+   Line of Best Fit
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/f96zyayz/s6ydE5EhIvlm4nsd/material-f96zyayz-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/f96zyayz
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>graphing-technique</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-132
+  </id>
+  <title>
+   Least Squares Criterion
+  </title>
+  <description />
+  <image>
+   https://www.geogebra.org/resource/zHwQNvpW/UI4ZvgXeUVUGjnOC/material-zHwQNvpW-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/zHwQNvpW
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>graphing-technique</topic>
   </topics>
  </simulation>
 </simulations>
