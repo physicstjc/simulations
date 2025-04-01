@@ -39,10 +39,10 @@ header {
 .nav-menu a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.6rem;
     border-radius: 4px;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     white-space: nowrap;
     background-color: rgba(255, 255, 255, 0.1);
     display: block;
@@ -61,7 +61,15 @@ header {
     
     .nav-menu a {
         padding: 0.4rem 0.8rem;
-        font-size: 0.85rem;
+        font-size: 0.6rem;  /* Reduced from 0.9rem */
+        padding: 0.4rem 0.6rem;  /* More compact padding */
+    }
+    
+    @media (max-width: 768px) {
+        .nav-menu a {
+            font-size: 0.8rem;  /* Reduced from 0.85rem */
+            padding: 0.3rem 0.6rem;  /* Tighter spacing */
+        }
     }
 }
 
