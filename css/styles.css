@@ -158,6 +158,13 @@ section h2 {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #3498db;
     font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+/* Remove the hover styles */
+section h2:hover {
+    background-color: transparent;
+    transform: none;
 }
 
 /* Simulation Grid Layout */
@@ -199,6 +206,13 @@ section h2 {
     margin: 0 0 0.8rem 0;
     color: #2c3e50;
     font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+/* Remove the hover effect for h3 */
+.simulation-card:hover .simulation-info h3 {
+    background-color: transparent;
+    transform: none;
 }
 
 .simulation-info p {
@@ -244,4 +258,37 @@ section h2 {
 
 header h1 {
     margin: 0; /* Remove default margin for better spacing */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
 }

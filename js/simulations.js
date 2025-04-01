@@ -30,11 +30,7 @@ function processSimulations(xmlDoc) {
     simulations.forEach(sim => {
         const topicNodes = sim.querySelectorAll('topic');
         topicNodes.forEach(topicNode => {
-            const topic = topicNode.textContent
-                .replace(/-/g, ' ')  // Replace hyphens with spaces
-                .split(' ')           // Split into words
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-                .join(' ');           // Rejoin with spaces
+            const topic = topicNode.textContent.trim(); // Keep the original topic name from XML
             if (!topics[topic]) {
                 topics[topic] = [];
             }
@@ -45,8 +41,8 @@ function processSimulations(xmlDoc) {
     // Render each topic section
     for (const [topic, sims] of Object.entries(topics)) {
         const section = document.createElement('section');
-        section.id = topic;
-        section.innerHTML = `<h2>${topic.replace('-', ' ')}</h2><div class="simulation-grid"></div>`;
+        section.id = topic; // Use the exact topic name as ID
+        section.innerHTML = `<h2>${topic.replace(/-/g, ' ')}</h2><div class="simulation-grid"></div>`;
         
         const grid = section.querySelector('.simulation-grid');
         sims.forEach(sim => {
@@ -61,16 +57,21 @@ function createSimulationCard(sim) {
     const card = document.createElement('div');
     card.className = 'simulation-card';
     
+    const title = sim.querySelector('title').textContent
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+    
     const url = sim.querySelector('shortUrl') ? 
         sim.querySelector('shortUrl').textContent : 
         sim.querySelector('url').textContent;
     
     card.innerHTML = `
         <a href="${url}" target="_blank">
-            <img src="${sim.querySelector('image').textContent}" alt="${sim.querySelector('title').textContent}">
+            <img src="${sim.querySelector('image').textContent}" alt="${title}">
         </a>
         <div class="simulation-info">
-            <h3>${sim.querySelector('title').textContent}</h3>
+            <h3>${title}</h3>
             <p>${sim.querySelector('description').textContent}</p>
             <span class="platform">Platform: ${sim.querySelector('platform').textContent}</span>
             <a href="${url}" class="button" target="_blank">Launch Simulation</a>
@@ -79,3 +80,24 @@ function createSimulationCard(sim) {
     
     return card;
 }
+
+// Add after your existing DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    // Back to top button functionality
+    const backToTop = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+    
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
