@@ -701,30 +701,6 @@
    <topic>kinematics</topic>
   </topics>
  </simulation>
-<simulation>
-  <id>
-   js-022
-  </id>
-  <title>
-   Projectile with Air Resistance
-  </title>
-  <description>
-   Visualize the horizontal and vertical components of velocity of a projectile changing over time with and without air resistance.
-  </description>
-  <image>
-   https://physicstjc.github.io/sls/projectile-with-air-resistance/projectile-with-air-resistance.png
-  </image>
-  <url>
-   https://physicstjc.github.io/sls/projectile-with-air-resistance/index.html
-  </url>
-  <platform>
-   JavaScript
-  </platform>
-  <topics>
-   <topic>kinematics</topic>
-  </topics>
- </simulation>
- 
  <simulation>
   <id>
    sim-014
@@ -939,6 +915,29 @@
    <topic>dynamics</topic>
   </topics>
  </simulation>
+    
+<simulation>
+  <id>
+   ejss-001
+  </id>
+  <title>
+   Elevator
+  </title>
+  <description/>
+  <image>
+   https://physicstjc.github.io/simulations/ejss/elevator/man-in-elevator.png
+  </image>
+  <url>
+   https://physicstjc.github.io/simulations/ejss/elevator_Simulation.xhtml
+  </url>
+  <platform>
+   EjsS
+  </platform>
+  <topics>
+   <topic>dynamics</topic>
+  </topics>
+ </simulation>
+    
  <simulation>
   <id>
    sim-018
@@ -960,6 +959,9 @@
    <topic>forces</topic>
   </topics>
  </simulation>
+
+
+    
  <simulation>
   <id>
    sim-019
