@@ -1,0 +1,18 @@
+generated-with: Easy Java/Javascript Simulations, version 6.0_beta, build 180814. Visit http://www.um.es/fem/Ejs
+title: 
+logo-image: 
+author: Seng Kwang Tan
+copyright: 
+preferred-width: 800
+preferred-height: 600
+author-image: 
+source: bearing.ejss
+main-script: 
+main-simulation: bearing_Simulation.xhtml
+available-languages: 
+html-contents: bearing_Contents.xhtml
+html-main: bearing.xhtml
+page-title: Simulation
+page-index: bearing_Simulation.xhtml
+resource: protractorround.png
+resource: northarrow.png
