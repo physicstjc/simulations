@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+<ModulePrefs
+title="variableresistor"
+author="Tan Seng Kwang"
+description=""
+screenshot="./electriccomponents/variableresistancesim.png"
+thumbnail="./electriccomponents/variableresistancesim.png">
+<Require feature="opensocial-0.9"/>
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html" href="variableresistor_Simulation.xhtml"/>
+</Module>
