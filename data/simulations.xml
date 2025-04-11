@@ -3841,29 +3841,6 @@
 
  <simulation>
   <id>
-   sim-038
-  </id>
-  <title>
-   Resultant Force on a Point Mass
-  </title>
-  <description/>
-  <image>
-   https://www.geogebra.org/resource/w7jdq8tp/bg06wkbYUKIJxMWS/material-w7jdq8tp-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/rtubwx9m
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>forces</topic>
-  </topics>
- </simulation>
- 
- 
- <simulation>
-  <id>
    sim-130
   </id>
   <title>
