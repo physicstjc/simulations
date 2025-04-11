@@ -4321,4 +4321,36 @@
    <topic>graphing-technique</topic>
   </topics>
  </simulation>
-<simulation><id>js-019</id><title>Sound Level Meter</title><description>Use this sound level meter to measure the noise level in your class. The slider allows you to change the sensitivity of the meter. The sensitivity value ranges from -20 dB to 20 dB.</description><image>https://physicstjc.github.io/sls/sound-level-meter/sound-level-meter.png</image><url>https://physicstjc.github.io/sls/sound-level-meter/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation><simulation><id>js-020</id><title>Sound Frequency Analyser</title><description>This sound frequency analyser is able to pick up the dominant frequency from the microphone. Students can use it to investigate the effect on the frequency of sound by factors such as length or tension of a guitar string. For higher level Physics students, they can observe the frequencies of higher harmonics.</description><image>https://physicstjc.github.io/sls/sound-frequency-analyser/sound-frequency-analyser.png</image><url>https://physicstjc.github.io/sls/sound-frequency-analyser/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation><simulation><id>js-021</id><title>Sound Generator</title><description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description><image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image><url>https://physicstjc.github.io/sls/sound-generator/</url><platform>JavaScript</platform><topics><topic>sound</topic></topics></simulation></simulations>
+<simulation>
+ <id>js-019</id>
+ <title>Sound Level Meter</title>
+ <description>Use this sound level meter to measure the noise level in your class. The slider allows you to change the sensitivity of the meter. The sensitivity value ranges from -20 dB to 20 dB.</description>
+ <image>https://physicstjc.github.io/sls/sound-level-meter/sound-level-meter.png</image>
+ <url>https://physicstjc.github.io/sls/sound-level-meter/</url>
+ <platform>JavaScript</platform><topics><topic>sound</topic></topics>
+</simulation>
+ <simulation>
+  <id>js-020</id>
+  <title>Sound Frequency Analyser</title>
+  <description>This sound frequency analyser is able to pick up the dominant frequency from the microphone. Students can use it to investigate the effect on the frequency of sound by factors such as length or tension of a guitar string. For higher level Physics students, they can observe the frequencies of higher harmonics.</description><image>https://physicstjc.github.io/sls/sound-frequency-analyser/sound-frequency-analyser.png</image>
+  <url>https://physicstjc.github.io/sls/sound-frequency-analyser/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>sound</topic></topics>
+ </simulation>
+ <simulation>
+  <id>js-021</id>
+  <title>Sound Generator</title>
+  <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
+  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
+  <url>https://physicstjc.github.io/sls/sound-generator/</url><platform>JavaScript</platform>
+  <topics><topic>sound</topic></topics></simulation>
+
+  <simulation>
+  <id>sim-134</id>
+  <title>Compound Circuits</title>
+  <description>By changing the resistance in a compound circuit, practise calculations of p.d. and current.</description>
+  <image>https://www.geogebra.org/resource/jkckp9pr/PIA2zH2yWbASjX4A/material-jkckp9pr-thumb.png</image>
+  <url>https://www.geogebra.org/m/jkckp9pr</url><platform>GeoGebra</platform>
+  <topics><topic>electricity</topic></topics></simulation>
+ 
+</simulations >
