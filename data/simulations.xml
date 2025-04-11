@@ -3793,7 +3793,7 @@ https://www.geogebra.org/resource/euxnftpg/oSE9K3POQLM1ZPPO/material-euxnftpg-th
    GeoGebra
   </platform>
   <topics>
-   <topic>forces</topic>
+   <topic>turning effect of forces</topic>
   </topics>
  </simulation>
  <simulation>
@@ -3838,27 +3838,7 @@ https://www.geogebra.org/resource/euxnftpg/oSE9K3POQLM1ZPPO/material-euxnftpg-th
    <topic>forces</topic>
   </topics>
  </simulation>
- <simulation>
-  <id>
-   sim-036
-  </id>
-  <title>
-   Equilibrium of a Wall Shelf
-  </title>
-  <description/>
-  <image>
-   https://www.geogebra.org/resource/xdbr7qr5/oxL0SnbXFugZ4dxV/material-xdbr7qr5-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xdbr7qr5
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>forces</topic>
-  </topics>
- </simulation>
+
  <simulation>
   <id>
    sim-038
