@@ -1494,7 +1494,7 @@
    sim-053
   </id>
   <title>
-   Circular motion 3d for IGCSE Physics
+   Circular Motion Experiment with Variable Tension 
   </title>
   <description/>
   <image>
@@ -1851,6 +1851,31 @@
    <topic>oscillations</topic>
   </topics>
  </simulation>
+ <simulation>
+  <id>
+   sim-071
+  </id>
+  <title>
+   Torsional Pendulum
+  </title>
+  <description/>
+  <image>
+   https://www.geogebra.org/resource/jhc4xvpe/P6Tax4Mt6DxV7R5C/material-jhc4xvpe-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/jhc4xvpe
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>oscillations</topic>
+  </topics>
+ </simulation>
+
+
+
+ 
  <simulation>
   <id>
    sim-035
