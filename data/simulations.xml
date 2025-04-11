@@ -3821,6 +3821,29 @@
    <topic>turning effect of forces</topic>
   </topics>
  </simulation>
+
+  <simulation>
+  <id>
+   sim-133
+  </id>
+  <title>
+   Turning Effect on a Tilted Beam
+  </title>
+  <description/>
+  <image>
+   https://www.geogebra.org/resource/sas5ybxu/hwi6RZe06OveLEMH/material-sas5ybxu-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/sas5ybxu
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>turning effect of forces</topic>
+  </topics>
+ </simulation>
+ 
  <simulation>
   <id>
    sim-034
