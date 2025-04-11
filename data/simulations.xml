@@ -3209,6 +3209,18 @@
    <topic>electricity</topic>
   </topics>
  </simulation>
+
+ 
+  <simulation>
+  <id>sim-134</id>
+  <title>Compound Circuits</title>
+  <description>By changing the resistance in a compound circuit, practise calculations of p.d. and current.</description>
+  <image>https://www.geogebra.org/resource/jkckp9pr/PIA2zH2yWbASjX4A/material-jkckp9pr-thumb.png</image>
+  <url>https://www.geogebra.org/m/jkckp9pr</url>
+  <platform>GeoGebra</platform>
+  <topics><topic>electricity</topic></topics>
+  </simulation>
+ 
  <simulation>
   <id>
    sim-067
@@ -4350,14 +4362,5 @@
   <platform>JavaScript</platform>
   <topics><topic>sound</topic></topics></simulation>
 
-  <simulation>
-  <id>sim-134</id>
-  <title>Compound Circuits</title>
-  <description>By changing the resistance in a compound circuit, practise calculations of p.d. and current.</description>
-  <image>https://www.geogebra.org/resource/jkckp9pr/PIA2zH2yWbASjX4A/material-jkckp9pr-thumb.png</image>
-  <url>https://www.geogebra.org/m/jkckp9pr</url>
-  <platform>GeoGebra</platform>
-  <topics><topic>electricity</topic></topics>
-  </simulation>
  
 </simulations>
