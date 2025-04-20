@@ -1214,6 +1214,32 @@
    <topic>energy-work-power</topic>
   </topics>
  </simulation>
+
+
+
+ <simulation>
+  <id>
+   sim-135
+  </id>
+  <title>
+   LOL Energy Diagram Template
+  </title>
+  <description/>
+  <image>
+   https://cdn.geogebra.org/resource/u2m3gnzj/0FFBCYMsFOprUxmY/material-u2m3gnzj-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/u2m3gnzj
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>energy-work-power</topic>
+  </topics>
+ </simulation>
+
+ 
  <simulation>
   <id>
    sim-031
