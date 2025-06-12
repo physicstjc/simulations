@@ -4398,7 +4398,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/faradays-experiment.png</image>
   <url>http://physicstjc.github.io/sls/faraday-experiment/index.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetic induction</topic></topics>
+  <topics><topic>electromagnetic-induction</topic></topics>
  </simulation>
 
 
@@ -4419,24 +4419,27 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
   <url>https://physicstjc.github.io/sls/ac-generator/index.html/</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetic induction</topic></topics></simulation>
+  <topics><topic>electromagnetic-induction</topic></topics></simulation>
 
  <simulation>
   <id>js-025</id>
-  <title>Sound Generator</title>
-  <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
-  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
-  <url>https://physicstjc.github.io/sls/sound-generator/</url>
+  <title>Charging by Induction</title>
+  <description>Explore how induced charging of a conductor can be done.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/static-electricity.png</image>
+  <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>sound</topic></topics></simulation>
+  <topics><topic>electric-fields</topic></topics></simulation>
 </simulations>
 
  <simulation>
-  <id>js-025</id>
-  <title>Sound Generator</title>
-  <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
-  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
-  <url>https://physicstjc.github.io/sls/sound-generator/</url>
+  <id>js-026</id>
+  <title>Temperature and Pressure</title>
+  <description>Observe what happens at the particle level when temperature of a gas increases.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/temperature-and-pressure.png</image>
+  <url>https://physicstjc.github.io/sls/temperature-of-gas/index.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>sound</topic></topics></simulation>
+  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
+
+
+
 </simulations>
