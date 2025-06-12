@@ -40,12 +40,23 @@ function processSimulations(xmlDoc) {
             return; // Skip this simulation if it's not JavaScript and we are on the JS page
         }
 
+        // Use a Set to track simulations already added to avoid duplicates
+        const addedToTopics = new Set();
+
         sim.querySelectorAll('topic').forEach(topicNode => {
             const rawTopic = topicNode.textContent.trim();
             const id = rawTopic.toLowerCase().replace(/[,\s]+/g, '-');
+            
             // Initialize topics array if not exists
-            if (!topics[id]) topics[id] = [];
-            topics[id].push(sim);
+            if (!topics[id]) {
+                topics[id] = [];
+            }
+
+            // Add simulation to topic only if not already added for this topic
+            if (!addedToTopics.has(sim)) {
+                topics[id].push(sim);
+                addedToTopics.add(sim);
+            }
             
             if (!seenTopics.has(id)) {
                 const displayText = rawTopic
