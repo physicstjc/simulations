@@ -4417,7 +4417,7 @@
   <title>AC Generator</title>
   <description>A rotating coil in a magnetic field produces an alternating emf. Changes to the rate of rotation changes the frequency and peak emf.</description>
   <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
-  <url>https://physicstjc.github.io/sls/ac-generator/index.html/</url>
+  <url>https://physicstjc.github.io/sls/ac-generator/index.html</url>
   <platform>JavaScript</platform>
   <topics><topic>electromagnetic-induction</topic></topics></simulation>
 
