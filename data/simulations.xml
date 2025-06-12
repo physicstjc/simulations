@@ -3567,7 +3567,7 @@
    sim-120
   </id>
   <title>
-   AC Generator 3D
+   A. C. Generator 3D
   </title>
   <description/>
   <image>
@@ -4414,7 +4414,7 @@
 
  <simulation>
   <id>js-024</id>
-  <title>AC Generator</title>
+  <title>A. C. Generator</title>
   <description>A rotating coil in a magnetic field produces an alternating emf. Changes to the rate of rotation changes the frequency and peak emf.</description>
   <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
   <url>https://physicstjc.github.io/sls/ac-generator/index.html</url>
