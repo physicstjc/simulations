@@ -4379,14 +4379,64 @@
   <topics><topic>sound</topic></topics>
  </simulation>
  
+
+
  <simulation>
   <id>js-021</id>
+   <title>Sound Generator</title>
+  <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
+  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
+  <url>https://physicstjc.github.io/sls/sound-generator/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>sound</topic></topics></simulation>
+ 
+ 
+ <simulation> 
+  <id>js-022</id>
+  <title>Faraday's Experiment</title>
+  <description>This simulation allows the user to explore the laws of electromagnetic induction (Faraday and Lenz) by dragging a magnet into and away from a coil.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/faradays-experiment.png</image>
+  <url>http://physicstjc.github.io/sls/faraday-experiment/index.html</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electromagnetic induction</topic></topics>
+ </simulation>
+
+
+ <simulation>
+  <id>js-023</id>
+  <title>Induced Magnetism</title>
+  <description>Magnetic domains of an iron bar becomes aligned to the magnetic field of a magnet or electromagnet.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/magnetic-field.png</image>
+  <url>https://physicstjc.github.io/ophysics/magnetism/induced-magnetism.html/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>magnetism</topic></topics>
+ </simulation>
+
+ <simulation>
+  <id>js-024</id>
+  <title>AC Generator</title>
+  <description>A rotating coil in a magnetic field produces an alternating emf. Changes to the rate of rotation changes the frequency and peak emf.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
+  <url>https://physicstjc.github.io/sls/ac-generator/index.html/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electromagnetic induction</topic></topics></simulation>
+
+ <simulation>
+  <id>js-025</id>
   <title>Sound Generator</title>
   <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
   <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
   <url>https://physicstjc.github.io/sls/sound-generator/</url>
   <platform>JavaScript</platform>
   <topics><topic>sound</topic></topics></simulation>
+</simulations>
 
- 
+ <simulation>
+  <id>js-025</id>
+  <title>Sound Generator</title>
+  <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
+  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
+  <url>https://physicstjc.github.io/sls/sound-generator/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>sound</topic></topics></simulation>
 </simulations>
