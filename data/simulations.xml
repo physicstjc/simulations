@@ -4429,7 +4429,6 @@
   <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction.html</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics></simulation>
-</simulations>
 
  <simulation>
   <id>js-026</id>
