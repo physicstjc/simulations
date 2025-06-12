@@ -26,6 +26,8 @@ function processSimulations(xmlDoc) {
     const container = document.getElementById('simulations-container');
     const navMenu = document.querySelector('.nav-menu');
 
+    const isJavaScriptPage = window.location.pathname.includes('javascript.html');
+
     // Create ordered topics map while preserving XML order
     const topicsMap = new Map();
     const seenTopics = new Set();
@@ -33,6 +35,11 @@ function processSimulations(xmlDoc) {
     const topics = {};  // Define topics object
     
     simulations.forEach(sim => {
+        // Filter simulations if on the JavaScript-only page
+        if (isJavaScriptPage && sim.querySelector('platform').textContent !== 'JavaScript') {
+            return; // Skip this simulation if it's not JavaScript and we are on the JS page
+        }
+
         sim.querySelectorAll('topic').forEach(topicNode => {
             const rawTopic = topicNode.textContent.trim();
             const id = rawTopic.toLowerCase().replace(/[,\s]+/g, '-');
