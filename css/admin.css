@@ -31,6 +31,12 @@
     font-size: 1rem;
 }
 
+/* Style for multi-select dropdown */
+.form-group select[multiple] {
+    min-height: 150px;
+    width: 100%;
+}
+
 .form-group textarea {
     min-height: 100px;
     resize: vertical;

@@ -60,11 +60,30 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="sim-topic">Topics</label>
-                    <div class="input-with-button">
-                        <input type="text" id="sim-topic" placeholder="Add a topic and press Enter">
-                    </div>
-                    <div class="topics-container" id="topics-container"></div>
+                    <label for="sim-topics">Topics</label>
+                    <select id="sim-topics" multiple>
+                        <option value="mechanics">Mechanics</option>
+                        <option value="kinematics">Kinematics</option>
+                        <option value="dynamics">Dynamics</option>
+                        <option value="forces">Forces</option>
+                        <option value="motion">Motion</option>
+                        <option value="energy">Energy</option>
+                        <option value="momentum">Momentum</option>
+                        <option value="waves">Waves</option>
+                        <option value="sound">Sound</option>
+                        <option value="light">Light</option>
+                        <option value="optics">Optics</option>
+                        <option value="electricity">Electricity</option>
+                        <option value="magnetism">Magnetism</option>
+                        <option value="electromagnetism">Electromagnetism</option>
+                        <option value="thermodynamics">Thermodynamics</option>
+                        <option value="fluid dynamics">Fluid Dynamics</option>
+                        <option value="quantum">Quantum</option>
+                        <option value="relativity">Relativity</option>
+                        <option value="nuclear">Nuclear</option>
+                        <option value="astronomy">Astronomy</option>
+                    </select>
+                    <div class="note">Hold Ctrl (or Cmd on Mac) to select multiple topics</div>
                 </div>
                 <button type="submit" class="admin-button">Generate XML</button>
             </form>
@@ -117,83 +136,13 @@
                 }
             });
             
-            // Topics handling
-            const topicInput = document.getElementById('sim-topic');
-            const topicsContainer = document.getElementById('topics-container');
-            const topics = new Set();
+            // Topics handling with dropdown
+            const topicsSelect = document.getElementById('sim-topics');
             
-            // Common physics topics for suggestions
-            const commonTopics = [
-                'mechanics', 'kinematics', 'dynamics', 'forces', 'motion', 
-                'energy', 'momentum', 'waves', 'sound', 'light', 'optics',
-                'electricity', 'magnetism', 'electromagnetism', 'thermodynamics',
-                'fluid dynamics', 'quantum', 'relativity', 'nuclear', 'astronomy'
-            ];
-            
-            topicInput.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    addTopic();
-                }
+            // Add change event listener to update preview when topics change
+            topicsSelect.addEventListener('change', function() {
+                updatePreview();
             });
-            
-            function addTopic() {
-                const topic = topicInput.value.trim().toLowerCase();
-                
-                if (topic && !topics.has(topic)) {
-                    topics.add(topic);
-                    renderTopics();
-                    topicInput.value = '';
-                    updatePreview();
-                }
-            }
-            
-            function renderTopics() {
-                topicsContainer.innerHTML = '';
-                
-                topics.forEach(topic => {
-                    const topicTag = document.createElement('div');
-                    topicTag.className = 'topic-tag';
-                    topicTag.innerHTML = `
-                        ${topic}
-                        <button type="button" data-topic="${topic}">&times;</button>
-                    `;
-                    
-                    topicTag.querySelector('button').addEventListener('click', function() {
-                        topics.delete(topic);
-                        renderTopics();
-                        updatePreview();
-                    });
-                    
-                    topicsContainer.appendChild(topicTag);
-                });
-                
-                // Add common topics suggestions if no topics added yet
-                if (topics.size === 0) {
-                    const suggestionsDiv = document.createElement('div');
-                    suggestionsDiv.className = 'topic-suggestions';
-                    suggestionsDiv.innerHTML = '<p>Suggestions: ' + 
-                        commonTopics.slice(0, 5).map(topic => 
-                            `<a href="#" data-topic="${topic}">${topic}</a>`
-                        ).join(', ') + '</p>';
-                    
-                    topicsContainer.appendChild(suggestionsDiv);
-                    
-                    // Add event listeners to suggestion links
-                    suggestionsDiv.querySelectorAll('a').forEach(link => {
-                        link.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            const topic = this.getAttribute('data-topic');
-                            topics.add(topic);
-                            renderTopics();
-                            updatePreview();
-                        });
-                    });
-                }
-            }
-            
-            // Initialize topics container
-            renderTopics();
             
             // Form handling and preview
             const simulationForm = document.getElementById('simulation-form');
@@ -240,9 +189,10 @@
                         previewImage.src = 'https://via.placeholder.com/300x180?text=No+Image';
                     }
                     
-                    // Update topics
+                    // Update topics from dropdown selection
                     previewTopics.innerHTML = '';
-                    topics.forEach(topic => {
+                    const selectedTopics = Array.from(topicsSelect.selectedOptions).map(option => option.value);
+                    selectedTopics.forEach(topic => {
                         const topicSpan = document.createElement('span');
                         topicSpan.className = 'simulation-topic';
                         topicSpan.textContent = topic;
@@ -261,8 +211,11 @@
                 const simUrl = urlInput.value.trim();
                 const platform = platformSelect.value;
                 
-                if (!title || !imageUrl || !simUrl || !platform || topics.size === 0) {
-                    alert('Please fill in all required fields and add at least one topic.');
+                // Get selected topics from the dropdown
+                const selectedTopics = Array.from(topicsSelect.selectedOptions).map(option => option.value);
+                
+                if (!title || !imageUrl || !simUrl || !platform || selectedTopics.length === 0) {
+                    alert('Please fill in all required fields and select at least one topic.');
                     return;
                 }
                 
@@ -284,7 +237,7 @@
                 xml += `  <platform>\n    ${platform}\n  </platform>\n`;
                 xml += `  <topics>\n`;
                 
-                topics.forEach(topic => {
+                selectedTopics.forEach(topic => {
                     xml += `    <topic>${topic}</topic>\n`;
                 });
                 
