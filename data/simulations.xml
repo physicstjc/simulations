@@ -4439,6 +4439,26 @@
   <platform>JavaScript</platform>
   <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
 
-
+<simulation>
+  <id>
+    sim-017570
+  </id>
+  <title>
+    Displacement-distance and displacement-time graphs
+  </title>
+  <description></description>
+  <image>
+    https://www.physicslens.com/wp-content/uploads/2025/08/wave-graphs-displacement-time-distance.png
+  </image>
+  <url>
+    https://physicstjc.github.io/sls/wave-graph/
+  </url>
+  <platform>
+    JavaScript
+  </platform>
+  <topics>
+    <topic>waves</topic>
+  </topics>
+</simulation>
 
 </simulations>
