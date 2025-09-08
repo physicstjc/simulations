@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
             if (errorNode) {
                 throw new Error('XML parsing error: ' + errorNode.textContent);
             }
+            // Store the XML document globally for search functionality
+            window.simulationsXmlDoc = xmlDoc;
             processSimulations(xmlDoc);
+            
+            // Initialize search functionality
+            initializeSearch();
         })
         .catch(error => {
             console.error('Error loading XML:', error);
@@ -138,3 +143,91 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Search functionality
+function initializeSearch() {
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+    
+    if (!searchInput || !searchButton) return;
+    
+    // Search when button is clicked
+    searchButton.addEventListener('click', () => {
+        performSearch(searchInput.value);
+    });
+    
+    // Search when Enter key is pressed
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            performSearch(searchInput.value);
+        }
+    });
+}
+
+function performSearch(query) {
+    if (!query || !window.simulationsXmlDoc) return;
+    
+    query = query.toLowerCase().trim();
+    
+    // Get all simulations
+    const simulations = window.simulationsXmlDoc.querySelectorAll('simulation');
+    const container = document.getElementById('simulations-container');
+    
+    // Clear current content
+    container.innerHTML = '';
+    
+    // Create search results section
+    const searchResultsSection = document.createElement('section');
+    searchResultsSection.id = 'search-results';
+    searchResultsSection.innerHTML = `<h2>Search Results for "${query}"</h2><div class="simulation-grid"></div>`;
+    
+    const grid = searchResultsSection.querySelector('.simulation-grid');
+    let resultsCount = 0;
+    
+    // Filter simulations based on search query
+    simulations.forEach(sim => {
+        const title = sim.querySelector('title').textContent.toLowerCase();
+        const description = sim.querySelector('description').textContent.toLowerCase();
+        const platform = sim.querySelector('platform').textContent.toLowerCase();
+        let topics = '';
+        
+        sim.querySelectorAll('topic').forEach(topic => {
+            topics += topic.textContent.toLowerCase() + ' ';
+        });
+        
+        // Check if any field contains the search query
+        if (title.includes(query) || description.includes(query) || 
+            platform.includes(query) || topics.includes(query)) {
+            grid.appendChild(createSimulationCard(sim));
+            resultsCount++;
+        }
+    });
+    
+    // Display results or no results message
+    if (resultsCount > 0) {
+        container.appendChild(searchResultsSection);
+        // Add a clear search button
+        const clearButton = document.createElement('button');
+        clearButton.id = 'clear-search';
+        clearButton.textContent = 'Clear Search';
+        clearButton.addEventListener('click', () => {
+            // Clear search input
+            document.getElementById('search-input').value = '';
+            // Reprocess all simulations
+            processSimulations(window.simulationsXmlDoc);
+        });
+        container.insertBefore(clearButton, searchResultsSection);
+    } else {
+        container.innerHTML = `
+            <div class="no-results">
+                <h2>No results found for "${query}"</h2>
+                <p>Try a different search term or browse by category.</p>
+                <button id="clear-search">Clear Search</button>
+            </div>
+        `;
+        document.getElementById('clear-search').addEventListener('click', () => {
+            document.getElementById('search-input').value = '';
+            processSimulations(window.simulationsXmlDoc);
+        });
+    }
+}

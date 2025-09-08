@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Physics Simulations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" class="home-link">Physics Simulations</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="admin-container" id="login-container">
+            <h2>Admin Login</h2>
+            <form class="login-form" id="login-form">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="admin-button">Login</button>
+            </form>
+        </div>
+
+        <div class="admin-container hidden" id="admin-panel">
+            <h2>Add New Simulation</h2>
+            <form class="simulation-form" id="simulation-form">
+                <div class="form-group">
+                    <label for="sim-title">Title</label>
+                    <input type="text" id="sim-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="sim-description">Description (optional)</label>
+                    <textarea id="sim-description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sim-image">Image URL</label>
+                    <input type="url" id="sim-image" required>
+                </div>
+                <div class="form-group">
+                    <label for="sim-url">Simulation URL</label>
+                    <input type="url" id="sim-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="sim-platform">Platform</label>
+                    <select id="sim-platform" required>
+                        <option value="">Select a platform</option>
+                        <option value="GeoGebra">GeoGebra</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PhET">PhET</option>
+                        <option value="EjsS">EjsS</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sim-topic">Topics</label>
+                    <div class="input-with-button">
+                        <input type="text" id="sim-topic" placeholder="Add a topic and press Enter">
+                    </div>
+                    <div class="topics-container" id="topics-container"></div>
+                </div>
+                <button type="submit" class="admin-button">Generate XML</button>
+            </form>
+
+            <div class="preview-container hidden" id="preview-container">
+                <h3>Preview</h3>
+                <div class="simulation-card" id="preview-card">
+                    <img src="" alt="Simulation preview" class="simulation-image" id="preview-image">
+                    <div class="simulation-info">
+                        <h3 class="simulation-title" id="preview-title"></h3>
+                        <span class="simulation-platform" id="preview-platform"></span>
+                        <p id="preview-description"></p>
+                        <div class="simulation-topics" id="preview-topics"></div>
+                    </div>
+                </div>
+
+                <div class="xml-output hidden" id="xml-output-container">
+                    <h3>XML Output</h3>
+                    <pre id="xml-output"></pre>
+                    <button id="download-xml" class="admin-button">Download XML</button>
+                    <p class="note">Note: You'll need to manually add this to your simulations.xml file.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Physics Simulations Collection</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Admin password - change this to your desired password
+            const ADMIN_PASSWORD = 'physics123';
+            
+            // Login form handling
+            const loginForm = document.getElementById('login-form');
+            const loginContainer = document.getElementById('login-container');
+            const adminPanel = document.getElementById('admin-panel');
+            
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const password = document.getElementById('password').value;
+                
+                if (password === ADMIN_PASSWORD) {
+                    loginContainer.classList.add('hidden');
+                    adminPanel.classList.remove('hidden');
+                } else {
+                    alert('Incorrect password. Please try again.');
+                }
+            });
+            
+            // Topics handling
+            const topicInput = document.getElementById('sim-topic');
+            const topicsContainer = document.getElementById('topics-container');
+            const topics = new Set();
+            
+            // Common physics topics for suggestions
+            const commonTopics = [
+                'mechanics', 'kinematics', 'dynamics', 'forces', 'motion', 
+                'energy', 'momentum', 'waves', 'sound', 'light', 'optics',
+                'electricity', 'magnetism', 'electromagnetism', 'thermodynamics',
+                'fluid dynamics', 'quantum', 'relativity', 'nuclear', 'astronomy'
+            ];
+            
+            topicInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    addTopic();
+                }
+            });
+            
+            function addTopic() {
+                const topic = topicInput.value.trim().toLowerCase();
+                
+                if (topic && !topics.has(topic)) {
+                    topics.add(topic);
+                    renderTopics();
+                    topicInput.value = '';
+                    updatePreview();
+                }
+            }
+            
+            function renderTopics() {
+                topicsContainer.innerHTML = '';
+                
+                topics.forEach(topic => {
+                    const topicTag = document.createElement('div');
+                    topicTag.className = 'topic-tag';
+                    topicTag.innerHTML = `
+                        ${topic}
+                        <button type="button" data-topic="${topic}">&times;</button>
+                    `;
+                    
+                    topicTag.querySelector('button').addEventListener('click', function() {
+                        topics.delete(topic);
+                        renderTopics();
+                        updatePreview();
+                    });
+                    
+                    topicsContainer.appendChild(topicTag);
+                });
+                
+                // Add common topics suggestions if no topics added yet
+                if (topics.size === 0) {
+                    const suggestionsDiv = document.createElement('div');
+                    suggestionsDiv.className = 'topic-suggestions';
+                    suggestionsDiv.innerHTML = '<p>Suggestions: ' + 
+                        commonTopics.slice(0, 5).map(topic => 
+                            `<a href="#" data-topic="${topic}">${topic}</a>`
+                        ).join(', ') + '</p>';
+                    
+                    topicsContainer.appendChild(suggestionsDiv);
+                    
+                    // Add event listeners to suggestion links
+                    suggestionsDiv.querySelectorAll('a').forEach(link => {
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            const topic = this.getAttribute('data-topic');
+                            topics.add(topic);
+                            renderTopics();
+                            updatePreview();
+                        });
+                    });
+                }
+            }
+            
+            // Initialize topics container
+            renderTopics();
+            
+            // Form handling and preview
+            const simulationForm = document.getElementById('simulation-form');
+            const previewContainer = document.getElementById('preview-container');
+            const previewImage = document.getElementById('preview-image');
+            const previewTitle = document.getElementById('preview-title');
+            const previewPlatform = document.getElementById('preview-platform');
+            const previewDescription = document.getElementById('preview-description');
+            const previewTopics = document.getElementById('preview-topics');
+            const xmlOutput = document.getElementById('xml-output');
+            const xmlOutputContainer = document.getElementById('xml-output-container');
+            const downloadXmlBtn = document.getElementById('download-xml');
+            
+            // Update preview as user types
+            const titleInput = document.getElementById('sim-title');
+            const descriptionInput = document.getElementById('sim-description');
+            const imageInput = document.getElementById('sim-image');
+            const urlInput = document.getElementById('sim-url');
+            const platformSelect = document.getElementById('sim-platform');
+            
+            [titleInput, descriptionInput, imageInput, urlInput, platformSelect].forEach(input => {
+                input.addEventListener('input', updatePreview);
+            });
+            
+            function updatePreview() {
+                const title = titleInput.value;
+                const description = descriptionInput.value;
+                const imageUrl = imageInput.value;
+                const platform = platformSelect.value;
+                
+                if (title || imageUrl || platform) {
+                    previewContainer.classList.remove('hidden');
+                    
+                    previewTitle.textContent = title || 'Simulation Title';
+                    previewDescription.textContent = description || '';
+                    previewPlatform.textContent = platform || 'Platform';
+                    
+                    if (imageUrl) {
+                        previewImage.src = imageUrl;
+                        previewImage.onerror = function() {
+                            this.src = 'https://via.placeholder.com/300x180?text=Image+Not+Found';
+                        };
+                    } else {
+                        previewImage.src = 'https://via.placeholder.com/300x180?text=No+Image';
+                    }
+                    
+                    // Update topics
+                    previewTopics.innerHTML = '';
+                    topics.forEach(topic => {
+                        const topicSpan = document.createElement('span');
+                        topicSpan.className = 'simulation-topic';
+                        topicSpan.textContent = topic;
+                        previewTopics.appendChild(topicSpan);
+                    });
+                }
+            }
+            
+            // Generate XML
+            simulationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const title = titleInput.value.trim();
+                const description = descriptionInput.value.trim();
+                const imageUrl = imageInput.value.trim();
+                const simUrl = urlInput.value.trim();
+                const platform = platformSelect.value;
+                
+                if (!title || !imageUrl || !simUrl || !platform || topics.size === 0) {
+                    alert('Please fill in all required fields and add at least one topic.');
+                    return;
+                }
+                
+                // Generate a unique ID based on timestamp
+                const timestamp = new Date().getTime();
+                const id = `sim-${timestamp.toString().slice(-6)}`;
+                
+                // Create XML
+                let xml = `<simulation>\n`;
+                xml += `  <id>\n    ${id}\n  </id>\n`;
+                xml += `  <title>\n    ${title}\n  </title>\n`;
+                if (description) {
+                    xml += `  <description>\n    ${description}\n  </description>\n`;
+                } else {
+                    xml += `  <description></description>\n`;
+                }
+                xml += `  <image>\n    ${imageUrl}\n  </image>\n`;
+                xml += `  <url>\n    ${simUrl}\n  </url>\n`;
+                xml += `  <platform>\n    ${platform}\n  </platform>\n`;
+                xml += `  <topics>\n`;
+                
+                topics.forEach(topic => {
+                    xml += `    <topic>${topic}</topic>\n`;
+                });
+                
+                xml += `  </topics>\n`;
+                xml += `</simulation>`;
+                
+                // Display XML
+                xmlOutput.textContent = xml;
+                xmlOutputContainer.classList.remove('hidden');
+                
+                // Create a success message
+                const resultMessage = document.createElement('div');
+                resultMessage.className = 'result-message success';
+                resultMessage.textContent = 'XML generated successfully! You can now download it.';
+                
+                // Remove any existing message
+                const existingMessage = document.querySelector('.result-message');
+                if (existingMessage) {
+                    existingMessage.remove();
+                }
+                
+                // Insert the message before the XML output
+                xmlOutputContainer.insertBefore(resultMessage, xmlOutputContainer.firstChild);
+                
+                // Scroll to the XML output
+                xmlOutputContainer.scrollIntoView({ behavior: 'smooth' });
+                
+                // Enable download - remove any previous event listeners
+                downloadXmlBtn.removeEventListener('click', downloadXmlHandler);
+                downloadXmlBtn.addEventListener('click', downloadXmlHandler);
+            });
+            
+            function downloadXmlHandler() {
+                const xml = xmlOutput.textContent;
+                const blob = new Blob([xml], { type: 'application/xml' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `simulation-${new Date().getTime().toString().slice(-6)}.xml`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+        });
+    </script>
+</body>
+</html>
