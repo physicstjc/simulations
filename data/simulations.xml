@@ -2030,27 +2030,6 @@
  </simulation>
  <simulation>
   <id>
-   sim-041
-  </id>
-  <title>
-   Longitudinal Waves as Displacement-Distance Graph
-  </title>
-  <description/>
-  <image>
-   https://www.geogebra.org/resource/xbsehq6s/SBnLgt3H1If1xpZT/material-xbsehq6s-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/xbsehq6s
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>waves</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
    sim-042
   </id>
   <title>
