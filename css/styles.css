@@ -237,14 +237,18 @@ body {
 
 .dropdown-link {
     display: block;
+    width: 100%;
     padding: 14px 24px;
     color: var(--text-primary);
-    text-decoration: none;
+    background: none;
+    border: none;
+    text-align: left;
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
     position: relative;
+    cursor: pointer;
 }
 
 .dropdown-link:hover {
@@ -356,11 +360,15 @@ body {
     }
     
     .dropdown-link {
+        width: 100%;
         padding: 12px 40px;
-        border-left: none;
+        background: none;
+        border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: left;
         color: #2c3e50;
         font-size: 14px;
+        cursor: pointer;
     }
     
     .dropdown-link:hover {

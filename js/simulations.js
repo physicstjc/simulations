@@ -147,7 +147,7 @@ function processSimulations(xmlDoc) {
                         <ul class="dropdown-list">
                             ${availableTopics.map(topicId => {
                                 const topicDisplay = topicsMap.get(topicId);
-                                return `<li><a href="#${topicId}" class="dropdown-link">${topicDisplay}</a></li>`;
+                                return `<li><button class="dropdown-link" data-topic="${topicDisplay}">${topicDisplay}</button></li>`;
                             }).join('')}
                         </ul>
                     </div>
@@ -169,7 +169,7 @@ function processSimulations(xmlDoc) {
                 <div class="dropdown-menu">
                     <ul class="dropdown-list">
                         ${otherTopics.map(([id, topic]) => 
-                            `<li><a href="#${id}" class="dropdown-link">${topic}</a></li>`
+                            `<li><button class="dropdown-link" data-topic="${topic}">${topic}</button></li>`
                         ).join('')}
                     </ul>
                 </div>
@@ -183,6 +183,9 @@ function processSimulations(xmlDoc) {
         return;
     }
     navContainer.innerHTML = `<ul class="nav-menu">${navHTML}</ul>`;
+    
+    // Add click handlers for navigation filtering
+    setupNavigationHandlers();
 
     // Render sections in the same order as navigation
     orderedTopics.forEach(([id]) => {
@@ -312,6 +315,66 @@ function performSearch(query) {
     // Create search results section
     const section = document.createElement('section');
     section.innerHTML = `<h2>Search Results for "${query}" (${matchingSimulations.length} found)</h2><div class="simulation-grid"></div>`;
+    
+    const grid = section.querySelector('.simulation-grid');
+    matchingSimulations.forEach(sim => {
+        grid.appendChild(createSimulationCard(sim));
+    });
+    
+    container.appendChild(section);
+}
+
+function setupNavigationHandlers() {
+    const dropdownLinks = document.querySelectorAll('.dropdown-link');
+    
+    dropdownLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const topic = this.getAttribute('data-topic');
+            if (topic) {
+                filterByTopic(topic);
+            }
+        });
+    });
+}
+
+function filterByTopic(topicName) {
+    if (!window.simulationsXmlDoc) {
+        console.error('XML document not loaded yet');
+        return;
+    }
+    
+    const simulations = window.simulationsXmlDoc.querySelectorAll('simulation');
+    const container = document.getElementById('simulations-container');
+    
+    if (!container) {
+        console.error('Simulations container not found');
+        return;
+    }
+    
+    // Clear existing content
+    container.innerHTML = '';
+    
+    const matchingSimulations = [];
+    const topicLower = topicName.toLowerCase();
+    
+    simulations.forEach(sim => {
+        const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.toLowerCase());
+        
+        // Check if any topic matches the selected topic name
+        if (topics.some(topic => topic.includes(topicLower) || topicLower.includes(topic))) {
+            matchingSimulations.push(sim);
+        }
+    });
+    
+    if (matchingSimulations.length === 0) {
+        container.innerHTML = `<div class="no-results"><h2>No simulations found for "${topicName}"</h2><p>Try browsing other categories.</p></div>`;
+        return;
+    }
+    
+    // Create filtered results section
+    const section = document.createElement('section');
+    section.innerHTML = `<h2>${topicName} (${matchingSimulations.length} simulations)</h2><div class="simulation-grid"></div>`;
     
     const grid = section.querySelector('.simulation-grid');
     matchingSimulations.forEach(sim => {
