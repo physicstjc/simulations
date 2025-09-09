@@ -43,8 +43,9 @@ body {
     padding: 0.75rem 1rem;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     min-height: var(--header-height);
     box-sizing: border-box;
 }
@@ -53,8 +54,27 @@ body {
 .search-container {
     display: flex;
     justify-content: center;
-    margin: 1rem auto;
-    max-width: 600px;
+    margin: 0;
+    max-width: 400px;
+    flex: 1;
+}
+
+/* Blog Link Styles */
+.blog-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.blog-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
 }
 
 #search-input {
@@ -291,16 +311,22 @@ body {
     
     .header-content {
         padding: 0.5rem 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
     }
     
     .header-content h1 {
         font-size: 1.5rem;
-        margin: 0 0 0.5rem 0;
+        margin: 0;
     }
     
     .search-container {
-        margin: 0.5rem auto 0;
+        margin: 0;
         max-width: 100%;
+    }
+    
+    .blog-link {
+        align-self: center;
     }
     
     .main-nav {
@@ -627,7 +653,7 @@ section h2:hover {
 header h1 {
     margin: 0;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }

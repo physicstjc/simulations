@@ -1482,7 +1482,7 @@
   </title>
   <description/>
   <image>
-   https://www.geogebra.org/resource/ny3jhhsp/hVrsnSPV1Qtt3d24/material-ny3jhhsp-thumb.png
+   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-vertical-non-uniform-circular-motion.png
   </image>
   <url>
    https://www.geogebra.org/m/ny3jhhsp
@@ -1503,7 +1503,7 @@
   </title>
   <description/>
   <image>
-   https://www.geogebra.org/resource/rnkrmcx8/88Uaj5CW1SS3ZSYg/material-rnkrmcx8-thumb.png
+   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-centripetal-acceleration.png
   </image>
   <url>
    https://www.geogebra.org/m/rnkrmcx8
@@ -1587,7 +1587,7 @@
   </title>
   <description/>
   <image>
-   https://www.geogebra.org/resource/va3dbqyd/076sObWjkSURWUtj/material-va3dbqyd-thumb.png
+   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-escape-velocity.png
   </image>
   <url>
    https://www.geogebra.org/m/va3dbqyd
@@ -1608,7 +1608,7 @@
   </title>
   <description/>
   <image>
-   https://www.geogebra.org/resource/yfhyxdm4/T2VUgGr2klfxhBsP/material-yfhyxdm4-thumb.png
+   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-gravitational-field-strength-between-two-masses.png
   </image>
   <url>
    https://www.geogebra.org/m/yfhyxdm4
@@ -4439,6 +4439,49 @@
   <platform>JavaScript</platform>
   <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
 
+<simulation>
+  <id>js-027</id>
+  <title>Charging Two Conductors by Induction</title>
+  <description>Explore how induced charging can be done using two conductors.</description>
+  <image>https://www.physicslens.com/wp-content/uploads/2025/06/charging-two-conductors-by-induction-1.png</image>
+  <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction-two-conductors.html</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electric-fields</topic></topics></simulation>
 
+<simulation>
+  <id>js-028</id>
+  <title>Lennard Jones Potential</title>
+  <description>Explore how intermolecular forces change from attractive to repulsive as particles get closer.</description>
+  <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lennard-jones-potential.png</image>
+  <url>https://physicstjc.github.io/sls/lennard-jones-potential/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
 
+<simulation>
+  <id>js-029</id>
+  <title>Ray Diagram of Lens</title>
+  <description>Observe how rays form an image. Includes infinitely far light source.</description>
+  <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lens-ray-diagram.png</image>
+  <url>https://physicstjc.github.io/sls/lens-ray-diagram/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>light</topic></topics></simulation>
+    
+<simulation>
+  <id>js-030</id>
+  <title>Simulating Radioactive Decay Using Dice</title>
+  <description>A simulation based on the casting of dice can be used to demonstrate the concept of half-life.</description>
+  <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-radioactive-decay.png</image>
+  <url>https://physicstjc.github.io/sls/decay</url>
+  <platform>JavaScript</platform>
+  <topics><topic>nuclear-physics</topic></topics></simulation>
+    
+<simulation>
+  <id>js-031</id>
+  <title>Displacement-Distance and Displacement-Time Graphs of a Wave</title>
+  <description>Adjust amplitude, frequency, wavelength, and speed and watch how the wave’s behavior changes over time and space.</description>
+  <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-displacement-distance-time-graphs-of-a-wave.png</image>
+  <url>https://physicstjc.github.io/sls/wave-graph/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>waves</topic></topics></simulation>
+    
 </simulations>
