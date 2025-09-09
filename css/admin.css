@@ -31,10 +31,39 @@
     font-size: 1rem;
 }
 
-/* Style for multi-select dropdown */
-.form-group select[multiple] {
-    min-height: 150px;
+/* Style for topics grid layout */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.topic-category {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.topic-category label {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.topic-category select[multiple] {
+    min-height: 100px;
     width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.topic-category select[multiple] option {
+    padding: 0.2rem 0.3rem;
+    font-weight: normal;
+    color: #333;
 }
 
 .form-group textarea {
