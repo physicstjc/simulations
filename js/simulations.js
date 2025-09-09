@@ -356,13 +356,14 @@ function filterByTopic(topicName) {
     container.innerHTML = '';
     
     const matchingSimulations = [];
-    const topicLower = topicName.toLowerCase();
+    // Convert display name back to topic ID format for matching
+    const topicId = topicName.toLowerCase().replace(/\s+/g, '-');
     
     simulations.forEach(sim => {
-        const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.toLowerCase());
+        const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.trim());
         
-        // Check if any topic matches the selected topic name
-        if (topics.some(topic => topic.includes(topicLower) || topicLower.includes(topic))) {
+        // Check if any topic matches the selected topic ID
+        if (topics.some(topic => topic === topicId || topic.toLowerCase() === topicId)) {
             matchingSimulations.push(sim);
         }
     });

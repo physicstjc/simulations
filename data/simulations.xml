@@ -2876,27 +2876,6 @@
  </simulation>
  <simulation>
   <id>
-    sim-975668
-  </id>
-  <title>
-    Charging by Induction Simulation
-  </title>
-  <description></description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/06/charging-by-induction.png
-  </image>
-  <url>
-    https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction.html
-  </url>
-  <platform>
-    JavaScript
-  </platform>
-  <topics>
-    <topic>electric-fields</topic>
-  </topics>
-</simulation>
- <simulation>
-  <id>
    sim-096
   </id>
   <title>
