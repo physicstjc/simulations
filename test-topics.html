@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Testing - Physics Simulations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-results { margin: 20px 0; }
+        .topic-test { margin: 10px 0; padding: 10px; border: 1px solid #ddd; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .warning { background-color: #fff3cd; border-color: #ffeaa7; }
+        button { margin: 5px; padding: 8px 16px; }
+        #results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Physics Simulations Topic Testing</h1>
+    <p>This page tests all 25 physics topics to ensure proper loading and filtering.</p>
+    
+    <button onclick="testAllTopics()">Test All Topics</button>
+    <button onclick="clearResults()">Clear Results</button>
+    
+    <div id="results"></div>
+    
+    <script>
+        // All 25 topics from the XML analysis
+        const allTopics = [
+            'measurement', 'kinematics', 'dynamics', 'forces', 'turning-effect-of-forces',
+            'pressure', 'energy-work-power', 'motion-in-a-circle', 'gravitational-field',
+            'thermal-physics', 'kinetic-model-of-matter', 'oscillations', 'waves',
+            'superposition', 'light', 'electromagnetic-spectrum', 'sound', 'electric-fields',
+            'electricity', 'magnetism', 'electromagnetism', 'electromagnetic-induction',
+            'alternating-current', 'nuclear-physics', 'quantum-physics', 'general',
+            'graphing-technique'
+        ];
+        
+        let xmlDoc = null;
+        
+        // Load XML data
+        async function loadXMLData() {
+            try {
+                const response = await fetch('data/simulations.xml');
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+                return true;
+            } catch (error) {
+                console.error('Failed to load XML:', error);
+                return false;
+            }
+        }
+        
+        // Test individual topic
+        function testTopic(topicId) {
+            if (!xmlDoc) {
+                return { success: false, message: 'XML not loaded', count: 0 };
+            }
+            
+            const simulations = xmlDoc.querySelectorAll('simulation');
+            const matchingSimulations = [];
+            
+            simulations.forEach(sim => {
+                const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.trim());
+                if (topics.some(topic => topic === topicId || topic.toLowerCase() === topicId)) {
+                    matchingSimulations.push(sim);
+                }
+            });
+            
+            return {
+                success: matchingSimulations.length > 0,
+                count: matchingSimulations.length,
+                message: matchingSimulations.length > 0 ? 
+                    `Found ${matchingSimulations.length} simulations` : 
+                    'No simulations found'
+            };
+        }
+        
+        // Test all topics
+        async function testAllTopics() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p>Loading XML data...</p>';
+            
+            const xmlLoaded = await loadXMLData();
+            if (!xmlLoaded) {
+                resultsDiv.innerHTML = '<div class="error">Failed to load XML data</div>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = '<h2>Testing Results:</h2>';
+            
+            let totalTopics = 0;
+            let successfulTopics = 0;
+            let totalSimulations = 0;
+            
+            allTopics.forEach(topicId => {
+                const result = testTopic(topicId);
+                totalTopics++;
+                
+                if (result.success) {
+                    successfulTopics++;
+                    totalSimulations += result.count;
+                }
+                
+                const displayName = topicId.replace(/-/g, ' ')
+                    .split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+                
+                const cssClass = result.success ? 'success' : 'error';
+                
+                resultsDiv.innerHTML += `
+                    <div class="topic-test ${cssClass}">
+                        <strong>${displayName}</strong> (${topicId}): ${result.message}
+                    </div>
+                `;
+            });
+            
+            // Summary
+            const summaryClass = successfulTopics === totalTopics ? 'success' : 
+                                successfulTopics > 0 ? 'warning' : 'error';
+            
+            resultsDiv.innerHTML += `
+                <div class="topic-test ${summaryClass}">
+                    <h3>Summary:</h3>
+                    <p><strong>${successfulTopics}/${totalTopics}</strong> topics have simulations</p>
+                    <p><strong>${totalSimulations}</strong> total simulations found</p>
+                    <p>Success rate: <strong>${Math.round((successfulTopics/totalTopics)*100)}%</strong></p>
+                </div>
+            `;
+        }
+        
+        function clearResults() {
+            document.getElementById('results').innerHTML = '';
+        }
+        
+        // Auto-run test on page load
+        window.addEventListener('load', testAllTopics);
+    </script>
+</body>
+</html>

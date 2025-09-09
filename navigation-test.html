@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Validation - Physics Simulations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .test-controls {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .test-results {
+            margin: 20px 0;
+            font-family: monospace;
+            background: #000;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .status.loading { background: #fff3cd; border: 1px solid #ffeaa7; }
+        .status.success { background: #d4edda; border: 1px solid #c3e6cb; }
+        .status.error { background: #f8d7da; border: 1px solid #f5c6cb; }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-success { background: #28a745; color: white; }
+        .btn-warning { background: #ffc107; color: black; }
+        .btn-danger { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <header class="header-nav-container">
+        <div class="header-content">
+            <h1><a href="index.html" class="home-link">Navigation Validation Test</a></h1>
+        </div>
+        
+        <!-- Navigation Menu (will be populated by JavaScript) -->
+        <nav class="main-nav">
+            <div id="navigation"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="test-controls">
+            <h2>Navigation Validation Controls</h2>
+            <p>This page tests all 25 physics topics to ensure proper navigation filtering.</p>
+            
+            <button class="btn-primary" onclick="runFullValidation()">Run Full Validation</button>
+            <button class="btn-success" onclick="testRandomTopic()">Test Random Topic</button>
+            <button class="btn-warning" onclick="showTopicList()">Show All Topics</button>
+            <button class="btn-danger" onclick="clearResults()">Clear Results</button>
+        </div>
+        
+        <div id="status" class="status">Ready to test...</div>
+        
+        <div id="results" class="test-results" style="display: none;"></div>
+        
+        <div id="simulations-container">
+            <!-- Content will be populated by filtering tests -->
+        </div>
+    </main>
+    
+    <script src="js/simulations.js"></script>
+    <script src="validate-navigation.js"></script>
+    <script>
+        let validator = null;
+        let testResults = null;
+        
+        // Initialize validator when page loads
+        window.addEventListener('load', async () => {
+            updateStatus('Initializing validation system...', 'loading');
+            
+            // Wait for simulations to load
+            await new Promise(resolve => {
+                const checkInterval = setInterval(() => {
+                    if (window.simulationsXmlDoc && document.querySelector('.nav-menu')) {
+                        clearInterval(checkInterval);
+                        resolve();
+                    }
+                }, 100);
+            });
+            
+            validator = new NavigationValidator();
+            updateStatus('Validation system ready. Click "Run Full Validation" to test all topics.', 'success');
+        });
+        
+        // Run comprehensive validation
+        async function runFullValidation() {
+            if (!validator) {
+                updateStatus('Validator not initialized yet. Please wait...', 'error');
+                return;
+            }
+            
+            updateStatus('Running comprehensive validation of all 25 topics...', 'loading');
+            showResults();
+            
+            // Capture console output
+            const originalLog = console.log;
+            let logOutput = '';
+            console.log = function(...args) {
+                logOutput += args.join(' ') + '\n';
+                originalLog.apply(console, args);
+            };
+            
+            try {
+                testResults = await validator.validateAllTopics();
+                
+                // Restore console.log
+                console.log = originalLog;
+                
+                // Display results
+                document.getElementById('results').textContent = logOutput;
+                
+                const successRate = testResults.successRate;
+                if (successRate === 100) {
+                    updateStatus(`✅ All ${testResults.total} topics validated successfully!`, 'success');
+                } else if (successRate >= 80) {
+                    updateStatus(`⚠️ ${testResults.successful}/${testResults.total} topics working (${successRate}% success rate)`, 'loading');
+                } else {
+                    updateStatus(`❌ Only ${testResults.successful}/${testResults.total} topics working (${successRate}% success rate)`, 'error');
+                }
+                
+            } catch (error) {
+                console.log = originalLog;
+                updateStatus(`Error during validation: ${error.message}`, 'error');
+            }
+        }
+        
+        // Test a random topic
+        async function testRandomTopic() {
+            if (!validator) {
+                updateStatus('Validator not initialized yet. Please wait...', 'error');
+                return;
+            }
+            
+            const topics = validator.allTopics;
+            const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+            const displayName = validator.topicIdToDisplayName(randomTopic);
+            
+            updateStatus(`Testing random topic: ${displayName}...`, 'loading');
+            
+            try {
+                const result = await validator.testSingleTopic(randomTopic);
+                
+                if (result.overallSuccess) {
+                    updateStatus(`✅ ${displayName}: ${result.xmlTest.count} simulations found and filtering works!`, 'success');
+                    // Show the filtered results
+                    filterByTopic(displayName);
+                } else {
+                    let issues = [];
+                    if (!result.xmlTest.success) issues.push('No XML data');
+                    if (!result.navTest.success) issues.push('No navigation button');
+                    if (!result.filterTest.success) issues.push('Filtering failed');
+                    updateStatus(`❌ ${displayName}: Issues found - ${issues.join(', ')}`, 'error');
+                }
+            } catch (error) {
+                updateStatus(`Error testing ${displayName}: ${error.message}`, 'error');
+            }
+        }
+        
+        // Show list of all topics
+        function showTopicList() {
+            if (!validator) {
+                updateStatus('Validator not initialized yet. Please wait...', 'error');
+                return;
+            }
+            
+            showResults();
+            
+            let output = 'All 25 Physics Topics:\n\n';
+            
+            const categories = {
+                'Mechanics (9 topics)': ['measurement', 'kinematics', 'dynamics', 'forces', 'turning-effect-of-forces', 'pressure', 'energy-work-power', 'motion-in-a-circle', 'gravitational-field'],
+                'Thermodynamics (2 topics)': ['thermal-physics', 'kinetic-model-of-matter'],
+                'Waves & Optics (6 topics)': ['oscillations', 'waves', 'superposition', 'light', 'electromagnetic-spectrum', 'sound'],
+                'Electricity & Magnetism (6 topics)': ['electric-fields', 'electricity', 'magnetism', 'electromagnetism', 'electromagnetic-induction', 'alternating-current'],
+                'Modern Physics (2 topics)': ['nuclear-physics', 'quantum-physics'],
+                'General (2 topics)': ['general', 'graphing-technique']
+            };
+            
+            Object.entries(categories).forEach(([category, topics]) => {
+                output += `${category}:\n`;
+                topics.forEach(topic => {
+                    const displayName = validator.topicIdToDisplayName(topic);
+                    output += `  • ${displayName} (${topic})\n`;
+                });
+                output += '\n';
+            });
+            
+            document.getElementById('results').textContent = output;
+            updateStatus('Topic list displayed. Use "Test Random Topic" or "Run Full Validation" to test functionality.', 'success');
+        }
+        
+        // Utility functions
+        function updateStatus(message, type = 'loading') {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+        }
+        
+        function showResults() {
+            document.getElementById('results').style.display = 'block';
+        }
+        
+        function clearResults() {
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('results').textContent = '';
+            document.getElementById('simulations-container').innerHTML = '';
+            updateStatus('Results cleared. Ready for new tests.', 'success');
+        }
+    </script>
+</body>
+</html>

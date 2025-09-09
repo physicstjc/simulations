@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Specific Topics - Turning Effect of Forces & Nuclear Physics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .topic-test {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .warning { background-color: #fff3cd; border-color: #ffeaa7; }
+        .simulation-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 3px;
+            background: #f9f9f9;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+        .results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Test Specific Topics: Turning Effect of Forces & Nuclear Physics</h1>
+        <p>This page tests the two specific topics mentioned by the user to ensure they load properly.</p>
+        
+        <button onclick="testSpecificTopics()">Test Both Topics</button>
+        <button onclick="testTurningEffect()">Test Turning Effect of Forces Only</button>
+        <button onclick="testNuclearPhysics()">Test Nuclear Physics Only</button>
+        <button onclick="clearResults()">Clear Results</button>
+        
+        <div id="results" class="results"></div>
+    </div>
+
+    <script>
+        let xmlDoc = null;
+        
+        // Load XML data
+        async function loadXMLData() {
+            try {
+                const response = await fetch('data/simulations.xml');
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+                return true;
+            } catch (error) {
+                console.error('Failed to load XML:', error);
+                return false;
+            }
+        }
+        
+        // Test a specific topic
+        function testTopic(topicId, displayName) {
+            if (!xmlDoc) {
+                return { success: false, message: 'XML not loaded', count: 0, simulations: [] };
+            }
+            
+            const simulations = xmlDoc.querySelectorAll('simulation');
+            const matchingSimulations = [];
+            
+            simulations.forEach(sim => {
+                const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.trim());
+                if (topics.some(topic => topic === topicId || topic.toLowerCase() === topicId)) {
+                    const title = sim.querySelector('title')?.textContent || 'No title';
+                    const url = sim.querySelector('url')?.textContent || 'No URL';
+                    const platform = sim.querySelector('platform')?.textContent || 'Unknown';
+                    matchingSimulations.push({ title, url, platform });
+                }
+            });
+            
+            return {
+                success: matchingSimulations.length > 0,
+                count: matchingSimulations.length,
+                message: matchingSimulations.length > 0 ? 
+                    `Found ${matchingSimulations.length} simulations` : 
+                    'No simulations found',
+                simulations: matchingSimulations
+            };
+        }
+        
+        // Display test results
+        function displayResults(results) {
+            const resultsDiv = document.getElementById('results');
+            let html = '';
+            
+            results.forEach(result => {
+                const statusClass = result.success ? 'success' : 'error';
+                html += `
+                    <div class="topic-test ${statusClass}">
+                        <h3>${result.topicName}</h3>
+                        <p><strong>Topic ID:</strong> ${result.topicId}</p>
+                        <p><strong>Status:</strong> ${result.message}</p>
+                        <p><strong>Simulations Found:</strong> ${result.count}</p>
+                        
+                        ${result.simulations.length > 0 ? `
+                            <h4>Available Simulations:</h4>
+                            ${result.simulations.map(sim => `
+                                <div class="simulation-card">
+                                    <strong>${sim.title}</strong><br>
+                                    <small>Platform: ${sim.platform}</small><br>
+                                    <a href="${sim.url}" target="_blank">Open Simulation</a>
+                                </div>
+                            `).join('')}
+                        ` : ''}
+                    </div>
+                `;
+            });
+            
+            resultsDiv.innerHTML = html;
+        }
+        
+        // Test both specific topics
+        async function testSpecificTopics() {
+            if (!xmlDoc) {
+                const loaded = await loadXMLData();
+                if (!loaded) {
+                    document.getElementById('results').innerHTML = 
+                        '<div class="topic-test error"><p>Failed to load XML data</p></div>';
+                    return;
+                }
+            }
+            
+            const results = [
+                {
+                    topicName: 'Turning Effect of Forces',
+                    topicId: 'turning effect of forces',
+                    ...testTopic('turning effect of forces', 'Turning Effect of Forces')
+                },
+                {
+                    topicName: 'Nuclear Physics',
+                    topicId: 'nuclear physics',
+                    ...testTopic('nuclear physics', 'Nuclear Physics')
+                }
+            ];
+            
+            displayResults(results);
+        }
+        
+        // Test only turning effect of forces
+        async function testTurningEffect() {
+            if (!xmlDoc) {
+                const loaded = await loadXMLData();
+                if (!loaded) {
+                    document.getElementById('results').innerHTML = 
+                        '<div class="topic-test error"><p>Failed to load XML data</p></div>';
+                    return;
+                }
+            }
+            
+            const results = [{
+                topicName: 'Turning Effect of Forces',
+                topicId: 'turning effect of forces',
+                ...testTopic('turning effect of forces', 'Turning Effect of Forces')
+            }];
+            
+            displayResults(results);
+        }
+        
+        // Test only nuclear physics
+        async function testNuclearPhysics() {
+            if (!xmlDoc) {
+                const loaded = await loadXMLData();
+                if (!loaded) {
+                    document.getElementById('results').innerHTML = 
+                        '<div class="topic-test error"><p>Failed to load XML data</p></div>';
+                    return;
+                }
+            }
+            
+            const results = [{
+                topicName: 'Nuclear Physics',
+                topicId: 'nuclear physics',
+                ...testTopic('nuclear physics', 'Nuclear Physics')
+            }];
+            
+            displayResults(results);
+        }
+        
+        // Clear results
+        function clearResults() {
+            document.getElementById('results').innerHTML = '';
+        }
+        
+        // Auto-load and test on page load
+        window.addEventListener('load', async function() {
+            await loadXMLData();
+            testSpecificTopics();
+        });
+    </script>
+</body>
+</html>
