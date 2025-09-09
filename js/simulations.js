@@ -217,7 +217,7 @@ function createSimulationCard(sim) {
             <p class="description">${description}</p>
             <div class="card-footer">
                 <span class="platform">${platform}</span>
-                <a href="${simUrl}" target="_blank" class="launch-btn">Launch</a>
+                <a href="${simUrl}" target="_blank" class="button">Launch</a>
             </div>
         </div>
     `;
