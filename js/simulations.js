@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, checking navigation element...');
+    const testNav = document.getElementById('navigation');
+    console.log('Navigation element exists:', !!testNav, testNav);
+    
     // Use relative path when served via web server
     fetch('data/simulations.xml')
         .then(response => {
@@ -15,21 +19,63 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             // Store the XML document globally for search functionality
             window.simulationsXmlDoc = xmlDoc;
-            processSimulations(xmlDoc);
-            
-            // Initialize search functionality
-            initializeSearch();
+            try {
+                processSimulations(xmlDoc);
+                // Initialize search functionality
+                initializeSearch();
+            } catch (error) {
+                console.error('Error in processSimulations:', error);
+                // Try to at least show a basic navigation
+                console.log('Try-catch: Looking for navigation element...');
+                const navContainer = document.getElementById('navigation');
+                console.log('Try-catch: Navigation container found:', navContainer);
+                if (navContainer) {
+                    navContainer.innerHTML = '<p>Navigation loading error. Please refresh the page.</p>';
+                }
+            }
         })
         .catch(error => {
             console.error('Error loading XML:', error);
-            alert('Failed to load simulations. Please try again later.');
+            console.error('Error stack:', error.stack);
+            // Create fallback navigation
+            console.log('Looking for navigation element...');
+            const navContainer = document.getElementById('navigation');
+            console.log('Navigation container found:', navContainer);
+            if (navContainer) {
+                navContainer.innerHTML = `
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <button class="nav-button" data-theme="Mechanics">Mechanics</button>
+                            <div class="dropdown-menu">
+                                <ul class="dropdown-list">
+                                    <li><a href="#measurement" class="dropdown-link">Measurement</a></li>
+                                    <li><a href="#kinematics" class="dropdown-link">Kinematics</a></li>
+                                    <li><a href="#dynamics" class="dropdown-link">Dynamics</a></li>
+                                    <li><a href="#forces" class="dropdown-link">Forces</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                `;
+                // Initialize search functionality after fallback navigation is created
+                initializeSearch();
+            }
         });
 });
 
 function processSimulations(xmlDoc) {
+    console.log('Starting processSimulations');
     const simulations = xmlDoc.querySelectorAll('simulation');
     const container = document.getElementById('simulations-container');
-    const navMenu = document.querySelector('.nav-menu');
+    const navContainer = document.getElementById('navigation');
+    
+    console.log('Container found:', !!container);
+    console.log('NavContainer found:', !!navContainer);
+    
+    if (!container || !navContainer) {
+        console.error('Required DOM elements not found - container:', !!container, 'navContainer:', !!navContainer);
+        return;
+    }
 
     const isJavaScriptPage = window.location.pathname.includes('javascript.html');
 
@@ -52,7 +98,7 @@ function processSimulations(xmlDoc) {
             const rawTopic = topicNode.textContent.trim();
             const id = rawTopic.toLowerCase().replace(/[,\s]+/g, '-');
             
-            // Initialize topics array if not exists
+            // Initialize topic array if it doesn't exist
             if (!topics[id]) {
                 topics[id] = [];
             }
@@ -76,10 +122,67 @@ function processSimulations(xmlDoc) {
         });
     });
 
-    // Generate nav items in original order
-    navMenu.innerHTML = orderedTopics
-        .map(([id, topic]) => `<li><a href="#${id}">${topic}</a></li>`)
-        .join('');
+    // Create simple menu bar with theme buttons
+    const themes = {
+        'Mechanics': ['measurement', 'kinematics', 'dynamics', 'forces', 'turning-effect-of-forces', 'pressure', 'energy-work-power', 'motion-in-a-circle', 'gravitational-field'],
+        'Thermodynamics': ['thermal-physics', 'kinetic-model-of-matter'],
+        'Waves & Optics': ['oscillations', 'waves', 'superposition', 'light', 'electromagnetic-spectrum', 'sound'],
+        'Electricity & Magnetism': ['electric-fields', 'electricity', 'magnetism', 'electromagnetism', 'electromagnetic-induction', 'alternating-current'],
+        'Modern Physics': ['nuclear-physics', 'quantum-physics'],
+        'General': ['general', 'graphing-technique']
+    };
+
+    // Create theme buttons with dropdowns
+    let navHTML = '';
+    Object.entries(themes).forEach(([themeName, themeTopics]) => {
+        const availableTopics = themeTopics.filter(topicId => 
+            orderedTopics.some(([id]) => id === topicId)
+        );
+        
+        if (availableTopics.length > 0) {
+            navHTML += `
+                <li class="nav-item">
+                    <button class="nav-button" data-theme="${themeName}">${themeName}</button>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            ${availableTopics.map(topicId => {
+                                const topicDisplay = topicsMap.get(topicId);
+                                return `<li><a href="#${topicId}" class="dropdown-link">${topicDisplay}</a></li>`;
+                            }).join('')}
+                        </ul>
+                    </div>
+                </li>
+            `;
+        }
+    });
+    
+    // Add uncategorized topics
+    const categorizedTopics = Object.values(themes).flat();
+    const otherTopics = orderedTopics.filter(([id]) => 
+        !categorizedTopics.includes(id)
+    );
+    
+    if (otherTopics.length > 0) {
+        navHTML += `
+            <li class="nav-item">
+                <button class="nav-button" data-theme="Other">Other Topics</button>
+                <div class="dropdown-menu">
+                    <ul class="dropdown-list">
+                        ${otherTopics.map(([id, topic]) => 
+                            `<li><a href="#${id}" class="dropdown-link">${topic}</a></li>`
+                        ).join('')}
+                    </ul>
+                </div>
+            </li>
+        `;
+    }
+    
+    // Double-check navContainer exists before setting innerHTML
+    if (!navContainer) {
+        console.error('Navigation container is null at innerHTML assignment');
+        return;
+    }
+    navContainer.innerHTML = `<ul class="nav-menu">${navHTML}</ul>`;
 
     // Render sections in the same order as navigation
     orderedTopics.forEach(([id]) => {
@@ -99,135 +202,121 @@ function createSimulationCard(sim) {
     const card = document.createElement('div');
     card.className = 'simulation-card';
     
-    const title = sim.querySelector('title').textContent
-        .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-        .join(' ');
-    
-    const url = sim.querySelector('shortUrl') ? 
-        sim.querySelector('shortUrl').textContent : 
-        sim.querySelector('url').textContent;
+    const title = sim.querySelector('title').textContent;
+    const description = sim.querySelector('description')?.textContent || '';
+    const imageUrl = sim.querySelector('image')?.textContent || '';
+    const simUrl = sim.querySelector('url').textContent;
+    const platform = sim.querySelector('platform').textContent;
     
     card.innerHTML = `
-        <a href="${url}" target="_blank">
-            <img src="${sim.querySelector('image').textContent}" alt="${title}">
-        </a>
-        <div class="simulation-info">
+        <div class="card-image">
+            <img src="${imageUrl}" alt="${title}" onerror="this.src='https://via.placeholder.com/300x180?text=No+Image'">
+        </div>
+        <div class="card-content">
             <h3>${title}</h3>
-            <p>${sim.querySelector('description').textContent}</p>
-            <span class="platform">Platform: ${sim.querySelector('platform').textContent}</span>
-            <a href="${url}" class="button" target="_blank">Launch Simulation</a>
+            <p class="description">${description}</p>
+            <div class="card-footer">
+                <span class="platform">${platform}</span>
+                <a href="${simUrl}" target="_blank" class="launch-btn">Launch</a>
+            </div>
         </div>
     `;
     
     return card;
 }
 
-// Add after your existing DOMContentLoaded event listener
+// Search functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Back to top button functionality
-    const backToTop = document.getElementById('back-to-top');
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
     
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-    
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (searchInput && searchButton) {
+        searchButton.addEventListener('click', function() {
+            const query = searchInput.value.trim();
+            if (query) {
+                performSearch(query);
+            }
         });
-    });
+        
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.trim();
+                if (query) {
+                    performSearch(query);
+                }
+            }
+        });
+    }
 });
 
-// Search functionality
 function initializeSearch() {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     
-    if (!searchInput || !searchButton) return;
-    
-    // Search when button is clicked
-    searchButton.addEventListener('click', () => {
-        performSearch(searchInput.value);
-    });
-    
-    // Search when Enter key is pressed
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            performSearch(searchInput.value);
-        }
-    });
+    if (searchInput && searchButton) {
+        searchButton.addEventListener('click', function() {
+            const query = searchInput.value.trim();
+            if (query) {
+                performSearch(query);
+            }
+        });
+        
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const query = searchInput.value.trim();
+                if (query) {
+                    performSearch(query);
+                }
+            }
+        });
+    }
 }
 
 function performSearch(query) {
-    if (!query || !window.simulationsXmlDoc) return;
+    if (!window.simulationsXmlDoc) {
+        console.error('XML document not loaded yet');
+        return;
+    }
     
-    query = query.toLowerCase().trim();
-    
-    // Get all simulations
     const simulations = window.simulationsXmlDoc.querySelectorAll('simulation');
     const container = document.getElementById('simulations-container');
     
-    // Clear current content
+    if (!container) {
+        console.error('Simulations container not found');
+        return;
+    }
+    
+    // Clear existing content
     container.innerHTML = '';
     
-    // Create search results section
-    const searchResultsSection = document.createElement('section');
-    searchResultsSection.id = 'search-results';
-    searchResultsSection.innerHTML = `<h2>Search Results for "${query}"</h2><div class="simulation-grid"></div>`;
+    const matchingSimulations = [];
+    const queryLower = query.toLowerCase();
     
-    const grid = searchResultsSection.querySelector('.simulation-grid');
-    let resultsCount = 0;
-    
-    // Filter simulations based on search query
     simulations.forEach(sim => {
         const title = sim.querySelector('title').textContent.toLowerCase();
-        const description = sim.querySelector('description').textContent.toLowerCase();
-        const platform = sim.querySelector('platform').textContent.toLowerCase();
-        let topics = '';
+        const description = sim.querySelector('description')?.textContent?.toLowerCase() || '';
+        const topics = Array.from(sim.querySelectorAll('topic')).map(t => t.textContent.toLowerCase());
         
-        sim.querySelectorAll('topic').forEach(topic => {
-            topics += topic.textContent.toLowerCase() + ' ';
-        });
-        
-        // Check if any field contains the search query
-        if (title.includes(query) || description.includes(query) || 
-            platform.includes(query) || topics.includes(query)) {
-            grid.appendChild(createSimulationCard(sim));
-            resultsCount++;
+        if (title.includes(queryLower) || 
+            description.includes(queryLower) || 
+            topics.some(topic => topic.includes(queryLower))) {
+            matchingSimulations.push(sim);
         }
     });
     
-    // Display results or no results message
-    if (resultsCount > 0) {
-        container.appendChild(searchResultsSection);
-        // Add a clear search button
-        const clearButton = document.createElement('button');
-        clearButton.id = 'clear-search';
-        clearButton.textContent = 'Clear Search';
-        clearButton.addEventListener('click', () => {
-            // Clear search input
-            document.getElementById('search-input').value = '';
-            // Reprocess all simulations
-            processSimulations(window.simulationsXmlDoc);
-        });
-        container.insertBefore(clearButton, searchResultsSection);
-    } else {
-        container.innerHTML = `
-            <div class="no-results">
-                <h2>No results found for "${query}"</h2>
-                <p>Try a different search term or browse by category.</p>
-                <button id="clear-search">Clear Search</button>
-            </div>
-        `;
-        document.getElementById('clear-search').addEventListener('click', () => {
-            document.getElementById('search-input').value = '';
-            processSimulations(window.simulationsXmlDoc);
-        });
+    if (matchingSimulations.length === 0) {
+        container.innerHTML = `<div class="no-results"><h2>No results found for "${query}"</h2><p>Try different keywords or browse by category.</p></div>`;
+        return;
     }
+    
+    // Create search results section
+    const section = document.createElement('section');
+    section.innerHTML = `<h2>Search Results for "${query}" (${matchingSimulations.length} found)</h2><div class="simulation-grid"></div>`;
+    
+    const grid = section.querySelector('.simulation-grid');
+    matchingSimulations.forEach(sim => {
+        grid.appendChild(createSimulationCard(sim));
+    });
+    
+    container.appendChild(section);
 }

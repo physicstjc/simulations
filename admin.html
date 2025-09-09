@@ -60,30 +60,65 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="sim-topics">Topics</label>
-                    <select id="sim-topics" multiple>
-                        <option value="mechanics">Mechanics</option>
-                        <option value="kinematics">Kinematics</option>
-                        <option value="dynamics">Dynamics</option>
-                        <option value="forces">Forces</option>
-                        <option value="motion">Motion</option>
-                        <option value="energy">Energy</option>
-                        <option value="momentum">Momentum</option>
-                        <option value="waves">Waves</option>
-                        <option value="sound">Sound</option>
-                        <option value="light">Light</option>
-                        <option value="optics">Optics</option>
-                        <option value="electricity">Electricity</option>
-                        <option value="magnetism">Magnetism</option>
-                        <option value="electromagnetism">Electromagnetism</option>
-                        <option value="thermodynamics">Thermodynamics</option>
-                        <option value="fluid dynamics">Fluid Dynamics</option>
-                        <option value="quantum">Quantum</option>
-                        <option value="relativity">Relativity</option>
-                        <option value="nuclear">Nuclear</option>
-                        <option value="astronomy">Astronomy</option>
-                    </select>
-                    <div class="note">Hold Ctrl (or Cmd on Mac) to select multiple topics</div>
+                    <label>Topics by Theme</label>
+                    <div class="topics-grid">
+                        <div class="topic-category">
+                            <label for="classical-mechanics">Classical Mechanics</label>
+                            <select id="classical-mechanics" multiple>
+                                <option value="mechanics">Mechanics</option>
+                                <option value="kinematics">Kinematics</option>
+                                <option value="dynamics">Dynamics</option>
+                                <option value="forces">Forces</option>
+                                <option value="motion">Motion</option>
+                                <option value="energy">Energy</option>
+                                <option value="momentum">Momentum</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="waves-optics">Waves & Optics</label>
+                            <select id="waves-optics" multiple>
+                                <option value="waves">Waves</option>
+                                <option value="sound">Sound</option>
+                                <option value="light">Light</option>
+                                <option value="optics">Optics</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="electricity-magnetism">Electricity & Magnetism</label>
+                            <select id="electricity-magnetism" multiple>
+                                <option value="electricity">Electricity</option>
+                                <option value="magnetism">Magnetism</option>
+                                <option value="electromagnetism">Electromagnetism</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="thermal-physics">Thermal Physics</label>
+                            <select id="thermal-physics" multiple>
+                                <option value="thermodynamics">Thermodynamics</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="fluid-mechanics">Fluid Mechanics</label>
+                            <select id="fluid-mechanics" multiple>
+                                <option value="fluid dynamics">Fluid Dynamics</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="modern-physics">Modern Physics</label>
+                            <select id="modern-physics" multiple>
+                                <option value="quantum">Quantum</option>
+                                <option value="relativity">Relativity</option>
+                                <option value="nuclear">Nuclear</option>
+                            </select>
+                        </div>
+                        <div class="topic-category">
+                            <label for="astrophysics">Astrophysics</label>
+                            <select id="astrophysics" multiple>
+                                <option value="astronomy">Astronomy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="note">Hold Ctrl (or Cmd on Mac) to select multiple topics from each category</div>
                 </div>
                 <button type="submit" class="admin-button">Generate XML</button>
             </form>
@@ -136,13 +171,35 @@
                 }
             });
             
-            // Topics handling with dropdown
-            const topicsSelect = document.getElementById('sim-topics');
+            // Topics handling with multiple themed dropdowns
+            const topicSelects = [
+                document.getElementById('classical-mechanics'),
+                document.getElementById('waves-optics'),
+                document.getElementById('electricity-magnetism'),
+                document.getElementById('thermal-physics'),
+                document.getElementById('fluid-mechanics'),
+                document.getElementById('modern-physics'),
+                document.getElementById('astrophysics')
+            ];
             
-            // Add change event listener to update preview when topics change
-            topicsSelect.addEventListener('change', function() {
-                updatePreview();
+            // Add change event listeners to all topic dropdowns
+            topicSelects.forEach(select => {
+                select.addEventListener('change', function() {
+                    updatePreview();
+                });
             });
+            
+            // Function to get all selected topics from all dropdowns
+            function getAllSelectedTopics() {
+                const allTopics = [];
+                topicSelects.forEach(select => {
+                    const selectedOptions = Array.from(select.selectedOptions);
+                    selectedOptions.forEach(option => {
+                        allTopics.push(option.value);
+                    });
+                });
+                return allTopics;
+            }
             
             // Form handling and preview
             const simulationForm = document.getElementById('simulation-form');
@@ -189,9 +246,9 @@
                         previewImage.src = 'https://via.placeholder.com/300x180?text=No+Image';
                     }
                     
-                    // Update topics from dropdown selection
+                    // Update topics from all dropdown selections
                     previewTopics.innerHTML = '';
-                    const selectedTopics = Array.from(topicsSelect.selectedOptions).map(option => option.value);
+                    const selectedTopics = getAllSelectedTopics();
                     selectedTopics.forEach(topic => {
                         const topicSpan = document.createElement('span');
                         topicSpan.className = 'simulation-topic';
@@ -211,8 +268,8 @@
                 const simUrl = urlInput.value.trim();
                 const platform = platformSelect.value;
                 
-                // Get selected topics from the dropdown
-                const selectedTopics = Array.from(topicsSelect.selectedOptions).map(option => option.value);
+                // Get selected topics from all dropdowns
+                const selectedTopics = getAllSelectedTopics();
                 
                 if (!title || !imageUrl || !simUrl || !platform || selectedTopics.length === 0) {
                     alert('Please fill in all required fields and select at least one topic.');
