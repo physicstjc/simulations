@@ -3291,27 +3291,6 @@
  </simulation>
  <simulation>
   <id>
-   sim-070
-  </id>
-  <title>
-   Fleming's left hand rule
-  </title>
-  <description/>
-  <image>
-   https://www.geogebra.org/resource/h3kxv53w/i63znZBDkv5UhSW7/material-h3kxv53w-thumb.png
-  </image>
-  <url>
-   https://www.geogebra.org/m/h3kxv53w
-  </url>
-  <platform>
-   GeoGebra
-  </platform>
-  <topics>
-   <topic>electromagnetism</topic>
-  </topics>
- </simulation>
- <simulation>
-  <id>
    sim-071
   </id>
   <title>
