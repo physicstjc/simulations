@@ -2,27 +2,6 @@
 <simulations>
  <simulation>
   <id>
-    sim-568669
-  </id>
-  <title>
-    Dropping with Air Resistance
-  </title>
-  <description></description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-air-resistance.png
-  </image>
-  <url>
-    https://physicstjc.github.io/sls/air-resistance/
-  </url>
-  <platform>
-    JavaScript
-  </platform>
-  <topics>
-    <topic>dynamics</topic>
-  </topics>
-</simulation>
- <simulation>
-  <id>
    sim-001
   </id>
   <title>
@@ -4462,5 +4441,25 @@
   <url>https://physicstjc.github.io/sls/wave-graph/</url>
   <platform>JavaScript</platform>
   <topics><topic>waves</topic></topics></simulation>
-    
+ <simulation>
+  <id>
+    sim-568669
+  </id>
+  <title>
+    Dropping with Air Resistance
+  </title>
+  <description></description>
+  <image>
+    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-air-resistance.png
+  </image>
+  <url>
+    https://physicstjc.github.io/sls/air-resistance/
+  </url>
+  <platform>
+    JavaScript
+  </platform>
+  <topics>
+    <topic>dynamics</topic>
+  </topics>
+</simulation>   
 </simulations>
