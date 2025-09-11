@@ -159,8 +159,6 @@ body {
     border-bottom: none;
     width: 100%;
     height: var(--nav-height);
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-    overflow-y: hidden;
 }
 
 .nav-menu {
@@ -172,9 +170,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
-    flex-wrap: nowrap; /* Prevent wrapping to keep items in one line */
+    flex-wrap: wrap;
     align-items: center;
-    min-width: max-content; /* Ensure menu doesn't shrink below content width */
 }
 
 .nav-menu li {
@@ -204,17 +201,34 @@ body {
     height: var(--nav-height);
     display: flex;
     align-items: center;
-    flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
-/* Add responsive adjustments for medium screens */
+/* Desktop-only responsive navigation fixes */
+@media (min-width: 769px) {
+    .main-nav {
+        overflow-x: auto; /* Allow horizontal scrolling on desktop only */
+        overflow-y: hidden;
+    }
+    
+    .nav-menu {
+        flex-wrap: nowrap; /* Prevent wrapping on desktop */
+        min-width: max-content; /* Ensure menu doesn't shrink below content width */
+    }
+    
+    .nav-button {
+        flex-shrink: 0; /* Prevent buttons from shrinking on desktop */
+    }
+}
+
+/* Medium desktop screens - reduce padding */
 @media (min-width: 769px) and (max-width: 1024px) {
     .nav-button {
-        padding: 12px 12px; /* Reduce padding on medium screens */
+        padding: 12px 12px;
         font-size: 13px;
     }
 }
 
+/* Large desktop screens - normal padding */
 @media (min-width: 1025px) {
     .nav-button {
         padding: 15px 20px;
@@ -222,7 +236,7 @@ body {
     }
 }
 
-/* For very small desktop screens, add subtle scroll indicators */
+/* Scroll indicator for small desktop screens */
 @media (min-width: 769px) and (max-width: 900px) {
     .main-nav {
         position: relative;
@@ -241,7 +255,80 @@ body {
     }
     
     .nav-menu {
-        padding-right: 20px; /* Add space for scroll indicator */
+        padding-right: 20px;
+    }
+}
+
+/* Mobile styles remain unchanged - keep original vertical menu */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 100;
+        box-shadow: 0 4px 8px var(--shadow-medium);
+        /* Keep original mobile behavior - no horizontal scroll */
+        overflow: visible;
+    }
+    
+    .main-nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu {
+        flex-direction: column; /* Keep vertical layout for mobile */
+        padding: 1rem 0;
+        flex-wrap: wrap; /* Allow wrapping on mobile if needed */
+    }
+    
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-button {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
+        border-bottom: none;
+        flex-shrink: 1; /* Allow shrinking on mobile */
+    }
+    
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: var(--card-background);
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .dropdown-link {
+        color: var(--text-primary);
+        padding: 12px 30px;
+    }
+    
+    .dropdown-link:hover {
+        background-color: var(--primary-color);
+        color: #ffffff;
     }
 }
 .nav-button:hover {
