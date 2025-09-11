@@ -384,3 +384,74 @@ function filterByTopic(topicName) {
     
     container.appendChild(section);
 }
+
+
+// Add this to your existing simulations.js file
+
+// Enhanced Mobile Menu Toggle Functionality
+function initializeMobileMenu() {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mainNav = document.getElementById('main-nav');
+    
+    if (hamburgerMenu && mainNav) {
+        // Function to close the mobile menu
+        function closeMobileMenu() {
+            hamburgerMenu.classList.remove('active');
+            mainNav.classList.remove('active');
+            hamburgerMenu.setAttribute('aria-expanded', 'false');
+        }
+        
+        // Toggle menu when hamburger is clicked
+        hamburgerMenu.addEventListener('click', function() {
+            hamburgerMenu.classList.toggle('active');
+            mainNav.classList.toggle('active');
+            
+            const isExpanded = mainNav.classList.contains('active');
+            hamburgerMenu.setAttribute('aria-expanded', isExpanded);
+        });
+        
+        // Close menu when any navigation button is clicked (topic selection)
+        mainNav.addEventListener('click', function(event) {
+            // Check if clicked element is a navigation button or dropdown item
+            if (event.target.classList.contains('nav-button') || 
+                event.target.classList.contains('dropdown-link') ||  // Changed from 'dropdown-item' to 'dropdown-link'
+                event.target.closest('.nav-button') ||
+                event.target.closest('.dropdown-link')) {  // Changed from 'dropdown-item' to 'dropdown-link'
+                
+                // Only close on mobile (when hamburger menu is visible)
+                if (window.innerWidth <= 768) {
+                    closeMobileMenu();
+                }
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburgerMenu.contains(event.target) && !mainNav.contains(event.target)) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close menu when window is resized to desktop size
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
+        });
+        
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && mainNav.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+    }
+}
+
+// Initialize mobile menu after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Your existing initialization code...
+    
+    // Add mobile menu initialization
+    initializeMobileMenu();
+});

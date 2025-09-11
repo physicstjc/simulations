@@ -28,7 +28,15 @@
         </div>
         
         <!-- Navigation Menu -->
-        <nav class="main-nav">
+        <!-- Add this after the header-content div and before the nav element -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Update the nav element to include mobile class -->
+        <nav class="main-nav" id="main-nav">
             <div id="navigation"></div>
         </nav>
     </header>

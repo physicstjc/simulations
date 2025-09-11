@@ -159,6 +159,8 @@ body {
     border-bottom: none;
     width: 100%;
     height: var(--nav-height);
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    overflow-y: hidden;
 }
 
 .nav-menu {
@@ -170,8 +172,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in one line */
     align-items: center;
+    min-width: max-content; /* Ensure menu doesn't shrink below content width */
 }
 
 .nav-menu li {
@@ -201,8 +204,46 @@ body {
     height: var(--nav-height);
     display: flex;
     align-items: center;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
 }
 
+/* Add responsive adjustments for medium screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-button {
+        padding: 12px 12px; /* Reduce padding on medium screens */
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .nav-button {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For very small desktop screens, add subtle scroll indicators */
+@media (min-width: 769px) and (max-width: 900px) {
+    .main-nav {
+        position: relative;
+    }
+    
+    .main-nav::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background: linear-gradient(to left, var(--primary-color), transparent);
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .nav-menu {
+        padding-right: 20px; /* Add space for scroll indicator */
+    }
+}
 .nav-button:hover {
     color: #ffd700;
     border-bottom-color: #ffd700;
@@ -709,4 +750,109 @@ footer {
 #back-to-top.visible {
     opacity: 1;
     visibility: visible;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 102;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 100;
+        box-shadow: 0 4px 8px var(--shadow-medium);
+    }
+    
+    .main-nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-button {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
+        border-bottom: none;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: var(--card-background);  /* Changed from rgba(255, 255, 255, 0.1) to match desktop */
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Ensure dropdown links maintain consistent styling */
+    .dropdown-link {
+        color: var(--text-primary);
+        padding: 12px 30px;  /* Slightly more indented for mobile */
+    }
+    
+    .dropdown-link:hover {
+        background-color: var(--primary-color);
+        color: #ffffff;
+    }
 }
