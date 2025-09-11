@@ -412,18 +412,38 @@ function initializeMobileMenu() {
         
         // Close menu when any navigation button is clicked (topic selection)
         mainNav.addEventListener('click', function(event) {
-            // Check if clicked element is a navigation button or dropdown item
-            if (event.target.classList.contains('nav-button') || 
-                event.target.classList.contains('dropdown-link') ||  // Changed from 'dropdown-item' to 'dropdown-link'
-                event.target.closest('.nav-button') ||
-                event.target.closest('.dropdown-link')) {  // Changed from 'dropdown-item' to 'dropdown-link'
+        // Check if clicked element is a dropdown link (topic) - NOT nav-button (theme)
+        if (event.target.classList.contains('dropdown-link') ||
+        event.target.closest('.dropdown-link')) {
+        
+        // Only close on mobile (when hamburger menu is visible)
+        if (window.innerWidth <= 768) {
+            closeMobileMenu();
+        }
+    }
+    
+    // Handle nav-button clicks for dropdown toggle (don't close menu)
+    if (event.target.classList.contains('nav-button') ||
+        event.target.closest('.nav-button')) {
+        
+        // Only on mobile - toggle dropdown visibility
+        if (window.innerWidth <= 768) {
+            const navItem = event.target.closest('.nav-item');
+            if (navItem) {
+                // Toggle dropdown-open class for this nav item
+                navItem.classList.toggle('dropdown-open');
                 
-                // Only close on mobile (when hamburger menu is visible)
-                if (window.innerWidth <= 768) {
-                    closeMobileMenu();
-                }
+                // Close other open dropdowns
+                const allNavItems = document.querySelectorAll('.nav-item');
+                allNavItems.forEach(item => {
+                    if (item !== navItem) {
+                        item.classList.remove('dropdown-open');
+                    }
+                });
             }
-        });
+        }
+    }
+});
         
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
