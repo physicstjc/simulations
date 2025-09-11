@@ -4461,5 +4461,28 @@
   <topics>
     <topic>dynamics</topic>
   </topics>
-</simulation>   
+</simulation>
+ <simulation>
+  <id>
+    sim-810182
+  </id>
+  <title>
+    Bouncing ball with energy loss
+  </title>
+  <description>
+    Energy loss during each collision or due to air resistance can be simulated.
+  </description>
+  <image>
+    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-bouncing-ball-with-energy-loss.png
+  </image>
+  <url>
+    https://physicstjc.github.io/sls/bouncing-ball-with-energy-loss
+  </url>
+  <platform>
+    JavaScript
+  </platform>
+  <topics>
+    <topic>dynamics</topic>
+  </topics>
+</simulation>
 </simulations>
