@@ -340,37 +340,178 @@ body {
 
 /* Desktop dropdown styles - ensure they work properly */
 @media (min-width: 769px) {
+    /* Remove all existing dropdown styles and replace with this unified system */
+    
+    /* Base dropdown styles - shared between desktop and mobile */
     .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        transform: translateY(-10px);
-        background: var(--card-background);
-        border: 1px solid var(--border-color);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 12px;
-        box-shadow: 0 10px 30px var(--shadow-dark);
-        min-width: 250px;
-        max-width: 350px;
-        z-index: 1000;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         overflow: hidden;
-        max-height: none; /* Override mobile max-height */
     }
     
-    .nav-item:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+    .dropdown-list {
+        list-style: none !important;
+        margin: 0;
+        padding: 8px 0;
     }
     
-    /* Adjust dropdown position for items that would go off-screen */
-    .nav-item:last-child .dropdown-menu,
-    .nav-item:nth-last-child(2) .dropdown-menu {
-        left: auto;
-        right: 0;
+    .dropdown-list li {
+        list-style: none !important;
+        margin: 0;
+        padding: 0;
     }
+    
+    .dropdown-link {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        color: #333;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        background: none;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        border-left: 3px solid transparent;
+        position: relative;
+    }
+    
+    .dropdown-link:hover,
+    .dropdown-link:focus {
+        background: linear-gradient(135deg, var(--primary-color), #4a90e2);
+        color: white;
+        border-left-color: var(--warning-color);
+        transform: translateX(4px);
+    }
+    
+    /* Desktop-specific dropdown styles */
+    @media (min-width: 769px) {
+        .dropdown-menu {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            min-width: 280px;
+            max-width: 320px;
+            z-index: 1003;
+            transform: translateY(-10px) scale(0.95);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
+        
+        /* Adjust position for right-side dropdowns */
+        .nav-item:last-child .dropdown-menu,
+        .nav-item:nth-last-child(2) .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+        
+        .dropdown-link {
+            font-size: 14px;
+            padding: 14px 20px;
+        }
+    }
+    
+    /* Mobile-specific dropdown styles */
+    @media (max-width: 768px) {
+        .dropdown-menu {
+            position: static;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border-radius: 0;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            max-height: 0;
+            transform: none;
+            border: none;
+            margin: 0;
+        }
+        
+        .nav-item:hover .dropdown-menu,
+        .nav-item.active .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            max-height: 400px;
+        }
+        
+        .dropdown-list {
+            padding: 0;
+        }
+        
+        .dropdown-link {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
+            padding: 16px 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .dropdown-link:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-link:hover,
+        .dropdown-link:focus {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            transform: translateX(8px);
+        }
+    }
+    
+    /* Ensure proper layering and overflow */
+    .main-nav {
+        position: relative;
+        z-index: 1001;
+        overflow: visible !important;
+    }
+    
+    .nav-item {
+        position: relative;
+        z-index: 1002;
+    }
+    
+    .header-content,
+    #navigation {
+        overflow: visible !important;
+    }
+    
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+        .dropdown-menu {
+            background: rgba(30, 30, 30, 0.95);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .dropdown-link {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (max-width: 768px) {
+            .dropdown-menu {
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    
+    /* Smooth staggered animation for dropdown items */
+    .dropdown-link:nth-child(1) { transition-delay: 0ms; }
+    .dropdown-link:nth-child(2) { transition-delay: 50ms; }
+    .dropdown-link:nth-child(3) { transition-delay: 100ms; }
+    .dropdown-link:nth-child(4) { transition-delay: 150ms; }
+    .dropdown-link:nth-child(5) { transition-delay: 200ms; }
 }
 
 @media (max-width: 768px) {
@@ -932,20 +1073,45 @@ footer {
         transform: none;
         box-shadow: none;
         border: none;
-        background: var(--card-background);  /* Changed from rgba(255, 255, 255, 0.1) to match desktop */
+        background: var(--card-background);
         border-radius: 0;
         opacity: 1;
         visibility: visible;
     }
     
-    /* Ensure dropdown links maintain consistent styling */
     .dropdown-link {
         color: var(--text-primary);
-        padding: 12px 30px;  /* Slightly more indented for mobile */
+        padding: 12px 30px;
     }
     
     .dropdown-link:hover {
         background-color: var(--primary-color);
         color: #ffffff;
     }
+}
+
+/* Desktop dropdown stability fixes */
+@media (min-width: 769px) {
+  /* Ensure dropdown visibility - add this to fix layering issues */
+  .main-nav {
+    position: relative;
+    z-index: 1001; /* Higher than other elements */
+    overflow: visible !important; /* Prevent clipping */
+  }
+  
+  .nav-item {
+    position: relative;
+    z-index: 1002;
+  }
+  
+  .dropdown-menu {
+    z-index: 1003 !important; /* Ensure it's on top */
+    position: absolute !important;
+  }
+  
+  /* Fix any overflow clipping from parent containers */
+  .header-content,
+  #navigation {
+    overflow: visible !important;
+  }
 }
