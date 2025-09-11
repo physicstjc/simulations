@@ -654,6 +654,14 @@ body {
         left: auto;
     }
     
+    /* Use class-based approach instead of hover for mobile */
+    .nav-item.dropdown-open .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 400px;
+    }
+    
+    /* Keep hover for desktop compatibility */
     .nav-item:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
