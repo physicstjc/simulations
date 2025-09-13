@@ -4485,4 +4485,47 @@
     <topic>dynamics</topic>
   </topics>
 </simulation>
+
+ <simulation>
+  <id>
+    sim-042248
+  </id>
+  <title>
+    RC Circuit
+  </title>
+  <description></description>
+  <image>
+    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-rc-circuit.png
+  </image>
+  <url>
+    https://www.geogebra.org/m/rFEV4HJx
+  </url>
+  <platform>
+    GeoGebra
+  </platform>
+  <topics>
+    <topic>electricity</topic>
+  </topics>
+</simulation>
+ <simulation>
+  <id>
+    sim-154844
+  </id>
+  <title>
+    Electrostatic Precipitator
+  </title>
+  <description></description>
+  <image>
+    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-electrostatic-precipitator.png
+  </image>
+  <url>
+    https://physicstjc.github.io/sls/electrostatic-precipitator
+  </url>
+  <platform>
+    JavaScript
+  </platform>
+  <topics>
+    <topic>electric-fields</topic>
+  </topics>
+</simulation>
 </simulations>
