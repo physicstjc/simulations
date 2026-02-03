@@ -3256,7 +3256,7 @@
   </title>
   <description/>
   <image>
-   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-dc-motor.png
+   https://www.geogebra.org/resource/UqPD6ax7/CvSMUruwiX0R8eRK/material-UqPD6ax7-thumb.png
   </image>
   <url>
    https://www.geogebra.org/m/PN2YrxBb
@@ -3281,6 +3281,27 @@
   </image>
   <url>
    https://www.geogebra.org/m/Xr65rR3b
+  </url>
+  <platform>
+   GeoGebra
+  </platform>
+  <topics>
+   <topic>electromagnetism</topic>
+  </topics>
+ </simulation>
+ <simulation>
+  <id>
+   sim-070
+  </id>
+  <title>
+   Fleming's left hand rule
+  </title>
+  <description/>
+  <image>
+   https://www.geogebra.org/resource/h3kxv53w/i63znZBDkv5UhSW7/material-h3kxv53w-thumb.png
+  </image>
+  <url>
+   https://www.geogebra.org/m/h3kxv53w
   </url>
   <platform>
    GeoGebra
@@ -3385,7 +3406,7 @@
    https://www.geogebra.org/resource/egdpjrpc/GuakwmomXkNF1GGa/material-egdpjrpc-thumb.png
   </image>
   <url>
-   https://www.geogebra.org/m/awdedu98
+   https://www.geogebra.org/m/egdpjrpc
   </url>
   <platform>
    GeoGebra
@@ -3483,11 +3504,11 @@
    sim-118
   </id>
   <title>
-   Electromagnetic Induction
+   Magnetic Induction
   </title>
   <description/>
   <image>
-   https://www.physicslens.com/wp-content/uploads/2025/09/simulation-electromagnetic-induction.png
+   https://www.geogebra.org/resource/w2jp2Jsy/fQRkDrxBR7F7UVA3/material-w2jp2Jsy-thumb.png
   </image>
   <url>
    https://www.geogebra.org/m/JPFxyhtA
@@ -4441,126 +4462,55 @@
   <url>https://physicstjc.github.io/sls/wave-graph/</url>
   <platform>JavaScript</platform>
   <topics><topic>waves</topic></topics></simulation>
-
-<simulation>
+    
+ <simulation>
   <id>js-032</id>
-  <title>Derived and Base Units</title>
-  <description>Use base units to build a unit of a given derived quantity.</description>
-  <image>https://physicstjc.github.io/sls/base-units/base-units.png</image>
-  <url>https://physicstjc.github.io/sls/base-units/</url>
+  <title>Metal Lattice Simulation</title>
+  <description>At low temperature, ions vibrate less, so collisions are fewer and resistance is lower.</description>
+  <image>images/placeholder.svg</image>
+  <url>https://physicstjc.github.io/sls/resistance-and-temperature/</url>
   <platform>JavaScript</platform>
-  <topics><topic>measurement</topic></topics></simulation>
-
-
- 
- <simulation>
-  <id>
-    sim-568669
-  </id>
-  <title>
-    Dropping with Air Resistance
-  </title>
-  <description></description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-air-resistance.png
-  </image>
-  <url>
-    https://physicstjc.github.io/sls/air-resistance/
-  </url>
-  <platform>
-    JavaScript
-  </platform>
-  <topics>
-    <topic>dynamics</topic>
-  </topics>
-</simulation>
- <simulation>
-  <id>
-    sim-810182
-  </id>
-  <title>
-    Bouncing ball with energy loss
-  </title>
-  <description>
-    Energy loss during each collision or due to air resistance can be simulated.
-  </description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-bouncing-ball-with-energy-loss.png
-  </image>
-  <url>
-    https://physicstjc.github.io/sls/bouncing-ball-with-energy-loss
-  </url>
-  <platform>
-    JavaScript
-  </platform>
-  <topics>
-    <topic>dynamics</topic>
-  </topics>
-</simulation>
+  <topics><topic>electricity</topic></topics>
+ </simulation>
 
  <simulation>
-  <id>
-    sim-042248
-  </id>
-  <title>
-    RC Circuit
-  </title>
-  <description></description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-rc-circuit.png
-  </image>
-  <url>
-    https://www.geogebra.org/m/rFEV4HJx
-  </url>
-  <platform>
-    GeoGebra
-  </platform>
-  <topics>
-    <topic>electricity</topic>
-  </topics>
-</simulation>
- <simulation>
-  <id>
-    sim-154844
-  </id>
-  <title>
-    Electrostatic Precipitator
-  </title>
-  <description></description>
-  <image>
-    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-electrostatic-precipitator.png
-  </image>
-  <url>
-    https://physicstjc.github.io/sls/electrostatic-precipitator
-  </url>
-  <platform>
-    JavaScript
-  </platform>
-  <topics>
-    <topic>electric-fields</topic>
-  </topics>
-</simulation>
+  <id>js-033</id>
+  <title>Rheostat</title>
+  <description>Interactive rheostat simulation showing how resistance changes with length.</description>
+  <image>images/placeholder.svg</image>
+  <url>https://physicstjc.github.io/sls/rheostat/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electricity</topic></topics>
+ </simulation>
 
-  <simulation>
-  <id>
-    sim-154845
-  </id>
-  <title>
-    Unit Conversion Practice
-  </title>
-  <description></description>
-  <image>
-    https://physicstjc.github.io/simulations/images/screenshots/unit-conversion.png
-  </image>
-  <url>
-    https://www.geogebra.org/m/sd9vf9nw
-  </url>
-  <platform>
-    GeoGebra
-  </platform>
-  <topics>
-    <topic>measurement</topic>
-  </topics>
-</simulation>
- 
-</simulations>
+ <simulation>
+  <id>js-034</id>
+  <title>Projectile Physics Lab - Gorilla Edition</title>
+  <description>Projectile motion simulation with gravity.</description>
+  <image>images/placeholder.svg</image>
+  <url>https://physicstjc.github.io/sls/gorilla-physics/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>kinematics</topic></topics>
+ </simulation>
+
+ <simulation>
+  <id>js-035</id>
+  <title>Vector Scale Drawing App</title>
+  <description>Vector scale drawing practice.</description>
+  <image>images/placeholder.svg</image>
+  <url>https://physicstjc.github.io/sls/vector-drawing/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>measurement</topic></topics>
+ </simulation>
+    
+<simulation>
+  <id>js-036</id>
+  <title>Electric Field Simulation</title>
+  <description>Interactive simulation of a charge moving between two charged spheres.</description>
+  <image>images/placeholder.svg</image>
+  <url>https://physicstjc.github.io/sls/electric-field/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electric-fields</topic></topics>
+ </simulation>
+    
+ </simulations>

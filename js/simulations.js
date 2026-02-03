@@ -207,13 +207,18 @@ function createSimulationCard(sim) {
     
     const title = sim.querySelector('title').textContent;
     const description = sim.querySelector('description')?.textContent || '';
-    const imageUrl = sim.querySelector('image')?.textContent || '';
+    let imageUrl = sim.querySelector('image')?.textContent || '';
+    // Use placeholder if image URL is empty or whitespace
+    if (!imageUrl.trim()) {
+        imageUrl = 'images/placeholder.svg';
+    }
+
     const simUrl = sim.querySelector('url').textContent;
     const platform = sim.querySelector('platform').textContent;
     
     card.innerHTML = `
         <div class="card-image">
-            <img src="${imageUrl}" alt="${title}" onerror="this.src='https://via.placeholder.com/300x180?text=No+Image'">
+            <img src="${imageUrl}" alt="${title}" onerror="this.src='images/placeholder.svg'">
         </div>
         <div class="card-content">
             <h3>${title}</h3>
