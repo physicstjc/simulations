@@ -11,7 +11,6 @@ const THEMES = {
 };
 
 window.simulationsData = [];
-let navThemesData = {};
 
 document.addEventListener('DOMContentLoaded', async function() {
     initializeMobileMenu();
@@ -95,30 +94,37 @@ function processSimulations(simulations) {
         });
     });
 
-    // Build sidebar navigation: all categories and topics always visible
-    let navHTML = '';
+    // Build a single grouped topic dropdown for reliable navigation.
+    let optionGroupsHTML = '<option value="">Jump to a topic...</option>';
     Object.entries(THEMES).forEach(([themeName, themeTopics]) => {
         const availableTopics = themeTopics.filter(topicId => orderedTopics.some(([id]) => id === topicId));
         if (availableTopics.length > 0) {
-            navHTML += `<li class="nav-item nav-theme"><span class="nav-theme-title">${themeName}</span><ul class="nav-topic-list">`;
+            optionGroupsHTML += `<optgroup label="${themeName}">`;
             availableTopics.forEach(topicId => {
-                navHTML += `<li class="nav-topic-item"><a href="#${topicId}" class="nav-topic-link">${topicsMap.get(topicId)}</a></li>`;
+                optionGroupsHTML += `<option value="${topicId}">${topicsMap.get(topicId)}</option>`;
             });
-            navHTML += `</ul></li>`;
+            optionGroupsHTML += '</optgroup>';
         }
     });
-    // Add uncategorized topics
-    const categorizedTopics = Object.values(THEMES).flat();
-    const otherTopics = orderedTopics.filter(([id]) => !categorizedTopics.includes(id));
+
+    const categorizedTopics = new Set(Object.values(THEMES).flat());
+    const otherTopics = orderedTopics.filter(([id]) => !categorizedTopics.has(id));
     if (otherTopics.length > 0) {
-        navHTML += `<li class="nav-item nav-theme"><span class="nav-theme-title">Other Topics</span><ul class="nav-topic-list">`;
+        optionGroupsHTML += '<optgroup label="Other Topics">';
         otherTopics.forEach(([id, display]) => {
-            navHTML += `<li class="nav-topic-item"><a href="#${id}" class="nav-topic-link">${display}</a></li>`;
+            optionGroupsHTML += `<option value="${id}">${display}</option>`;
         });
-        navHTML += `</ul></li>`;
+        optionGroupsHTML += '</optgroup>';
     }
-    navContainer.className = 'nav-menu nav-sidebar';
-    navContainer.innerHTML = navHTML;
+
+    navContainer.className = 'nav-menu nav-topic-menu';
+    navContainer.innerHTML = `
+        <li class="nav-item nav-topic-picker">
+            <label for="topic-dropdown" class="topic-dropdown-label">Browse Topics</label>
+            <select id="topic-dropdown" class="topic-dropdown">${optionGroupsHTML}</select>
+        </li>
+    `;
+    setupNavigationHandlers();
 
     // Render all topic sections as before
     orderedTopics.forEach(([id]) => {
@@ -213,7 +219,30 @@ function performSearch(queryText) {
 }
 
 function setupNavigationHandlers() {
-    // Topics links are dynamically created in the click handler
+    const dropdown = document.getElementById('topic-dropdown');
+    if (!dropdown) {
+        return;
+    }
+
+    dropdown.onchange = function() {
+        const topicId = dropdown.value;
+        if (!topicId) {
+            return;
+        }
+
+        const section = document.getElementById(topicId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const mainNav = document.getElementById('main-nav');
+        if (window.innerWidth <= 768 && hamburgerMenu && mainNav) {
+            hamburgerMenu.classList.remove('active');
+            mainNav.classList.remove('active');
+            hamburgerMenu.setAttribute('aria-expanded', 'false');
+        }
+    };
 }
 
 function filterByTopic(topicName) {
@@ -262,48 +291,9 @@ function initializeMobileMenu() {
         hamburgerMenu.setAttribute('aria-expanded', isExpanded);
     });
 
-    mainNav.addEventListener('click', function(event) {
-        const topicsPanel = document.getElementById('nav-topics-panel');
-
-        if (event.target.classList.contains('topics-link') || event.target.closest('.topics-link')) {
-            const topic = (event.target.closest('.topics-link') || event.target).getAttribute('data-topic');
-            if (topic) {
-                filterByTopic(topic);
-            }
-            topicsPanel?.classList.remove('active');
-            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('dropdown-open'));
-            closeMobileMenu();
-            return;
-        }
-
-        if (event.target.classList.contains('nav-button') || event.target.closest('.nav-button')) {
-            const button = event.target.closest('.nav-button');
-            const navItem = button.closest('.nav-item');
-            const themeName = button.getAttribute('data-theme');
-            const allNavItems = document.querySelectorAll('.nav-item');
-
-            const isOpen = navItem.classList.contains('dropdown-open');
-            allNavItems.forEach(item => item.classList.remove('dropdown-open'));
-
-            if (!isOpen && topicsPanel && navThemesData[themeName]) {
-                navItem.classList.add('dropdown-open');
-                const topics = navThemesData[themeName];
-                topicsPanel.innerHTML = `<ul class="topics-list">${topics.map(t =>
-                    `<li><button class="topics-link" data-topic="${t}">${t}</button></li>`
-                ).join('')}</ul>`;
-                topicsPanel.classList.add('active');
-            } else {
-                topicsPanel?.classList.remove('active');
-            }
-            event.stopPropagation();
-        }
-    });
-
     document.addEventListener('click', function(event) {
         if (!hamburgerMenu.contains(event.target) && !mainNav.contains(event.target)) {
             closeMobileMenu();
-            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('dropdown-open'));
-            document.getElementById('nav-topics-panel')?.classList.remove('active');
         }
     });
 
