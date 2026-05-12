@@ -150,25 +150,24 @@ header h1 {
 }
 
 .main-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: relative;
     width: 100%;
     z-index: 1001;
     background: #ffe64a;
-    border-top: 3px solid var(--ink-strong);
-    border-bottom: 3px solid var(--ink-strong);
-    transform: translateY(-8px);
+    border-top: 0;
+    border-bottom: 0;
+    max-height: 0;
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.18s ease, transform 0.18s ease;
+    transition: max-height 0.2s ease, opacity 0.18s ease;
     box-shadow: none;
-    display: flex;
-    align-items: flex-start;
 }
 
 .main-nav.active {
-    transform: translateY(0);
+    border-top: 3px solid var(--ink-strong);
+    border-bottom: 3px solid var(--ink-strong);
+    max-height: 180px;
     opacity: 1;
     visibility: visible;
 }
@@ -504,15 +503,20 @@ footer {
     }
 
     .main-nav {
-        left: 0.7rem;
-        width: min(84vw, 320px);
-        max-height: 62vh;
-        overflow-y: auto;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
         background: #ffe64a;
-        border: 3px solid var(--ink-strong);
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .main-nav.active {
+        max-height: 220px;
+        overflow-y: auto;
         border-top: 3px solid var(--ink-strong);
-        border-radius: 10px;
-        box-shadow: 4px 4px 0 var(--ink-strong);
+        border-bottom: 3px solid var(--ink-strong);
     }
 
     #navigation.nav-menu {
