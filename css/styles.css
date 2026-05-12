@@ -234,8 +234,6 @@ header h1 {
     z-index: 1003;
 }
 
-.nav-item:hover .dropdown-menu,
-.nav-item:focus-within .dropdown-menu,
 .nav-item.dropdown-open .dropdown-menu {
     display: block;
 }
