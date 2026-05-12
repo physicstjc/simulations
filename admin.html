@@ -3,344 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Physics Simulations</title>
+    <title>Simulations CMS</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
-    <header>
-        <h1><a href="index.html" class="home-link">Physics Simulations</a></h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
+    <header class="header-nav-container">
+        <div class="header-content">
+            <h1><a href="index.html" class="home-link">Simulations CMS</a></h1>
+            <div class="search-container">
+                <input type="text" id="admin-search" placeholder="Filter simulations...">
+                <button id="admin-search-button">Search</button>
+            </div>
+            <a href="index.html" class="blog-link">View Site</a>
+        </div>
     </header>
 
-    <main>
-        <div class="admin-container" id="login-container">
-            <h2>Admin Login</h2>
-            <form class="login-form" id="login-form">
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" required>
-                </div>
-                <button type="submit" class="admin-button">Login</button>
-            </form>
-        </div>
-
-        <div class="admin-container hidden" id="admin-panel">
-            <h2>Add New Simulation</h2>
-            <form class="simulation-form" id="simulation-form">
-                <div class="form-group">
-                    <label for="sim-title">Title</label>
-                    <input type="text" id="sim-title" required>
-                </div>
-                <div class="form-group">
-                    <label for="sim-description">Description (optional)</label>
-                    <textarea id="sim-description"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="sim-image">Image URL</label>
-                    <input type="url" id="sim-image" required>
-                </div>
-                <div class="form-group">
-                    <label for="sim-url">Simulation URL</label>
-                    <input type="url" id="sim-url" required>
-                </div>
-                <div class="form-group">
-                    <label for="sim-platform">Platform</label>
-                    <select id="sim-platform" required>
-                        <option value="">Select a platform</option>
-                        <option value="GeoGebra">GeoGebra</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="PhET">PhET</option>
-                        <option value="EjsS">EjsS</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Topics by Theme</label>
-                    <div class="topics-grid">
-                        <div class="topic-category">
-                            <label for="classical-mechanics">Classical Mechanics</label>
-                            <select id="classical-mechanics" multiple>
-                                <option value="mechanics">Mechanics</option>
-                                <option value="kinematics">Kinematics</option>
-                                <option value="dynamics">Dynamics</option>
-                                <option value="forces">Forces</option>
-                                <option value="motion">Motion</option>
-                                <option value="energy">Energy</option>
-                                <option value="momentum">Momentum</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="waves-optics">Waves & Optics</label>
-                            <select id="waves-optics" multiple>
-                                <option value="waves">Waves</option>
-                                <option value="sound">Sound</option>
-                                <option value="light">Light</option>
-                                <option value="optics">Optics</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="electricity-magnetism">Electricity & Magnetism</label>
-                            <select id="electricity-magnetism" multiple>
-                                <option value="electric-fields">Electric Fields</option>
-                                <option value="electricity">Electricity</option>
-                                <option value="magnetism">Magnetism</option>
-                                <option value="electromagnetism">Electromagnetism</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="thermal-physics">Thermal Physics</label>
-                            <select id="thermal-physics" multiple>
-                                <option value="thermodynamics">Thermodynamics</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="fluid-mechanics">Fluid Mechanics</label>
-                            <select id="fluid-mechanics" multiple>
-                                <option value="fluid dynamics">Fluid Dynamics</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="modern-physics">Modern Physics</label>
-                            <select id="modern-physics" multiple>
-                                <option value="quantum">Quantum</option>
-                                <option value="relativity">Relativity</option>
-                                <option value="nuclear">Nuclear</option>
-                            </select>
-                        </div>
-                        <div class="topic-category">
-                            <label for="astrophysics">Astrophysics</label>
-                            <select id="astrophysics" multiple>
-                                <option value="astronomy">Astronomy</option>
-                            </select>
-                        </div>
+    <main class="admin-shell">
+        <section class="admin-panel" id="auth-panel">
+            <h2>Admin Access</h2>
+            <p class="admin-subtext">Sign in with Firebase Authentication. Email/password users can create, edit, and delete simulation cards in Firestore.</p>
+            <form id="login-form" class="login-form">
+                <div class="inline-fields">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="username" required>
                     </div>
-                    <div class="note">Hold Ctrl (or Cmd on Mac) to select multiple topics from each category</div>
-                </div>
-                <button type="submit" class="admin-button">Generate XML</button>
-            </form>
-
-            <div class="preview-container hidden" id="preview-container">
-                <h3>Preview</h3>
-                <div class="simulation-card" id="preview-card">
-                    <img src="" alt="Simulation preview" class="simulation-image" id="preview-image">
-                    <div class="simulation-info">
-                        <h3 class="simulation-title" id="preview-title"></h3>
-                        <span class="simulation-platform" id="preview-platform"></span>
-                        <p id="preview-description"></p>
-                        <div class="simulation-topics" id="preview-topics"></div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required>
                     </div>
                 </div>
-
-                <div class="xml-output hidden" id="xml-output-container">
-                    <h3>XML Output</h3>
-                    <pre id="xml-output"></pre>
-                    <button id="download-xml" class="admin-button">Download XML</button>
-                    <p class="note">Note: You'll need to manually add this to your simulations.xml file.</p>
+                <div class="admin-toolbar">
+                    <button type="submit" class="admin-button">Sign In</button>
+                    <button type="button" id="register-button" class="admin-button secondary">Create Account</button>
                 </div>
+            </form>
+            <div id="auth-status" class="admin-status"></div>
+        </section>
+
+        <section id="cms-panel" class="hidden-panel">
+            <div class="admin-toolbar">
+                <div>
+                    <h2>Simulation Cards</h2>
+                    <p class="admin-subtext">Manage Firestore records used by the public simulations page.</p>
+                </div>
+                <button type="button" id="new-simulation-button" class="admin-button secondary">New Card</button>
+                <button type="button" id="import-xml-button" class="admin-button neutral">Import Existing XML</button>
+                <button type="button" id="logout-button" class="admin-button danger">Sign Out</button>
             </div>
-        </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Physics Simulations Collection</p>
-    </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Admin password - change this to your desired password
-            const ADMIN_PASSWORD = 'physics123';
-            
-            // Login form handling
-            const loginForm = document.getElementById('login-form');
-            const loginContainer = document.getElementById('login-container');
-            const adminPanel = document.getElementById('admin-panel');
-            
-            loginForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const password = document.getElementById('password').value;
-                
-                if (password === ADMIN_PASSWORD) {
-                    loginContainer.classList.add('hidden');
-                    adminPanel.classList.remove('hidden');
-                } else {
-                    alert('Incorrect password. Please try again.');
-                }
-            });
-            
-            // Topics handling with multiple themed dropdowns
-            const topicSelects = [
-                document.getElementById('classical-mechanics'),
-                document.getElementById('waves-optics'),
-                document.getElementById('electricity-magnetism'),
-                document.getElementById('thermal-physics'),
-                document.getElementById('fluid-mechanics'),
-                document.getElementById('modern-physics'),
-                document.getElementById('astrophysics')
-            ];
-            
-            // Add change event listeners to all topic dropdowns
-            topicSelects.forEach(select => {
-                select.addEventListener('change', function() {
-                    updatePreview();
-                });
-            });
-            
-            // Function to get all selected topics from all dropdowns
-            function getAllSelectedTopics() {
-                const allTopics = [];
-                topicSelects.forEach(select => {
-                    const selectedOptions = Array.from(select.selectedOptions);
-                    selectedOptions.forEach(option => {
-                        allTopics.push(option.value);
-                    });
-                });
-                return allTopics;
-            }
-            
-            // Form handling and preview
-            const simulationForm = document.getElementById('simulation-form');
-            const previewContainer = document.getElementById('preview-container');
-            const previewImage = document.getElementById('preview-image');
-            const previewTitle = document.getElementById('preview-title');
-            const previewPlatform = document.getElementById('preview-platform');
-            const previewDescription = document.getElementById('preview-description');
-            const previewTopics = document.getElementById('preview-topics');
-            const xmlOutput = document.getElementById('xml-output');
-            const xmlOutputContainer = document.getElementById('xml-output-container');
-            const downloadXmlBtn = document.getElementById('download-xml');
-            
-            // Update preview as user types
-            const titleInput = document.getElementById('sim-title');
-            const descriptionInput = document.getElementById('sim-description');
-            const imageInput = document.getElementById('sim-image');
-            const urlInput = document.getElementById('sim-url');
-            const platformSelect = document.getElementById('sim-platform');
-            
-            [titleInput, descriptionInput, imageInput, urlInput, platformSelect].forEach(input => {
-                input.addEventListener('input', updatePreview);
-            });
-            
-            function updatePreview() {
-                const title = titleInput.value;
-                const description = descriptionInput.value;
-                const imageUrl = imageInput.value;
-                const platform = platformSelect.value;
-                
-                if (title || imageUrl || platform) {
-                    previewContainer.classList.remove('hidden');
-                    
-                    previewTitle.textContent = title || 'Simulation Title';
-                    previewDescription.textContent = description || '';
-                    previewPlatform.textContent = platform || 'Platform';
-                    
-                    if (imageUrl) {
-                        previewImage.src = imageUrl;
-                        previewImage.onerror = function() {
-                            this.src = 'https://via.placeholder.com/300x180?text=Image+Not+Found';
-                        };
-                    } else {
-                        previewImage.src = 'https://via.placeholder.com/300x180?text=No+Image';
-                    }
-                    
-                    // Update topics from all dropdown selections
-                    previewTopics.innerHTML = '';
-                    const selectedTopics = getAllSelectedTopics();
-                    selectedTopics.forEach(topic => {
-                        const topicSpan = document.createElement('span');
-                        topicSpan.className = 'simulation-topic';
-                        topicSpan.textContent = topic;
-                        previewTopics.appendChild(topicSpan);
-                    });
-                }
-            }
-            
-            // Generate XML
-            simulationForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const title = titleInput.value.trim();
-                const description = descriptionInput.value.trim();
-                const imageUrl = imageInput.value.trim();
-                const simUrl = urlInput.value.trim();
-                const platform = platformSelect.value;
-                
-                // Get selected topics from all dropdowns
-                const selectedTopics = getAllSelectedTopics();
-                
-                if (!title || !imageUrl || !simUrl || !platform || selectedTopics.length === 0) {
-                    alert('Please fill in all required fields and select at least one topic.');
-                    return;
-                }
-                
-                // Generate a unique ID based on timestamp
-                const timestamp = new Date().getTime();
-                const id = `sim-${timestamp.toString().slice(-6)}`;
-                
-                // Create XML
-                let xml = `<simulation>\n`;
-                xml += `  <id>\n    ${id}\n  </id>\n`;
-                xml += `  <title>\n    ${title}\n  </title>\n`;
-                if (description) {
-                    xml += `  <description>\n    ${description}\n  </description>\n`;
-                } else {
-                    xml += `  <description></description>\n`;
-                }
-                xml += `  <image>\n    ${imageUrl}\n  </image>\n`;
-                xml += `  <url>\n    ${simUrl}\n  </url>\n`;
-                xml += `  <platform>\n    ${platform}\n  </platform>\n`;
-                xml += `  <topics>\n`;
-                
-                selectedTopics.forEach(topic => {
-                    xml += `    <topic>${topic}</topic>\n`;
-                });
-                
-                xml += `  </topics>\n`;
-                xml += `</simulation>`;
-                
-                // Display XML
-                xmlOutput.textContent = xml;
-                xmlOutputContainer.classList.remove('hidden');
-                
-                // Create a success message
-                const resultMessage = document.createElement('div');
-                resultMessage.className = 'result-message success';
-                resultMessage.textContent = 'XML generated successfully! You can now download it.';
-                
-                // Remove any existing message
-                const existingMessage = document.querySelector('.result-message');
-                if (existingMessage) {
-                    existingMessage.remove();
-                }
-                
-                // Insert the message before the XML output
-                xmlOutputContainer.insertBefore(resultMessage, xmlOutputContainer.firstChild);
-                
-                // Scroll to the XML output
-                xmlOutputContainer.scrollIntoView({ behavior: 'smooth' });
-                
-                // Enable download - remove any previous event listeners
-                downloadXmlBtn.removeEventListener('click', downloadXmlHandler);
-                downloadXmlBtn.addEventListener('click', downloadXmlHandler);
-            });
-            
-            function downloadXmlHandler() {
-                const xml = xmlOutput.textContent;
-                const blob = new Blob([xml], { type: 'application/xml' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `simulation-${new Date().getTime().toString().slice(-6)}.xml`;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-            }
-        });
-    </script>
+            <div id="cms-status" class="admin-status"></div>
+
+            <div class="admin-grid">
+                <section class="admin-panel">
+                    <h3 id="editor-heading">Create Simulation</h3>
+                    <form id="simulation-form" class="simulation-form">
+                        <div class="inline-fields">
+                            <div class="form-group">
+                                <label for="simulation-id">Simulation ID</label>
+                                <input id="simulation-id" name="id" type="text" placeholder="js-050" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sort-order">Sort Order</label>
+                                <input id="sort-order" name="sortOrder" type="number" min="0" step="1" placeholder="50">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input id="title" name="title" type="text" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" name="description"></textarea>
+                        </div>
+
+                        <div class="inline-fields">
+                            <div class="form-group">
+                                <label for="image">Image URL</label>
+                                <input id="image" name="image" type="text" placeholder="../barometer/barometer.png">
+                            </div>
+                            <div class="form-group">
+                                <label for="url">Launch URL</label>
+                                <input id="url" name="url" type="text" placeholder="../barometer/">
+                            </div>
+                        </div>
+
+                        <div class="inline-fields">
+                            <div class="form-group">
+                                <label for="platform">Platform</label>
+                                <select id="platform" name="platform">
+                                    <option value="JavaScript">JavaScript</option>
+                                    <option value="GeoGebra">GeoGebra</option>
+                                    <option value="EJSS">EJSS</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="author">Author</label>
+                                <input id="author" name="author" type="text" value="Tan Seng Kwang">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topics">Topics</label>
+                            <input id="topics" name="topics" type="text" placeholder="pressure, electricity">
+                            <p class="topics-input-hint">Use comma-separated topic IDs such as `pressure`, `electromagnetic-induction`, `kinematics`.</p>
+                        </div>
+
+                        <div class="admin-toolbar">
+                            <button type="submit" class="admin-button">Save Card</button>
+                            <button type="button" id="reset-form-button" class="admin-button neutral">Reset</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="admin-panel">
+                    <h3>Existing Cards</h3>
+                    <div id="simulations-list" class="simulation-list">
+                        <div class="empty-state">No simulations loaded yet.</div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/admin.js"></script>
 </body>
 </html>

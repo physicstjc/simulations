@@ -4532,5 +4532,15 @@
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
  </simulation>
-    
+
+ <simulation>
+  <id>js-050</id>
+  <title>Barometer</title>
+  <description>Interactive barometer simulation with selectable liquids, probe-based pressure readouts, and environment controls for altitude and planets.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/barometer.png</image>
+  <url>https://physicstjc.github.io/sls/barometer/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>pressure</topic></topics>
+ </simulation>
+
  </simulations>

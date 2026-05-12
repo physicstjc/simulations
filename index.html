@@ -2,19 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulations Collection</title>
+    <link rel="stylesheet" href="css/styles.css">
+        <script type="module" src="js/simulations.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SNZS72FS2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Immediate redirect -->
-    <meta http-equiv="refresh" content="0; url=https://physicstjc.github.io/sls/simulations/">
-
-    <script>
-        // Fallback redirect (in case meta refresh is blocked)
-        window.location.href = "https://physicstjc.github.io/sls/simulations/";
-    </script>
+  gtag('config', 'G-4SNZS72FS2');
+</script>
 </head>
 <body>
-    <p>If you are not redirected automatically, 
-        <a href="https://physicstjc.github.io/sls/simulations/">click here</a>.
-    </p>
+    <header class="header-nav-container">
+        <div class="header-content">
+            <h1><a href="index.html" class="home-link">Physics Simulations</a></h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search simulations...">
+                <button id="search-button">Search</button>
+            </div>
+            <a href="https://physicslens.com" class="blog-link">Blog</a>
+        </div>
+        
+        <!-- Mobile hamburger menu -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-menu" id="navigation">
+                <!-- Navigation will be populated by JavaScript -->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="simulations-container">
+        <!-- Content will be populated by JavaScript -->
+    </main>
+    
+    <footer>
+        <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="admin-link">CC BY-NC-SA 4.0</a> Physics Simulations Collection | <a href="admin.html" class="admin-link">Admin</a> | <a href="https://physicslens.com" class="admin-link">Blog</a></p>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">↑</button>
 </body>
 </html>
