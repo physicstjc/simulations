@@ -174,6 +174,7 @@ function initializeSearch() {
     searchButton.addEventListener('click', function() {
         const query = searchInput.value.trim();
         if (query) {
+            resetTopicFilter();
             performSearch(query);
         }
     });
@@ -182,10 +183,18 @@ function initializeSearch() {
         if (event.key === 'Enter') {
             const query = searchInput.value.trim();
             if (query) {
+                resetTopicFilter();
                 performSearch(query);
             }
         }
     });
+}
+
+function resetTopicFilter() {
+    const dropdown = document.getElementById('topic-dropdown');
+    if (dropdown) {
+        dropdown.value = '';
+    }
 }
 
 function performSearch(queryText) {
@@ -226,14 +235,20 @@ function setupNavigationHandlers() {
 
     dropdown.onchange = function() {
         const topicId = dropdown.value;
+        const searchInput = document.getElementById('search-input');
+
+        // Applying a topic filter clears search.
+        if (searchInput) {
+            searchInput.value = '';
+        }
+
         if (!topicId) {
+            processSimulations(window.simulationsData || []);
             return;
         }
 
-        const section = document.getElementById(topicId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        const topicName = dropdown.options[dropdown.selectedIndex]?.text || topicId;
+        filterByTopic(topicId, topicName);
 
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const mainNav = document.getElementById('main-nav');
@@ -245,7 +260,7 @@ function setupNavigationHandlers() {
     };
 }
 
-function filterByTopic(topicName) {
+function filterByTopic(topicId, topicName) {
     const simulations = window.simulationsData || [];
     const container = document.getElementById('simulations-container');
 
@@ -254,8 +269,9 @@ function filterByTopic(topicName) {
     }
 
     container.innerHTML = '';
-    const topicId = topicName.toLowerCase().replace(/\s+/g, '-');
-    const matchingSimulations = simulations.filter(sim => sim.topics.some(topic => topic.toLowerCase() === topicId));
+    const matchingSimulations = simulations.filter(sim =>
+        sim.topics.some(topic => topic.toLowerCase().replace(/[,\s]+/g, '-') === topicId)
+    );
 
     if (matchingSimulations.length === 0) {
         container.innerHTML = `<div class="no-results"><h2>No simulations found for "${topicName}"</h2><p>Try browsing other categories.</p></div>`;
