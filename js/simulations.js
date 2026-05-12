@@ -11,6 +11,7 @@ const THEMES = {
 };
 
 window.simulationsData = [];
+let navThemesData = {};
 
 document.addEventListener('DOMContentLoaded', async function() {
     initializeMobileMenu();
@@ -108,24 +109,13 @@ function processSimulations(simulations) {
         });
     });
 
+    navThemesData = {};
     let navHTML = '';
     Object.entries(THEMES).forEach(([themeName, themeTopics]) => {
         const availableTopics = themeTopics.filter(topicId => orderedTopics.some(([id]) => id === topicId));
-
         if (availableTopics.length > 0) {
-            navHTML += `
-                <li class="nav-item">
-                    <button class="nav-button" data-theme="${themeName}">${themeName}</button>
-                    <div class="dropdown-menu">
-                        <ul class="dropdown-list">
-                            ${availableTopics.map(topicId => {
-                                const topicDisplay = topicsMap.get(topicId);
-                                return `<li><button class="dropdown-link" data-topic="${topicDisplay}">${topicDisplay}</button></li>`;
-                            }).join('')}
-                        </ul>
-                    </div>
-                </li>
-            `;
+            navThemesData[themeName] = availableTopics.map(topicId => topicsMap.get(topicId));
+            navHTML += `<li class="nav-item"><button class="nav-button" data-theme="${themeName}">${themeName}</button></li>`;
         }
     });
 
@@ -133,21 +123,23 @@ function processSimulations(simulations) {
     const otherTopics = orderedTopics.filter(([id]) => !categorizedTopics.includes(id));
 
     if (otherTopics.length > 0) {
-        navHTML += `
-            <li class="nav-item">
-                <button class="nav-button" data-theme="Other">Other Topics</button>
-                <div class="dropdown-menu">
-                    <ul class="dropdown-list">
-                        ${otherTopics.map(([, topic]) => `<li><button class="dropdown-link" data-topic="${topic}">${topic}</button></li>`).join('')}
-                    </ul>
-                </div>
-            </li>
-        `;
+        navThemesData['Other'] = otherTopics.map(([, display]) => display);
+        navHTML += `<li class="nav-item"><button class="nav-button" data-theme="Other">Other Topics</button></li>`;
     }
 
     navContainer.className = 'nav-menu';
     navContainer.innerHTML = navHTML;
-    setupNavigationHandlers();
+
+    // Create/reset topics panel as a sibling inside <nav>
+    let topicsPanel = document.getElementById('nav-topics-panel');
+    if (!topicsPanel) {
+        topicsPanel = document.createElement('div');
+        topicsPanel.id = 'nav-topics-panel';
+        topicsPanel.className = 'nav-topics-panel';
+        navContainer.parentElement.appendChild(topicsPanel);
+    }
+    topicsPanel.innerHTML = '';
+    topicsPanel.classList.remove('active');
 
     orderedTopics.forEach(([id]) => {
         if (topics[id]) {
@@ -242,17 +234,7 @@ function performSearch(queryText) {
 }
 
 function setupNavigationHandlers() {
-    const dropdownLinks = document.querySelectorAll('.dropdown-link');
-
-    dropdownLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const topic = this.getAttribute('data-topic');
-            if (topic) {
-                filterByTopic(topic);
-            }
-        });
-    });
+    // Topics links are dynamically created in the click handler
 }
 
 function filterByTopic(topicName) {
@@ -302,24 +284,39 @@ function initializeMobileMenu() {
     });
 
     mainNav.addEventListener('click', function(event) {
-        if (event.target.classList.contains('dropdown-link') || event.target.closest('.dropdown-link')) {
-            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('dropdown-open'));
-            if (window.innerWidth <= 768) {
-                closeMobileMenu();
+        const topicsPanel = document.getElementById('nav-topics-panel');
+
+        if (event.target.classList.contains('topics-link') || event.target.closest('.topics-link')) {
+            const topic = (event.target.closest('.topics-link') || event.target).getAttribute('data-topic');
+            if (topic) {
+                filterByTopic(topic);
             }
+            topicsPanel?.classList.remove('active');
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('dropdown-open'));
+            closeMobileMenu();
+            return;
         }
 
         if (event.target.classList.contains('nav-button') || event.target.closest('.nav-button')) {
-            const navItem = event.target.closest('.nav-item');
-            if (navItem) {
-                const isOpen = navItem.classList.contains('dropdown-open');
-                const allNavItems = document.querySelectorAll('.nav-item');
-                allNavItems.forEach(item => item.classList.remove('dropdown-open'));
-                if (!isOpen) {
-                    navItem.classList.add('dropdown-open');
-                }
-                event.stopPropagation();
+            const button = event.target.closest('.nav-button');
+            const navItem = button.closest('.nav-item');
+            const themeName = button.getAttribute('data-theme');
+            const allNavItems = document.querySelectorAll('.nav-item');
+
+            const isOpen = navItem.classList.contains('dropdown-open');
+            allNavItems.forEach(item => item.classList.remove('dropdown-open'));
+
+            if (!isOpen && topicsPanel && navThemesData[themeName]) {
+                navItem.classList.add('dropdown-open');
+                const topics = navThemesData[themeName];
+                topicsPanel.innerHTML = `<ul class="topics-list">${topics.map(t =>
+                    `<li><button class="topics-link" data-topic="${t}">${t}</button></li>`
+                ).join('')}</ul>`;
+                topicsPanel.classList.add('active');
+            } else {
+                topicsPanel?.classList.remove('active');
             }
+            event.stopPropagation();
         }
     });
 
@@ -327,6 +324,7 @@ function initializeMobileMenu() {
         if (!hamburgerMenu.contains(event.target) && !mainNav.contains(event.target)) {
             closeMobileMenu();
             document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('dropdown-open'));
+            document.getElementById('nav-topics-panel')?.classList.remove('active');
         }
     });
 

@@ -160,6 +160,8 @@ header h1 {
     visibility: hidden;
     transition: opacity 0.18s ease, transform 0.18s ease;
     box-shadow: none;
+    display: flex;
+    align-items: flex-start;
 }
 
 .main-nav.active {
@@ -180,13 +182,57 @@ header h1 {
 }
 
 #navigation.nav-menu {
-    display: block;
-    gap: 0;
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0.52rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 0 0 auto;
+    min-width: 170px;
+    padding: 0.52rem 0.75rem 0.52rem 1rem;
     background: #ffe64a;
-    border-top: 2px solid var(--ink-strong);
+}
+
+.nav-topics-panel {
+    display: none;
+    flex: 1;
+    padding: 0.52rem 1rem 0.52rem 0.75rem;
+    border-left: 2px solid var(--ink-strong);
+    max-height: 68vh;
+    overflow-y: auto;
+}
+
+.nav-topics-panel.active {
+    display: block;
+}
+
+.topics-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.topics-link {
+    width: 100%;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #111827;
+    padding: 0.42rem 0.6rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background 0.12s ease;
+}
+
+.topics-link:hover {
+    background: #fff7c2;
+    border-color: var(--ink-strong);
 }
 
 .nav-item {
@@ -535,12 +581,20 @@ footer {
     }
 
     #navigation.nav-menu {
-        display: block;
-        max-height: 68vh;
+        flex-direction: column;
+        max-height: 40vh;
         overflow-y: auto;
         padding: 0.75rem;
-        background: #ffe64a;
-        border-top: 2px solid var(--ink-strong);
+        min-width: 0;
+        width: 45%;
+        flex-shrink: 0;
+    }
+
+    .nav-topics-panel {
+        border-left: 2px solid var(--ink-strong);
+        max-height: 40vh;
+        padding: 0.75rem;
+        overflow-y: auto;
     }
 
     .nav-item {
@@ -552,23 +606,6 @@ footer {
         width: 100%;
         border-radius: 8px;
         box-shadow: 2px 2px 0 var(--ink-strong);
-    }
-
-    .dropdown-menu {
-        position: static;
-        min-width: 0;
-        margin-top: 0.45rem;
-        box-shadow: 3px 3px 0 var(--ink-strong);
-        border-radius: 8px;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-    }
-
-    .nav-item.dropdown-open .dropdown-menu,
-    .nav-item:hover .dropdown-menu {
-        display: block;
     }
 
     #simulations-container {
