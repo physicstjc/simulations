@@ -192,12 +192,12 @@ header h1 {
 }
 
 .nav-topics-panel {
-    display: none;
-    flex: 1;
-    padding: 0.52rem 1rem 0.52rem 0.75rem;
-    border-left: 2px solid var(--ink-strong);
-    max-height: 68vh;
-    overflow-y: auto;
+    display: block !important;
+    background: #fff7c2 !important;
+    border: 3px solid red !important;
+    color: #111;
+    min-width: 220px;
+    z-index: 2000;
 }
 
 .nav-topics-panel.active {
