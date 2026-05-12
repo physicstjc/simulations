@@ -22,23 +22,10 @@
     <main class="admin-shell">
         <section class="admin-panel" id="auth-panel">
             <h2>Admin Access</h2>
-            <p class="admin-subtext">Sign in with Firebase Authentication. Email/password users can create, edit, and delete simulation cards in Firestore.</p>
-            <form id="login-form" class="login-form">
-                <div class="inline-fields">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" autocomplete="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input id="password" name="password" type="password" autocomplete="current-password" required>
-                    </div>
-                </div>
-                <div class="admin-toolbar">
-                    <button type="submit" class="admin-button">Sign In</button>
-                    <button type="button" id="register-button" class="admin-button secondary">Create Account</button>
-                </div>
-            </form>
+            <p class="admin-subtext">Sign in with Google. Only <strong>wboson2007@gmail.com</strong> and accounts ending with <strong>@moe.edu.sg</strong> can access editing.</p>
+            <div class="admin-toolbar">
+                <button type="button" id="google-login-button" class="admin-button">Sign In With Google</button>
+            </div>
             <div id="auth-status" class="admin-status"></div>
         </section>
 

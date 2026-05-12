@@ -1,4 +1,5 @@
 import {
+    addDoc,
     collection,
     deleteDoc,
     doc,
@@ -9,12 +10,15 @@ import {
     serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 import {
-    createUserWithEmailAndPassword,
+    GoogleAuthProvider,
     onAuthStateChanged,
-    signInWithEmailAndPassword,
+    signInWithPopup,
     signOut
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 import { auth, db } from "./firebase-config.js";
+
+const ALLOWED_EMAIL = 'wboson2007@gmail.com';
+const ALLOWED_DOMAIN = '@moe.edu.sg';
 
 const state = {
     simulations: [],
@@ -34,8 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function cacheDom() {
     elements.authPanel = document.getElementById('auth-panel');
     elements.cmsPanel = document.getElementById('cms-panel');
-    elements.loginForm = document.getElementById('login-form');
-    elements.registerButton = document.getElementById('register-button');
+    elements.googleLoginButton = document.getElementById('google-login-button');
     elements.logoutButton = document.getElementById('logout-button');
     elements.authStatus = document.getElementById('auth-status');
     elements.cmsStatus = document.getElementById('cms-status');
@@ -59,8 +62,7 @@ function cacheDom() {
 }
 
 function bindEvents() {
-    elements.loginForm.addEventListener('submit', handleLogin);
-    elements.registerButton.addEventListener('click', handleRegister);
+    elements.googleLoginButton.addEventListener('click', handleGoogleLogin);
     elements.logoutButton.addEventListener('click', handleLogout);
     elements.form.addEventListener('submit', handleSaveSimulation);
     elements.resetFormButton.addEventListener('click', resetForm);
@@ -73,6 +75,16 @@ function bindEvents() {
 function attachAuthListener() {
     onAuthStateChanged(auth, async user => {
         if (user) {
+            if (!isAuthorizedUser(user)) {
+                await recordAudit('auth_denied', {
+                    reason: 'Email not in allowlist',
+                    attemptedEmail: user.email || null
+                });
+                await signOut(auth);
+                setStatus(elements.authStatus, 'Access denied. Only wboson2007@gmail.com and @moe.edu.sg accounts can access CMS.', 'error');
+                return;
+            }
+
             elements.authPanel.classList.add('hidden-panel');
             elements.cmsPanel.classList.remove('hidden-panel');
             setStatus(elements.cmsStatus, `Signed in as ${user.email}`, 'success');
@@ -87,39 +99,36 @@ function attachAuthListener() {
     });
 }
 
-async function handleLogin(event) {
-    event.preventDefault();
-
-    const email = elements.loginForm.email.value.trim();
-    const password = elements.loginForm.password.value;
+async function handleGoogleLogin() {
+    const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({ prompt: 'select_account' });
 
     try {
-        await signInWithEmailAndPassword(auth, email, password);
-        elements.loginForm.reset();
+        const result = await signInWithPopup(auth, provider);
+        if (!isAuthorizedUser(result.user)) {
+            await recordAudit('auth_denied', {
+                reason: 'Email not in allowlist',
+                attemptedEmail: result.user.email || null
+            });
+            await signOut(auth);
+            setStatus(elements.authStatus, 'Access denied. Only wboson2007@gmail.com and @moe.edu.sg accounts can access CMS.', 'error');
+            return;
+        }
+
+        await recordAudit('auth_login', {
+            email: result.user.email || null,
+            method: 'google'
+        });
         setStatus(elements.authStatus, 'Signed in successfully.', 'success');
     } catch (error) {
         setStatus(elements.authStatus, error.message, 'error');
     }
 }
 
-async function handleRegister() {
-    const email = elements.loginForm.email.value.trim();
-    const password = elements.loginForm.password.value;
-
-    if (!email || !password) {
-        setStatus(elements.authStatus, 'Enter email and password before creating an account.', 'error');
-        return;
-    }
-
-    try {
-        await createUserWithEmailAndPassword(auth, email, password);
-        setStatus(elements.authStatus, 'Admin account created and signed in.', 'success');
-    } catch (error) {
-        setStatus(elements.authStatus, error.message, 'error');
-    }
-}
-
 async function handleLogout() {
+    await recordAudit('auth_logout', {
+        email: auth.currentUser?.email || null
+    });
     await signOut(auth);
 }
 
@@ -140,6 +149,10 @@ async function loadSimulations() {
 
 async function handleSaveSimulation(event) {
     event.preventDefault();
+
+    if (!requireAuthorizedAccess()) {
+        return;
+    }
 
     const formData = new FormData(elements.form);
     const id = String(formData.get('id') || '').trim();
@@ -177,6 +190,10 @@ async function handleSaveSimulation(event) {
             ...payload,
             createdAt: existing?.createdAt || serverTimestamp()
         }, { merge: true });
+        await recordAudit(state.editingId ? 'update_simulation' : 'create_simulation', {
+            simulationId: id,
+            title: payload.title
+        });
         setStatus(elements.cmsStatus, state.editingId ? `Updated ${payload.title}.` : `Created ${payload.title}.`, 'success');
         resetForm();
         await loadSimulations();
@@ -237,8 +254,16 @@ function renderSimulations() {
                 return;
             }
 
+            if (!requireAuthorizedAccess()) {
+                return;
+            }
+
             try {
                 await deleteDoc(doc(db, 'simulations', simulation.firestoreId));
+                await recordAudit('delete_simulation', {
+                    simulationId: simulation.firestoreId,
+                    title: simulation.title || null
+                });
                 setStatus(elements.cmsStatus, `Deleted ${simulation.title}.`, 'success');
                 if (state.editingId === simulation.firestoreId) {
                     resetForm();
@@ -297,28 +322,44 @@ function filterSimulations() {
 }
 
 async function importFromXml() {
-    const confirmed = window.confirm('Import all records from data/simulations.xml into Firestore? Existing documents with the same IDs will be overwritten.');
+    if (!requireAuthorizedAccess()) {
+        return;
+    }
+
+    const confirmed = window.confirm('Import records from data/simulations.xml and data/simulations_backup.xml into Firestore? Existing IDs from simulations.xml take priority, and backup records fill missing historical entries.');
     if (!confirmed) {
         return;
     }
 
     try {
-        const response = await fetch(`data/simulations.xml?v=${Date.now()}`);
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+        const timestamp = Date.now();
+        const [primaryNodes, backupNodes] = await Promise.all([
+            loadSimulationNodes(`data/simulations.xml?v=${timestamp}`),
+            loadSimulationNodes(`data/simulations_backup.xml?v=${timestamp}`)
+        ]);
+
+        const mergedById = new Map();
+
+        for (const node of primaryNodes) {
+            const id = (node.querySelector('id')?.textContent || '').trim();
+            if (!id) {
+                continue;
+            }
+            mergedById.set(id, node);
         }
 
-        const xmlText = await response.text();
-        const xmlDoc = new DOMParser().parseFromString(xmlText, 'text/xml');
-        const parserError = xmlDoc.querySelector('parsererror');
-        if (parserError) {
-            throw new Error('XML parsing failed.');
+        for (const node of backupNodes) {
+            const id = (node.querySelector('id')?.textContent || '').trim();
+            if (!id || mergedById.has(id)) {
+                continue;
+            }
+            mergedById.set(id, node);
         }
 
-        const simulationNodes = Array.from(xmlDoc.querySelectorAll('simulation'));
         let importedCount = 0;
+        const mergedNodes = Array.from(mergedById.values());
 
-        for (const [index, node] of simulationNodes.entries()) {
+        for (const [index, node] of mergedNodes.entries()) {
             const id = (node.querySelector('id')?.textContent || '').trim();
             if (!id) {
                 continue;
@@ -328,6 +369,7 @@ async function importFromXml() {
                 id,
                 title: (node.querySelector('title')?.textContent || 'Untitled').trim(),
                 description: (node.querySelector('description')?.textContent || '').trim(),
+                // Keep XML image URLs exactly as authored (including direct GeoGebra links).
                 image: (node.querySelector('image')?.textContent || '').trim(),
                 url: (node.querySelector('url')?.textContent || '#').trim(),
                 platform: (node.querySelector('platform')?.textContent || 'Unknown').trim(),
@@ -342,10 +384,66 @@ async function importFromXml() {
             importedCount += 1;
         }
 
-        setStatus(elements.cmsStatus, `Imported ${importedCount} simulations from XML into Firestore.`, 'success');
+        setStatus(elements.cmsStatus, `Imported ${importedCount} merged simulations from XML into Firestore.`, 'success');
+        await recordAudit('import_xml', {
+            importedCount,
+            sourceFiles: ['data/simulations.xml', 'data/simulations_backup.xml']
+        });
         await loadSimulations();
     } catch (error) {
+        await recordAudit('import_xml_failed', {
+            error: error.message
+        });
         setStatus(elements.cmsStatus, `Import failed: ${error.message}`, 'error');
+    }
+}
+
+async function loadSimulationNodes(xmlUrl) {
+    const response = await fetch(xmlUrl);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch ${xmlUrl} (HTTP ${response.status})`);
+    }
+
+    const xmlText = await response.text();
+    const xmlDoc = new DOMParser().parseFromString(xmlText, 'text/xml');
+    const parserError = xmlDoc.querySelector('parsererror');
+    if (parserError) {
+        throw new Error(`XML parsing failed for ${xmlUrl}.`);
+    }
+
+    return Array.from(xmlDoc.querySelectorAll('simulation'));
+}
+
+function isAuthorizedEmail(email) {
+    const normalized = String(email || '').trim().toLowerCase();
+    return normalized === ALLOWED_EMAIL || normalized.endsWith(ALLOWED_DOMAIN);
+}
+
+function isAuthorizedUser(user) {
+    return isAuthorizedEmail(user?.email || '');
+}
+
+function requireAuthorizedAccess() {
+    if (isAuthorizedUser(auth.currentUser)) {
+        return true;
+    }
+
+    setStatus(elements.cmsStatus, 'Access denied. Only wboson2007@gmail.com and @moe.edu.sg accounts can edit.', 'error');
+    return false;
+}
+
+async function recordAudit(action, details = {}) {
+    try {
+        await addDoc(collection(db, 'auditLogs'), {
+            action,
+            ...details,
+            userEmail: auth.currentUser?.email || null,
+            userUid: auth.currentUser?.uid || null,
+            userAgent: navigator.userAgent,
+            createdAt: serverTimestamp()
+        });
+    } catch (error) {
+        console.error('Failed to write audit log:', error);
     }
 }
 

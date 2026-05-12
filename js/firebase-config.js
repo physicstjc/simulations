@@ -1,14 +1,32 @@
 // Firebase configuration for Physics Simulations
 // The API key is intentionally in client-side code — this is the standard Firebase web
 // pattern. Security is enforced by Firestore Security Rules, not by the API key.
-// Required Firestore rules (set in Firebase Console → Firestore → Rules):
+// Required Firestore rules (set in Firebase Console -> Firestore -> Rules):
 //
 //   rules_version = '2';
 //   service cloud.firestore {
 //     match /databases/{database}/documents {
 //       match /simulations/{simId} {
 //         allow read: if true;              // public read
-//         allow write: if request.auth != null; // authenticated write only
+//         allow write: if request.auth != null
+//           && (
+//             request.auth.token.email == 'wboson2007@gmail.com'
+//             || request.auth.token.email.matches('.*@moe\\.edu\\.sg$')
+//           );
+//       }
+//
+//       match /auditLogs/{logId} {
+//         allow create: if request.auth != null
+//           && (
+//             request.auth.token.email == 'wboson2007@gmail.com'
+//             || request.auth.token.email.matches('.*@moe\\.edu\\.sg$')
+//           );
+//         allow read: if request.auth != null
+//           && (
+//             request.auth.token.email == 'wboson2007@gmail.com'
+//             || request.auth.token.email.matches('.*@moe\\.edu\\.sg$')
+//           );
+//         allow update, delete: if false;
 //       }
 //     }
 //   }
