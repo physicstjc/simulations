@@ -340,10 +340,56 @@ section h2 {
     text-transform: uppercase;
 }
 
+
 .simulation-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 0.25rem;
+    gap: 1.2rem;
+    margin-bottom: 2.2rem;
+}
+
+/* Sidebar navigation styles */
+.nav-sidebar {
+    display: block;
+    width: 260px;
+    background: #fff7c2;
+    border: 3px solid var(--ink-strong);
+    border-radius: 12px;
+    padding: 1.1rem 1.2rem 1.1rem 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 4px 4px 0 var(--ink-strong);
+}
+.nav-theme-title {
+    display: block;
+    font-size: 1.02rem;
+    font-weight: 800;
+    color: var(--ink-strong);
+    margin-bottom: 0.3rem;
+    margin-top: 1.1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.nav-topic-list {
+    list-style: none;
+    padding: 0 0 0 0.7rem;
+    margin: 0 0 0.7rem 0;
+}
+.nav-topic-item {
+    margin-bottom: 0.18rem;
+}
+.nav-topic-link {
+    color: #111827;
+    text-decoration: none;
+    font-size: 0.98rem;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 0.22rem 0.5rem;
+    display: inline-block;
+    transition: background 0.13s;
+}
+.nav-topic-link:hover, .nav-topic-link:focus {
+    background: #ffe64a;
+    color: var(--ink-strong);
 }
 
 .simulation-card {

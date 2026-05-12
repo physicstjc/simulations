@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 async function loadSimulations() {
     const navContainer = document.getElementById('navigation');
     const container = document.getElementById('simulations-container');
-
     if (!navContainer || !container) {
         console.error('Required DOM elements not found');
         return;
@@ -64,11 +63,7 @@ function normalizeSimulation(doc) {
 function processSimulations(simulations) {
     const container = document.getElementById('simulations-container');
     const navContainer = document.getElementById('navigation');
-
-    if (!container || !navContainer) {
-        return;
-    }
-
+    if (!container || !navContainer) return;
     container.innerHTML = '';
 
     const isJavaScriptPage = window.location.pathname.includes('javascript.html');
@@ -78,24 +73,15 @@ function processSimulations(simulations) {
     const topics = {};
 
     simulations.forEach(sim => {
-        if (isJavaScriptPage && sim.platform !== 'JavaScript') {
-            return;
-        }
-
+        if (isJavaScriptPage && sim.platform !== 'JavaScript') return;
         const addedToTopics = new Set();
-
         sim.topics.forEach(rawTopic => {
-            const id = rawTopic.toLowerCase().replace(/[,\s]+/g, '-');
-
-            if (!topics[id]) {
-                topics[id] = [];
-            }
-
+            const id = rawTopic.toLowerCase().replace(/[\,\s]+/g, '-');
+            if (!topics[id]) topics[id] = [];
             if (!addedToTopics.has(id)) {
                 topics[id].push(sim);
                 addedToTopics.add(id);
             }
-
             if (!seenTopics.has(id)) {
                 const displayText = rawTopic
                     .replace(/-/g, ' ')
@@ -109,44 +95,37 @@ function processSimulations(simulations) {
         });
     });
 
-    navThemesData = {};
+    // Build sidebar navigation: all categories and topics always visible
     let navHTML = '';
     Object.entries(THEMES).forEach(([themeName, themeTopics]) => {
         const availableTopics = themeTopics.filter(topicId => orderedTopics.some(([id]) => id === topicId));
         if (availableTopics.length > 0) {
-            navThemesData[themeName] = availableTopics.map(topicId => topicsMap.get(topicId));
-            navHTML += `<li class="nav-item"><button class="nav-button" data-theme="${themeName}">${themeName}</button></li>`;
+            navHTML += `<li class="nav-item nav-theme"><span class="nav-theme-title">${themeName}</span><ul class="nav-topic-list">`;
+            availableTopics.forEach(topicId => {
+                navHTML += `<li class="nav-topic-item"><a href="#${topicId}" class="nav-topic-link">${topicsMap.get(topicId)}</a></li>`;
+            });
+            navHTML += `</ul></li>`;
         }
     });
-
+    // Add uncategorized topics
     const categorizedTopics = Object.values(THEMES).flat();
     const otherTopics = orderedTopics.filter(([id]) => !categorizedTopics.includes(id));
-
     if (otherTopics.length > 0) {
-        navThemesData['Other'] = otherTopics.map(([, display]) => display);
-        navHTML += `<li class="nav-item"><button class="nav-button" data-theme="Other">Other Topics</button></li>`;
+        navHTML += `<li class="nav-item nav-theme"><span class="nav-theme-title">Other Topics</span><ul class="nav-topic-list">`;
+        otherTopics.forEach(([id, display]) => {
+            navHTML += `<li class="nav-topic-item"><a href="#${id}" class="nav-topic-link">${display}</a></li>`;
+        });
+        navHTML += `</ul></li>`;
     }
-
-    navContainer.className = 'nav-menu';
+    navContainer.className = 'nav-menu nav-sidebar';
     navContainer.innerHTML = navHTML;
 
-    // Create/reset topics panel as a sibling inside <nav>
-    let topicsPanel = document.getElementById('nav-topics-panel');
-    if (!topicsPanel) {
-        topicsPanel = document.createElement('div');
-        topicsPanel.id = 'nav-topics-panel';
-        topicsPanel.className = 'nav-topics-panel';
-        navContainer.parentElement.appendChild(topicsPanel);
-    }
-    topicsPanel.innerHTML = '';
-    topicsPanel.classList.remove('active');
-
+    // Render all topic sections as before
     orderedTopics.forEach(([id]) => {
         if (topics[id]) {
             const section = document.createElement('section');
             section.id = id;
             section.innerHTML = `<h2>${topicsMap.get(id)}</h2><div class="simulation-grid"></div>`;
-
             const grid = section.querySelector('.simulation-grid');
             topics[id].forEach(sim => grid.appendChild(createSimulationCard(sim)));
             container.appendChild(section);
