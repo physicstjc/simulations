@@ -7,7 +7,7 @@
   <title>
    Using a Vernier Scale
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/PxFdhgEk/ItUZwos5WzsKWPvJ/material-PxFdhgEk-thumb.png
   </image>
@@ -20,7 +20,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>GreenMaths</author></simulation>
  <simulation>
   <id>
    sim-002
@@ -28,7 +28,7 @@
   <title>
    Vernier Calipers
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/b67besak/ld1orXIRLtIZbBnh/material-b67besak-thumb.png
   </image>
@@ -41,7 +41,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-003
@@ -49,7 +49,7 @@
   <title>
    Vernier calipers with zero error
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-vernier-calipers-with-zero-error.png
   </image>
@@ -62,7 +62,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-004
@@ -70,7 +70,7 @@
   <title>
    Micrometer with zero error
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qedrwymk/rSDzrgkXrVgZUncg/material-qedrwymk-thumb.png
   </image>
@@ -83,7 +83,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-005
@@ -91,7 +91,7 @@
   <title>
    Standard Form and Prefixes
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qxjun83v/cYOqGtot7nXLSxHT/material-qxjun83v-thumb.png
   </image>
@@ -104,7 +104,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-001
@@ -112,7 +112,7 @@
   <title>
    Accuracy and Precision
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/JPWSCM3W/hvYIUlrAzaP8D0EX/material-JPWSCM3W-thumb.png
   </image>
@@ -125,7 +125,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Keith Harrison</author></simulation>
  <simulation>
   <id>
    sim-002
@@ -133,7 +133,7 @@
   <title>
    Vector Addition
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/FCknj7c3/zpUfDEUpSRypfwUv/material-FCknj7c3-thumb.png
   </image>
@@ -146,7 +146,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-003
@@ -154,7 +154,7 @@
   <title>
    Relative Velocity: Boat Crossing a River
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jgA3FrVk/gqsl3bzpLEWgQBpR/material-jgA3FrVk-thumb.png
   </image>
@@ -167,7 +167,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-004
@@ -175,7 +175,7 @@
   <title>
    Vector Addition
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-vector-addition.png
   </image>
@@ -188,7 +188,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-005
@@ -196,7 +196,7 @@
   <title>
    Relative velocity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/b9ehq8ua/oafNBAaZT1L7o3uX/material-b9ehq8ua-thumb.png
   </image>
@@ -209,7 +209,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-010
@@ -221,10 +221,10 @@
    Upload CSV data, plot a best-fit straight line graph with equation and screenshot option.
   </description>
   <image>
-   https://physicstjc.github.io/sls/graph-plotter/graph-plotter.png
+   ../graph-plotter/graph-plotter.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/graph-plotter/index.html
+   ../graph-plotter/index.html
   </url>
   <platform>
    JavaScript
@@ -232,7 +232,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-006
@@ -240,7 +240,7 @@
   <title>
    Displacement-time graph: average and instantaneous velocity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/mctbbgzn/7V0SIcQoGrV1ARvM/material-mctbbgzn-thumb.png
   </image>
@@ -253,7 +253,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-007
@@ -261,7 +261,7 @@
   <title>
    Position, Velocity, and Acceleration vs. Time Graphs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/pdNj3DgD/GzSrA2achtsxUgI5/material-pdNj3DgD-thumb.png
   </image>
@@ -274,7 +274,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-008
@@ -282,7 +282,7 @@
   <title>
    Acceleration Interaction Animation
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/eHCme87U/Bx8KUnZsvbJqYfop/material-eHCme87U-thumb.png
   </image>
@@ -295,7 +295,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>andy1987</author></simulation>
  <simulation>
   <id>
    sim-009
@@ -303,7 +303,7 @@
   <title>
    Parachute Applet by Abdul Latiff
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/wavar9bx/9aiVQduewxxZ2SZN/material-wavar9bx-thumb.png
   </image>
@@ -316,7 +316,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-010
@@ -324,7 +324,7 @@
   <title>
    Vertical Throw
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/zvsydy9f/t5Pj4VaEc6byURTn/material-zvsydy9f-thumb.png
   </image>
@@ -337,7 +337,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-011
@@ -345,7 +345,7 @@
   <title>
    Equations of Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/mfvvhjrj/95vTEnsmySAcQtHr/material-mfvvhjrj-thumb.png
   </image>
@@ -358,7 +358,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-012
@@ -366,7 +366,7 @@
   <title>
    Bouncing Ball
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dfb53dps/VXNSIAPtweP1sUow/material-dfb53dps-thumb.png
   </image>
@@ -379,7 +379,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-013
@@ -387,7 +387,7 @@
   <title>
    Graphs of Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tsn4x2jp/5qWaW6agovhawpXe/material-tsn4x2jp-thumb.png
   </image>
@@ -400,7 +400,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-006
@@ -408,7 +408,7 @@
   <title>
    Motion in a Straight Line Animation (with velocity)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/vhgwfrkj/gczQvKJeVLaAke5P/material-vhgwfrkj-thumb.png
   </image>
@@ -421,7 +421,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-007
@@ -429,7 +429,7 @@
   <title>
    Acceleration, velocity and displacement graphs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qpxcs6vb/in6MAwOxRT2onkzp/material-qpxcs6vb-thumb.png
   </image>
@@ -442,7 +442,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-008
@@ -450,7 +450,7 @@
   <title>
    Projectile Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/BXBMnZPS/gOcRuTnhQ3N0QxY4/material-BXBMnZPS-thumb.png
   </image>
@@ -463,7 +463,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-009
@@ -471,7 +471,7 @@
   <title>
    Projectile Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ysf6yxw4/zk212gNtI63FYigl/material-ysf6yxw4-thumb.png
   </image>
@@ -484,7 +484,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-010
@@ -492,7 +492,7 @@
   <title>
    Kinematics of rectilinear motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/mW8xdnQf/pNzzOwyMoCyXiSeP/material-mW8xdnQf-thumb.png
   </image>
@@ -505,7 +505,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Gaetano Di Caprio</author></simulation>
  <simulation>
   <id>
    sim-011
@@ -513,7 +513,7 @@
   <title>
    Velocity and displacement graphs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-velocity-and-displacement-graphs.png
   </image>
@@ -526,7 +526,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-012
@@ -534,7 +534,7 @@
   <title>
    Acceleration and velocity graphs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ynwtuvf5/VAHZtWAfwL51SYFe/material-ynwtuvf5-thumb.png
   </image>
@@ -547,7 +547,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-013
@@ -555,7 +555,7 @@
   <title>
    Resolution of Vectors
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/j63uznk7/73IiDmismDbFCZaw/material-j63uznk7-thumb.png
   </image>
@@ -568,7 +568,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-014
@@ -576,7 +576,7 @@
   <title>
    Parachute V3
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/wytxsyrd/VPcTCMTCfCF7qhY1/material-wytxsyrd-thumb.png
   </image>
@@ -589,7 +589,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-017
@@ -597,7 +597,7 @@
   <title>
    Change in Velocity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/vb2fcque/gg5ftJXxtkGnbD8O/material-vb2fcque-thumb.png
   </image>
@@ -610,7 +610,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-018
@@ -618,7 +618,7 @@
   <title>
    Displacement time graph
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/rxpukb8d/MXwhL5IQxFLDbIBp/material-rxpukb8d-thumb.png
   </image>
@@ -631,7 +631,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-001
@@ -643,10 +643,10 @@
    Explore changes in displacement or velocity graphs using sliders for initial velocity and acceleration.
   </description>
   <image>
-   https://physicstjc.github.io/sls/kinematics-graph/kinematics-graph.png
+   ../kinematics-graph/kinematics-graph.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/kinematics-graph/index.html
+   ../kinematics-graph/index.html
   </url>
   <platform>
    JavaScript
@@ -654,7 +654,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-005
@@ -666,10 +666,10 @@
    Visualize projectile launched vertically from a moving cart, showing independence of velocity components.
   </description>
   <image>
-   https://physicstjc.github.io/sls/projectile-simulator/projectile-simulator.png
+   ../projectile-simulator/projectile-simulator.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/projectile-simulator/index.html
+   ../projectile-simulator/index.html
   </url>
   <platform>
    JavaScript
@@ -677,7 +677,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-009
@@ -689,10 +689,10 @@
    Manipulate velocity vs time graph using sliders, take screenshots for submission.
   </description>
   <image>
-   https://physicstjc.github.io/sls/interactive-graph/interactive-graph.png
+   ../interactive-graph/interactive-graph.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/interactive-graph/index.html
+   ../interactive-graph/index.html
   </url>
   <platform>
    JavaScript
@@ -700,7 +700,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-014
@@ -708,7 +708,7 @@
   <title>
    Resultant Force on a Point Mass
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/euxnftpg/oSE9K3POQLM1ZPPO/material-euxnftpg-thumb.png
   </image>
@@ -721,7 +721,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-015
@@ -729,7 +729,7 @@
   <title>
    Forces in Equilibrium
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-forces-in-equilibrium.png
   </image>
@@ -742,7 +742,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-016
@@ -750,7 +750,7 @@
   <title>
    Forces on a Box on a Slope
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-forces-on-a-box-on-a-slope.png
   </image>
@@ -763,7 +763,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-017
@@ -771,7 +771,7 @@
   <title>
    Dynamics Problem
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kbkabucg/WKp0bLijedY6Arx0/material-kbkabucg-thumb.png
   </image>
@@ -784,7 +784,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-021
@@ -792,7 +792,7 @@
   <title>
    Inclined Plane with Two Masses and a Pulley
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/MQpSdK2A/PB0xnzYDXyo1epSq/material-MQpSdK2A-thumb.png
   </image>
@@ -805,7 +805,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-022
@@ -813,7 +813,7 @@
   <title>
    Elastic  Inelastic Collisions
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ezZ2wrGG/JM7MJ1riOuJjaXkQ/material-ezZ2wrGG-thumb.png
   </image>
@@ -826,7 +826,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-025
@@ -834,7 +834,7 @@
   <title>
    Two Mass Problem
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/fh5pwc37/6N6ccW1btzM1ySKN/material-fh5pwc37-thumb.png
   </image>
@@ -847,7 +847,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-026
@@ -855,7 +855,7 @@
   <title>
    Inclined Plane with Friction, Two Masses, and a Pulley
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kZ4H4C7v/uCgLCd0DMRYkKnH1/material-kZ4H4C7v-thumb.png
   </image>
@@ -868,7 +868,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    js-012
@@ -880,10 +880,10 @@
    Visualizes vector addition of velocity of boat and river current.
   </description>
   <image>
-   https://physicstjc.github.io/sls/relative-velocity/relative-velocity.png
+   ../relative-velocity/relative-velocity.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/relative-velocity/index.html
+   ../relative-velocity/index.html
   </url>
   <platform>
    JavaScript
@@ -891,7 +891,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-018
@@ -903,10 +903,10 @@
    Interactive tool to construct Newton’s 3rd law force interaction diagrams.
   </description>
   <image>
-   https://physicstjc.github.io/sls/system-schema/system-schema.png
+   ../system-schema/system-schema.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/system-schema/index.html
+   ../system-schema/index.html
   </url>
   <platform>
    JavaScript
@@ -914,7 +914,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>
@@ -923,12 +923,12 @@
   <title>
    Elevator
   </title>
-  <description/>
+  <description />
   <image>
-   https://physicstjc.github.io/simulations/ejss/elevator/man-in-elevator.png
+   ejss/elevator/man-in-elevator.png
   </image>
   <url>
-   https://physicstjc.github.io/simulations/ejss/elevator_Simulation.xhtml
+   ejss/elevator_Simulation.xhtml
   </url>
   <platform>
    EjsS
@@ -936,7 +936,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -945,7 +945,7 @@
   <title>
    Mass, Volume, and Density
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kr9cNFgJ/wncEauiUYLgEbut7/material-kr9cNFgJ-thumb.png
   </image>
@@ -958,7 +958,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Dinesh</author></simulation>
 
 
     
@@ -969,7 +969,7 @@
   <title>
    Moments
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Qnb2Tzcc/2aoPUhQ1zVkrkgWZ/material-Qnb2Tzcc-thumb.png
   </image>
@@ -982,7 +982,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Patrick Cobb</author></simulation>
  <simulation>
   <id>
    sim-020
@@ -990,7 +990,7 @@
   <title>
    Calculating Moment of a Force
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-calculating-moments.png
   </image>
@@ -1003,7 +1003,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-021
@@ -1011,7 +1011,7 @@
   <title>
    Stability
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xmx55cj5/BhUbVgHGsWyzl3Na/material-xmx55cj5-thumb.png
   </image>
@@ -1024,7 +1024,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-022
@@ -1032,7 +1032,7 @@
   <title>
    Stability with varying centre of gravity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-stability-with-varying-centre-of-gravity.png
   </image>
@@ -1045,7 +1045,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-023
@@ -1053,7 +1053,7 @@
   <title>
    Equilibrium of a Wall Shelf
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-equilibrium-of-a-wall-shelf.png
   </image>
@@ -1066,7 +1066,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-024
@@ -1074,7 +1074,7 @@
   <title>
    Girl on suspended plank
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ndjxzry9/Th621NgsP3jy544f/material-ndjxzry9-thumb.png
   </image>
@@ -1087,7 +1087,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-025
@@ -1095,7 +1095,7 @@
   <title>
    Fluid Pressure in a Reservoir
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/XEnWjMEU/t5fZZO8XHfb8peRA/material-XEnWjMEU-thumb.png
   </image>
@@ -1108,7 +1108,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-026
@@ -1116,7 +1116,7 @@
   <title>
    Pressure in a U Tube
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/MrqUXY4h/0SmzKjGEKbkbn1Va/material-MrqUXY4h-thumb.png
   </image>
@@ -1129,7 +1129,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-027
@@ -1137,7 +1137,7 @@
   <title>
    Pascal's Principle in a Hydraulic Lift
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/geryzgax/j5hg48ArPe76rlaV/material-geryzgax-thumb.png
   </image>
@@ -1150,7 +1150,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-028
@@ -1158,7 +1158,7 @@
   <title>
    Hydraulic Press
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-hydraulic-press.png
   </image>
@@ -1171,7 +1171,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-029
@@ -1179,7 +1179,7 @@
   <title>
    U Tube Manometer
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qyuncz3h/egGyAcflGJDaraaw/material-qyuncz3h-thumb.png
   </image>
@@ -1192,7 +1192,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-030
@@ -1200,7 +1200,7 @@
   <title>
    Work Done
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-work-done.png
   </image>
@@ -1213,7 +1213,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Unknown</author></simulation>
 
 
 
@@ -1224,7 +1224,7 @@
   <title>
    LOL Energy Diagram Template
   </title>
-  <description/>
+  <description />
   <image>
    https://cdn.geogebra.org/resource/u2m3gnzj/0FFBCYMsFOprUxmY/material-u2m3gnzj-thumb.png
   </image>
@@ -1237,7 +1237,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  
  <simulation>
@@ -1247,7 +1247,7 @@
   <title>
    Graphs of Energy II
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dnusrn83/KIzndYF22Ch3aEe8/material-dnusrn83-thumb.png
   </image>
@@ -1260,7 +1260,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-032
@@ -1268,7 +1268,7 @@
   <title>
    Conservation of Mechanical Energy: Mass on a Vertical Spring
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/TxXK2dnq/AJWrdVtpfpNSOyp4/material-TxXK2dnq-thumb.png
   </image>
@@ -1281,7 +1281,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-033
@@ -1289,7 +1289,7 @@
   <title>
    Simple Harmonic Oscillation of Mass-Spring System
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/aebg46df/KPpy348ReIEgX36p/material-aebg46df-thumb.png
   </image>
@@ -1302,7 +1302,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-015
@@ -1314,10 +1314,10 @@
    Observe bouncing ball motion with graphs of velocity and displacement, showing energy loss.
   </description>
   <image>
-   https://physicstjc.github.io/sls/bouncing-ball/bouncing-ball.png
+   ../bouncing-ball/bouncing-ball.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/bouncing-ball/index.html
+   ../bouncing-ball/index.html
   </url>
   <platform>
    JavaScript
@@ -1325,7 +1325,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     <simulation>
   <id>
    sim-044
@@ -1333,7 +1333,7 @@
   <title>
    Angular Displacement
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-angular-displacement.png
   </image>
@@ -1346,7 +1346,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-045
@@ -1354,7 +1354,7 @@
   <title>
    Angular Velocity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-angular-velocity.png
   </image>
@@ -1367,7 +1367,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-046
@@ -1375,7 +1375,7 @@
   <title>
    Uniform Circular Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-uniform-circular-motion.png
   </image>
@@ -1388,7 +1388,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-047
@@ -1396,7 +1396,7 @@
   <title>
    Aircraft in Circular Motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jxee2cwd/5BSXMewUCHndQvnn/material-jxee2cwd-thumb.png
   </image>
@@ -1409,7 +1409,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-048
@@ -1417,7 +1417,7 @@
   <title>
    Conical Pendulum
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/zdd3qbkm/OSYmd4WtcB22whDF/material-zdd3qbkm-thumb.png
   </image>
@@ -1430,7 +1430,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-049
@@ -1438,7 +1438,7 @@
   <title>
    Friction as a Centripetal Force:
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/mzhmhgua/rgjvGnx0rDOfnQG5/material-mzhmhgua-thumb.png
   </image>
@@ -1451,7 +1451,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-050
@@ -1459,7 +1459,7 @@
   <title>
    Vertical circular motion (uniform)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/m28vcnbz/yNXvLh4XIbVy1L4F/material-m28vcnbz-thumb.png
   </image>
@@ -1472,7 +1472,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-051
@@ -1480,7 +1480,7 @@
   <title>
    Vertical non-uniform circular motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-vertical-non-uniform-circular-motion.png
   </image>
@@ -1493,7 +1493,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-052
@@ -1501,7 +1501,7 @@
   <title>
    Centripetal Acceleration
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-centripetal-acceleration.png
   </image>
@@ -1514,7 +1514,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-053
@@ -1522,7 +1522,7 @@
   <title>
    Circular Motion Experiment with Variable Tension 
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/s4fpkqz2/vVHFzYMUUp3sG3sG/material-s4fpkqz2-thumb.png
   </image>
@@ -1535,7 +1535,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+ <author>rasheedgadir</author></simulation>
     <simulation>
   <id>
    sim-054
@@ -1543,7 +1543,7 @@
   <title>
    Gravitational Potential between Two Planets
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ff55x6vr/72NrjDONYigPgiPc/material-ff55x6vr-thumb.png
   </image>
@@ -1556,7 +1556,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-055
@@ -1564,7 +1564,7 @@
   <title>
    Satellite in Orbit
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kqvkegxj/KbvzzENM0dWiEsQ4/material-kqvkegxj-thumb.png
   </image>
@@ -1577,7 +1577,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-056
@@ -1585,7 +1585,7 @@
   <title>
    Escape Velocity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-escape-velocity.png
   </image>
@@ -1598,7 +1598,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-057
@@ -1606,7 +1606,7 @@
   <title>
    Gravitational Field Strength between two masses
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-gravitational-field-strength-between-two-masses.png
   </image>
@@ -1619,7 +1619,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-058
@@ -1627,7 +1627,7 @@
   <title>
    Pluto and Charon
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/angpz9uu/Ry2ixlJ5UhRsnQ3A/material-angpz9uu-thumb.png
   </image>
@@ -1640,7 +1640,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -1653,10 +1653,10 @@
    Simulate heat transfer between two bodies with adjustable heat capacity.
   </description>
   <image>
-   https://physicstjc.github.io/sls/thermal-processes/heat-capacity.png
+   ../thermal-processes/heat-capacity.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/thermal-processes/index.html
+   ../thermal-processes/index.html
   </url>
   <platform>
    JavaScript
@@ -1664,7 +1664,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-034
@@ -1672,7 +1672,7 @@
   <title>
    Simple model of heating a metal
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/QDdSsy8t/n7uk34ERzD5zZp8c/material-QDdSsy8t-thumb.png
   </image>
@@ -1685,7 +1685,7 @@
   <topics>
    <topic>kinetic-model-of-matter</topic>
   </topics>
- </simulation>
+ <author>Michael Borcherds</author></simulation>
  <simulation>
   <id>
    js-011
@@ -1697,10 +1697,10 @@
    Simulation of particle movement with collisions to show Brownian motion.
   </description>
   <image>
-   https://physicstjc.github.io/sls/brownian-motion/brownian-motion.png
+   ../brownian-motion/brownian-motion.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/brownian-motion/index.html
+   ../brownian-motion/index.html
   </url>
   <platform>
    JavaScript
@@ -1708,7 +1708,7 @@
   <topics>
    <topic>kinetic-model-of-matter</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-063
@@ -1716,7 +1716,7 @@
   <title>
    Velocity vs Displacement of Simple Harmonic Oscillation
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xwx3skfd/LLQOceYM3eP2ifiT/material-xwx3skfd-thumb.png
   </image>
@@ -1729,7 +1729,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-064
@@ -1737,7 +1737,7 @@
   <title>
    Box Losing Contact with Spring Oscillator
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/pbqtmbfn/QO7MSdk7JHJWEAaQ/material-pbqtmbfn-thumb.png
   </image>
@@ -1750,7 +1750,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-065
@@ -1758,7 +1758,7 @@
   <title>
    Resonance with Masses on Springs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/JCyp4bYH/OnDBFJBOn6yHGoJA/material-JCyp4bYH-thumb.png
   </image>
@@ -1771,7 +1771,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-066
@@ -1779,7 +1779,7 @@
   <title>
    Accelaration-time graph of simple harmonic motion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/vrqf9hyj/FJ0uUz0S0p8Pg7sl/material-vrqf9hyj-thumb.png
   </image>
@@ -1792,7 +1792,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-067
@@ -1800,7 +1800,7 @@
   <title>
    Oscillations
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/CdBu65h4/iKwucBVIlGsrVYUm/material-CdBu65h4-thumb.png
   </image>
@@ -1813,7 +1813,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-068
@@ -1821,7 +1821,7 @@
   <title>
    Simple Harmonic Motion Graphs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-shm-graphs.png
   </image>
@@ -1834,7 +1834,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-069
@@ -1842,7 +1842,7 @@
   <title>
    Simple Harmonic Motion Graphs with Energy
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-shm-graphs-with-energy.png
   </image>
@@ -1855,7 +1855,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-070
@@ -1863,7 +1863,7 @@
   <title>
    SHM in 3D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tsz95u6p/2rbxBt45uwLLVwyq/material-tsz95u6p-thumb.png
   </image>
@@ -1876,7 +1876,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-071
@@ -1884,7 +1884,7 @@
   <title>
    Torsional Pendulum
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jhc4xvpe/P6Tax4Mt6DxV7R5C/material-jhc4xvpe-thumb.png
   </image>
@@ -1897,7 +1897,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
 
 
@@ -1909,7 +1909,7 @@
   <title>
    Linear Wavefront
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/rbjcszuc/aGf6cdA4xlerbish/material-rbjcszuc-thumb.png
   </image>
@@ -1922,7 +1922,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-036
@@ -1930,7 +1930,7 @@
   <title>
    Circular Wavefronts
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/gwffcn7c/rx5vkPillpB1RQpO/material-gwffcn7c-thumb.png
   </image>
@@ -1943,7 +1943,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-037
@@ -1951,7 +1951,7 @@
   <title>
    Measuring Speed of a Wave
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/rfhhusft/eMEUljshY2geRHGu/material-rfhhusft-thumb.png
   </image>
@@ -1964,7 +1964,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-038
@@ -1972,7 +1972,7 @@
   <title>
    Graphs of a Progressive Wave
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-graphs-of-a-progressive-wave.png
   </image>
@@ -1985,7 +1985,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-039
@@ -1993,7 +1993,7 @@
   <title>
    Progressive wave particle movement
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-progressive-wave-particle-movement.png
   </image>
@@ -2006,7 +2006,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-040
@@ -2014,7 +2014,7 @@
   <title>
    Transverse and Longitudinal Progressive Waves
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-transverse-and-longitudinal-progressive-waves.png
   </image>
@@ -2027,7 +2027,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-042
@@ -2035,7 +2035,7 @@
   <title>
    Graph of Longitudinal Wave
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kq3e2qjk/jDnhWTZ43lPHofW0/material-kq3e2qjk-thumb.png
   </image>
@@ -2048,7 +2048,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-002
@@ -2060,10 +2060,10 @@
    Observe how two opposing waves form a stationary wave. Explore effects of mismatched conditions.
   </description>
   <image>
-   https://physicstjc.github.io/sls/stationary-waves/stationary-waves.gif
+   ../stationary-waves/stationary-waves.gif
   </image>
   <url>
-   https://physicstjc.github.io/sls/stationary-waves/index.html
+   ../stationary-waves/index.html
   </url>
   <platform>
    JavaScript
@@ -2071,7 +2071,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-006
@@ -2083,10 +2083,10 @@
    Demonstrate SHM of particles and the effect of period on wave motion.
   </description>
   <image>
-   https://physicstjc.github.io/sls/wave-motion/wave-motion.gif
+   ../wave-motion/wave-motion.gif
   </image>
   <url>
-   https://physicstjc.github.io/sls/wave-motion/index.html
+   ../wave-motion/index.html
   </url>
   <platform>
    JavaScript
@@ -2094,7 +2094,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-017
@@ -2106,10 +2106,10 @@
    Auto-generating graph quiz to test concepts like amplitude, wavelength, period, and frequency.
   </description>
   <image>
-   https://physicstjc.github.io/sls/wave-quiz/wave-quiz.png
+   ../wave-quiz/wave-quiz.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/wave-quiz/index.html
+   ../wave-quiz/index.html
   </url>
   <platform>
    JavaScript
@@ -2117,7 +2117,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-078
@@ -2125,7 +2125,7 @@
   <title>
    Conditions for Formation of Stationary Waves
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/wse5hvmj/nVoVtpY5qbeALN4Y/material-wse5hvmj-thumb.png
   </image>
@@ -2138,7 +2138,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-079
@@ -2146,7 +2146,7 @@
   <title>
    Phase Difference on a Stationary Wave
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xm5mnfyq/WVHXGPnmWuYqd4PR/material-xm5mnfyq-thumb.png
   </image>
@@ -2159,7 +2159,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-080
@@ -2167,7 +2167,7 @@
   <title>
    Phase Difference on a Stationary Wave (fixed positions)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/zg4spztb/mxoDrCZEygqtPc7a/material-zg4spztb-thumb.png
   </image>
@@ -2180,7 +2180,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-081
@@ -2188,7 +2188,7 @@
   <title>
    Standing Waves on Strings
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qYX5eakP/72tltbgYvZk2xE87/material-qYX5eakP-thumb.png
   </image>
@@ -2201,7 +2201,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-082
@@ -2209,7 +2209,7 @@
   <title>
    Resonant Frequency of Standing Waves on a Stretched String
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/bpnejfsv/Ww1IW7bcc4uBHHWI/material-bpnejfsv-thumb.png
   </image>
@@ -2222,7 +2222,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-083
@@ -2230,7 +2230,7 @@
   <title>
    Single Slit Diffraction Relative Intensity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/wanct2nt/cWRj1LM0T8D6hVhy/material-wanct2nt-thumb.png
   </image>
@@ -2243,7 +2243,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-084
@@ -2251,7 +2251,7 @@
   <title>
    Two source path difference
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Dh7SDHa8/o4jxjMzBKwwUIoIL/material-Dh7SDHa8-thumb.png
   </image>
@@ -2264,7 +2264,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-085
@@ -2272,7 +2272,7 @@
   <title>
    Double Slit Interference
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/quqcv8pe/ml2plujUnRcT8xJf/material-quqcv8pe-thumb.png
   </image>
@@ -2285,7 +2285,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-086
@@ -2293,7 +2293,7 @@
   <title>
    Wave Interference in 3D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/uXF5HM4h/OAO0sNNo3JJZM3tz/material-uXF5HM4h-thumb.png
   </image>
@@ -2306,7 +2306,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-087
@@ -2314,7 +2314,7 @@
   <title>
    Optical Diffraction Grating
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/p5m34MKj/kKyIQuhZIoekUrbx/material-p5m34MKj-thumb.png
   </image>
@@ -2327,7 +2327,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>David Radcliffe</author></simulation>
  <simulation>
   <id>
    sim-088
@@ -2335,7 +2335,7 @@
   <title>
    Resolution and the Rayleigh Criterion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/er2sravh/lZnIYV6toLg2iOZI/material-er2sravh-thumb.png
   </image>
@@ -2348,7 +2348,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-089
@@ -2356,7 +2356,7 @@
   <title>
    Wave Pulse Interference and Superposition
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dJrTcxYd/JNPRIgAQMJNFG2P4/material-dJrTcxYd-thumb.png
   </image>
@@ -2369,7 +2369,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-090
@@ -2377,7 +2377,7 @@
   <title>
    Wave Interference
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dnbpbvz7/Lc7zSM8l64qgLxss/material-dnbpbvz7-thumb.png
   </image>
@@ -2390,7 +2390,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-091
@@ -2398,7 +2398,7 @@
   <title>
    Path difference
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jkqmuvne/erb63WH5Hf2w6RH6/material-jkqmuvne-thumb.png
   </image>
@@ -2411,7 +2411,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-092
@@ -2419,7 +2419,7 @@
   <title>
    Stationary Sound Wave (Displacement and Pressure)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-sound-wave-displacement-and-pressure.png
   </image>
@@ -2432,7 +2432,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-093
@@ -2440,7 +2440,7 @@
   <title>
    Harmonics of Open Pipes
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tsufws72/gHeq0K3tFWixehAG/material-tsufws72-thumb.png
   </image>
@@ -2453,7 +2453,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-094
@@ -2461,7 +2461,7 @@
   <title>
    Harmonics for Closed Pipe
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/gm9k6hkg/iY5R5OPvsUot2iQW/material-gm9k6hkg-thumb.png
   </image>
@@ -2474,7 +2474,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-043
@@ -2482,7 +2482,7 @@
   <title>
    Reflection from a Plane Mirror
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/KdaXessn/aTCccLUL7haYUdmq/material-KdaXessn-thumb.png
   </image>
@@ -2495,7 +2495,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>GreenMaths</author></simulation>
  <simulation>
   <id>
    sim-044
@@ -2503,7 +2503,7 @@
   <title>
    Snell's Law
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/KUchQNVQ/p1i8B6Z2cJFFNy63/material-KUchQNVQ-thumb.png
   </image>
@@ -2516,7 +2516,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>optowiki.info (Michael Schaefer)</author></simulation>
  <simulation>
   <id>
    sim-045
@@ -2524,7 +2524,7 @@
   <title>
    Ray diagram for converging lens
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/J8Xv8ZB3/1vyWh3Jpz8tgMJ1f/material-J8Xv8ZB3-thumb.png
   </image>
@@ -2537,7 +2537,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>GeoGebra Materials Team</author></simulation>
  <simulation>
   <id>
    sim-046
@@ -2545,7 +2545,7 @@
   <title>
    Copy of Optics of the Human Eye
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ux9ke25p/zA5aS8r2lQBqIidM/material-ux9ke25p-thumb.png
   </image>
@@ -2558,7 +2558,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-047
@@ -2566,7 +2566,7 @@
   <title>
    Converging Lens
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qxsu8jy5/qi2FSfbxfJtPMDa0/material-qxsu8jy5-thumb.png
   </image>
@@ -2579,7 +2579,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-048
@@ -2587,7 +2587,7 @@
   <title>
    Concave Mirror
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Dk34GZUA/F6fXowoLzwafsfHd/material-Dk34GZUA-thumb.png
   </image>
@@ -2600,7 +2600,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>mr.jsquiggle</author></simulation>
  <simulation>
   <id>
    sim-049
@@ -2608,7 +2608,7 @@
   <title>
    Apparent Depth V1
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/bgts4zkc/6SrFKqKpZi2dNNlk/material-bgts4zkc-thumb.png
   </image>
@@ -2621,7 +2621,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-050
@@ -2629,7 +2629,7 @@
   <title>
    Thin Converging Lens (Movable)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-thin-converging-lens-movable.png
   </image>
@@ -2642,7 +2642,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-051
@@ -2650,7 +2650,7 @@
   <title>
    Critical Angle for Total Internal Reflection
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/DHmnJnHh/0GYrxZ4a3I7Eys8q/material-DHmnJnHh-thumb.png
   </image>
@@ -2663,7 +2663,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Sue Popelka</author></simulation>
  <simulation>
   <id>
    sim-052
@@ -2671,7 +2671,7 @@
   <title>
    Reflection visible or not
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/rjpb2dv7/nrPvIAaKLhFyKJZS/material-rjpb2dv7-thumb.png
   </image>
@@ -2684,7 +2684,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-053
@@ -2692,7 +2692,7 @@
   <title>
    Reflection and Refraction
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tvstqv47/BpdBNDKShXDKJR3T/material-tvstqv47-thumb.png
   </image>
@@ -2705,7 +2705,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-054
@@ -2713,7 +2713,7 @@
   <title>
    Where is the Fish? A Refraction Simulation
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/kdszgpfg/WXVdXn2dVZxuoMGI/material-kdszgpfg-thumb.png
   </image>
@@ -2726,7 +2726,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-055
@@ -2734,7 +2734,7 @@
   <title>
    Apparent Depth V2
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-apparent-depth.png
   </image>
@@ -2747,7 +2747,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-056
@@ -2755,7 +2755,7 @@
   <title>
    Refraction Self-Test
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-refraction-self-test.png
   </image>
@@ -2768,7 +2768,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-057
@@ -2776,7 +2776,7 @@
   <title>
    Electromagnetic Waves
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xhYwXSsH/CFASb2HdylssjiA4/material-xhYwXSsH-thumb.png
   </image>
@@ -2789,7 +2789,7 @@
   <topics>
    <topic>electromagnetic-spectrum</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-058
@@ -2797,7 +2797,7 @@
   <title>
    Frequency and Amplitude of Sound
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/afg2t74v/M5GLAekn6oK81HdA/material-afg2t74v-thumb.png
   </image>
@@ -2810,7 +2810,7 @@
   <topics>
    <topic>sound</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-059
@@ -2818,7 +2818,7 @@
   <title>
    Sound Wave (Displacement and Pressure)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-sound-displacement-pressure-wave.png
   </image>
@@ -2831,7 +2831,7 @@
   <topics>
    <topic>sound</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-095
@@ -2839,7 +2839,7 @@
   <title>
    Electric Potential
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/bPexk3Uw/eXYbhCTa0DgeBNHr/material-bPexk3Uw-thumb.png
   </image>
@@ -2852,7 +2852,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-096
@@ -2860,7 +2860,7 @@
   <title>
    Electric Potential for Multiple Point Charges
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/PC6SsyaT/ZNcbsWn1xSkSykUO/material-PC6SsyaT-thumb.png
   </image>
@@ -2873,7 +2873,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Dave Nero</author></simulation>
  <simulation>
   <id>
    sim-097
@@ -2881,7 +2881,7 @@
   <title>
    Charged Particle in an Electric Field
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/R6UGrg6n/Dqr2E2zSYfeXDyta/material-R6UGrg6n-thumb.png
   </image>
@@ -2894,7 +2894,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-098
@@ -2902,7 +2902,7 @@
   <title>
    Electrostatic Forces of Two Charges on a Third
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Z4qkqpYu/KxBHDiTY8R4naHTR/material-Z4qkqpYu-thumb.png
   </image>
@@ -2915,7 +2915,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Lenore Horner</author></simulation>
  <simulation>
   <id>
    sim-099
@@ -2923,7 +2923,7 @@
   <title>
    Potential of Two Point Charges
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/z8cr66wb/f9TDo9tlE5UnxkZ9/material-z8cr66wb-thumb.png
   </image>
@@ -2936,7 +2936,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -2949,10 +2949,10 @@
    Visualize electric potential due to two charges. Adjust magnitudes, signs, and distances using sliders.
   </description>
   <image>
-   https://physicstjc.github.io/sls/electric-potential/electric-potential.png
+   ../electric-potential/electric-potential.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/electric-potential/index.html
+   ../electric-potential/index.html
   </url>
   <platform>
    JavaScript
@@ -2960,7 +2960,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -2969,7 +2969,7 @@
   <title>
    I-V characteristics (resistor)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/K2gh8kfM/3j5Ec4vrQzMx7l8Y/material-K2gh8kfM-thumb.png
   </image>
@@ -2982,7 +2982,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Ray Tuck</author></simulation>
  <simulation>
   <id>
    sim-061
@@ -2990,7 +2990,7 @@
   <title>
    Voltmeter
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/watavkq8/Lhwi7a3W3E1V4HG9/material-watavkq8-thumb.png
   </image>
@@ -3003,7 +3003,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-100
@@ -3011,7 +3011,7 @@
   <title>
    Internal Resistance
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xmnmqedn/jPLLveuHLJw4wx1H/material-xmnmqedn-thumb.png
   </image>
@@ -3024,7 +3024,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-101
@@ -3032,7 +3032,7 @@
   <title>
    Maximum Power Theorem
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/hscshcj8/JQTWvK7Rh7TlDNEp/material-hscshcj8-thumb.png
   </image>
@@ -3045,7 +3045,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-102
@@ -3053,7 +3053,7 @@
   <title>
    Potentiometer
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/m7tc5szx/EoFuayA8a8v76TcE/material-m7tc5szx-thumb.png
   </image>
@@ -3066,7 +3066,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-062
@@ -3074,7 +3074,7 @@
   <title>
    Combination Electric Circuit with Four Identical Bulbs
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Vq8jv86K/k5bOiIonhG8TyKOX/material-Vq8jv86K-thumb.png
   </image>
@@ -3087,7 +3087,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-063
@@ -3095,7 +3095,7 @@
   <title>
    Current and Voltage in a Parallel Circuit
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/pHHxZrAf/So73k8C7q1R2V80k/material-pHHxZrAf-thumb.png
   </image>
@@ -3108,7 +3108,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-064
@@ -3116,7 +3116,7 @@
   <title>
    Electric Circuits
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/etszj23m/gjnoj8EharcAwsrh/material-etszj23m-thumb.png
   </image>
@@ -3129,7 +3129,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-065
@@ -3137,7 +3137,7 @@
   <title>
    DC Motor 3D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/z9prvqrq/L0DMWChd7GaOB2IU/material-z9prvqrq-thumb.png
   </image>
@@ -3150,7 +3150,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-104
@@ -3158,7 +3158,7 @@
   <title>
    Resistors in Circuits
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/cukmcvxf/vGagoI6URM6lek73/material-cukmcvxf-thumb.png
   </image>
@@ -3171,7 +3171,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-107
@@ -3179,7 +3179,7 @@
   <title>
    Internal Resistance
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/puvfjxk5/agkSwqxRkq0j5xFs/material-puvfjxk5-thumb.png
   </image>
@@ -3192,7 +3192,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-066
@@ -3200,7 +3200,7 @@
   <title>
    Practical Electricity
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/pmatpapk/5raZJNXHAwYGZsVA/material-pmatpapk-thumb.png
   </image>
@@ -3213,7 +3213,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  
   <simulation>
@@ -3224,7 +3224,7 @@
   <url>https://www.geogebra.org/m/jkckp9pr</url>
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
-  </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3233,7 +3233,7 @@
   <title>
    3D Magnetic field from magnet
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/reNCF9Sz/HQzAydkHN6nCQ5ZU/material-reNCF9Sz-thumb.png
   </image>
@@ -3246,7 +3246,7 @@
   <topics>
    <topic>magnetism</topic>
   </topics>
- </simulation>
+ <author>olha0707</author></simulation>
  <simulation>
   <id>
    sim-068
@@ -3254,7 +3254,7 @@
   <title>
    DC Motor
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/UqPD6ax7/CvSMUruwiX0R8eRK/material-UqPD6ax7-thumb.png
   </image>
@@ -3267,7 +3267,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-069
@@ -3275,7 +3275,7 @@
   <title>
    B field around a wire
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Xr65rR3b/FFkexKVEvdl4GxtQ/material-Xr65rR3b-thumb.png
   </image>
@@ -3288,7 +3288,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-070
@@ -3296,7 +3296,7 @@
   <title>
    Fleming's left hand rule
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/h3kxv53w/i63znZBDkv5UhSW7/material-h3kxv53w-thumb.png
   </image>
@@ -3309,7 +3309,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-071
@@ -3317,7 +3317,7 @@
   <title>
    Fleming's left hand rule
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jax9jwxc/MKQvXfORA3uaZ70N/material-jax9jwxc-thumb.png
   </image>
@@ -3330,7 +3330,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-072
@@ -3338,7 +3338,7 @@
   <title>
    DC Motor 2D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/eayhekjz/l1wIHzmuD2POpGh0/material-eayhekjz-thumb.png
   </image>
@@ -3351,7 +3351,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-108
@@ -3359,7 +3359,7 @@
   <title>
    Forces Between Two Current-Carrying Wires
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/gc39y5hc/p5LRqBtQaN2WY51V/material-gc39y5hc-thumb.png
   </image>
@@ -3372,7 +3372,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-110
@@ -3380,7 +3380,7 @@
   <title>
    Charged Particles in a Magnetic Field
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/k9yrhsst/IUrBxGLRDl3yDQOs/material-k9yrhsst-thumb.png
   </image>
@@ -3393,7 +3393,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-112
@@ -3401,7 +3401,7 @@
   <title>
    3D Force on current in Magnetic field
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/egdpjrpc/GuakwmomXkNF1GGa/material-egdpjrpc-thumb.png
   </image>
@@ -3414,7 +3414,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-114
@@ -3422,7 +3422,7 @@
   <title>
    Charged Particle in a Magnetic Field 3D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/qajRP2O4/nBJa7i53VdoPZsJe/material-qajRP2O4-thumb.png
   </image>
@@ -3435,7 +3435,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-115
@@ -3443,7 +3443,7 @@
   <title>
    Charged Particles in a Magnetic Field
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/mkem6b9y/5XbUacxSB7eWyPPH/material-mkem6b9y-thumb.png
   </image>
@@ -3456,7 +3456,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-116
@@ -3464,7 +3464,7 @@
   <title>
    Charged Particles in Parallel Magnetic and Electric Fields
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/erehat7n/tLDUdQVSiDl0sTNT/material-erehat7n-thumb.png
   </image>
@@ -3477,7 +3477,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-117
@@ -3485,7 +3485,7 @@
   <title>
    Helical movement
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/gg6zhevd/SjEFhrCOosKBfAmC/material-gg6zhevd-thumb.png
   </image>
@@ -3498,7 +3498,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-118
@@ -3506,7 +3506,7 @@
   <title>
    Magnetic Induction
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/w2jp2Jsy/fQRkDrxBR7F7UVA3/material-w2jp2Jsy-thumb.png
   </image>
@@ -3519,7 +3519,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-119
@@ -3527,7 +3527,7 @@
   <title>
    3D Rotating coil
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/QJdqdmbR/EUZsG5FIo71iJEQb/material-QJdqdmbR-thumb.png
   </image>
@@ -3540,7 +3540,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-120
@@ -3548,7 +3548,7 @@
   <title>
    A. C. Generator 3D
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xpm5s7wz/lDG5mEPSHBx1XrVq/material-xpm5s7wz-thumb.png
   </image>
@@ -3561,7 +3561,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+ <author>Abdul Latiff</author></simulation>
  
  
  <simulation>
@@ -3571,7 +3571,7 @@
   <title>
    Root-Mean-Squared Current (Sinusoidal)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/btx3uzec/FSv3YTkq4cXWLZtX/material-btx3uzec-thumb.png
   </image>
@@ -3584,7 +3584,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-122
@@ -3592,7 +3592,7 @@
   <title>
    Root-Mean-Squared Rectified Current
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/pmdfkamh/eKHcBx5jF2M8MRB1/material-pmdfkamh-thumb.png
   </image>
@@ -3605,7 +3605,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-123
@@ -3613,7 +3613,7 @@
   <title>
    AC Transformer
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tc7mxwgs/SVdsi2X3DgdJl6BN/material-tc7mxwgs-thumb.png
   </image>
@@ -3626,7 +3626,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-124
@@ -3634,7 +3634,7 @@
   <title>
    AC Power
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xmta8sud/fmoBjESIm7oL1Nvx/material-xmta8sud-thumb.png
   </image>
@@ -3647,7 +3647,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-125
@@ -3655,7 +3655,7 @@
   <title>
    Root mean square
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/tdxdmfzf/DsJIrPHvXzfkHl1M/material-tdxdmfzf-thumb.png
   </image>
@@ -3668,7 +3668,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3677,7 +3677,7 @@
   <title>
    First Law of Thermodynamics
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/wttrxzje/D8jj8gsqlvQmnP0B/material-wttrxzje-thumb.png
   </image>
@@ -3690,7 +3690,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-060
@@ -3698,7 +3698,7 @@
   <title>
    PV diagram for an Ideal Gas
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dvtxwp4g/wsDLIqNwVT3DXGRE/material-dvtxwp4g-thumb.png
   </image>
@@ -3711,7 +3711,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-061
@@ -3719,7 +3719,7 @@
   <title>
    Idealized Stirling Cycle
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ckayaykx/Xv2ihenl1jnazS2E/material-ckayaykx-thumb.png
   </image>
@@ -3732,7 +3732,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-027
@@ -3740,7 +3740,7 @@
   <title>
    Buoyancy
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/uM5fD5KD/QoZDFHHIT01CXAv6/material-uM5fD5KD-thumb.png
   </image>
@@ -3753,7 +3753,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-028
@@ -3761,7 +3761,7 @@
   <title>
    Friction: Pulling a Box on a Horizontal Surface
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/ynATf9QU/8zWOmIVvuFrOSHcI/material-ynATf9QU-thumb.png
   </image>
@@ -3774,7 +3774,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-029
@@ -3782,7 +3782,7 @@
   <title>
    Hydrostatic Pressure and Upthrust
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xxeyzkqq/UqONLnF0PRTx81bt/material-xxeyzkqq-thumb.png
   </image>
@@ -3795,7 +3795,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-030
@@ -3803,7 +3803,7 @@
   <title>
    Coplanar concurrent forces
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/vw8grewc/dotpbgHX3qbXKjPH/material-vw8grewc-thumb.png
   </image>
@@ -3816,7 +3816,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-032
@@ -3824,7 +3824,7 @@
   <title>
    Torque of a Couple
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-torque-of-a-couple.png
   </image>
@@ -3837,7 +3837,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
   <simulation>
   <id>
@@ -3846,7 +3846,7 @@
   <title>
    Turning Effect on a Tilted Beam
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/sas5ybxu/hwi6RZe06OveLEMH/material-sas5ybxu-thumb.png
   </image>
@@ -3859,7 +3859,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3868,7 +3868,7 @@
   <title>
    Upthrust
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-upthrust.png
   </image>
@@ -3881,7 +3881,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-035
@@ -3889,7 +3889,7 @@
   <title>
    Forces in Equilibirum (Photoframe)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/jqp9z9qc/8HNXPHvGLXkSy678/material-jqp9z9qc-thumb.png
   </image>
@@ -3902,7 +3902,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>
@@ -3911,7 +3911,7 @@
   <title>
    Half-Life Action!!!
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/Ym5NQWJp/YKLkxk6Ea1IAcJ1o/material-Ym5NQWJp-thumb.png
   </image>
@@ -3924,7 +3924,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+ <author>Tim Brzezinski</author></simulation>
  
  
 
@@ -3935,7 +3935,7 @@
   <title>
    Polarisation Malus' Law
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/x5w3XjJs/I155X6JqV20Emh58/material-x5w3XjJs-thumb.png
   </image>
@@ -3948,7 +3948,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-073
@@ -3956,7 +3956,7 @@
   <title>
    Amplitude after Linear Polarisation
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/nxqRUBJm/zZDMLe6jm02pXKPv/material-nxqRUBJm-thumb.png
   </image>
@@ -3969,7 +3969,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>J. van Lück</author></simulation>
  <simulation>
   <id>
    sim-074
@@ -3977,7 +3977,7 @@
   <title>
    Phase difference between two particles on a wave
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-phase-difference-between-two-particles-on-a-wave.png
   </image>
@@ -3990,7 +3990,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-075
@@ -3998,7 +3998,7 @@
   <title>
    Phase Difference between two waves
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-phase-difference-between-two-waves.png
   </image>
@@ -4011,7 +4011,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-039
@@ -4019,9 +4019,9 @@
   <title>
    Work done
   </title>
-  <description/>
+  <description />
   <image>
-   https://physicstjc.github.io/simulations/images/screenshots/work-done.png
+   images/screenshots/work-done.png
   </image>
   <url>
    https://www.geogebra.org/m/zhjhx9d9
@@ -4032,7 +4032,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-040
@@ -4040,7 +4040,7 @@
   <title>
    Work done (with initial v)
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/Simulation-of-work-done-with-initial-velocity.png
   </image>
@@ -4053,7 +4053,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-042
@@ -4061,7 +4061,7 @@
   <title>
    Bungee Jumping With Energy Conservation
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/dTAq6KaN/NWmH7HV7DXFay05P/material-dTAq6KaN-thumb.png
   </image>
@@ -4074,7 +4074,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Dave Nero</author></simulation>
  <simulation>
   <id>
    sim-043
@@ -4082,7 +4082,7 @@
   <title>
    Work Done by Two Forces
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/bpdmqepv/p7VRPYKgOJi9yv1c/material-bpdmqepv-thumb.png
   </image>
@@ -4095,7 +4095,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
     <simulation>
   <id>
@@ -4108,10 +4108,10 @@
    Observe radioactive decay and plot decay curves with variable half-life.
   </description>
   <image>
-   https://physicstjc.github.io/sls/radioactive-decay/radioactive-decay.png
+   ../radioactive-decay/radioactive-decay.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/radioactive-decay/index.html
+   ../radioactive-decay/index.html
   </url>
   <platform>
    JavaScript
@@ -4119,7 +4119,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-016
@@ -4131,10 +4131,10 @@
    Explore background radiation and compare count rates with various sources.
   </description>
   <image>
-   https://physicstjc.github.io/sls/gm-counter/gm-counter.png
+   ../gm-counter/gm-counter.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/gm-counter/index.html
+   ../gm-counter/index.html
   </url>
   <platform>
    JavaScript
@@ -4142,7 +4142,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-126
@@ -4150,7 +4150,7 @@
   <title>
    Photoelectric Effect
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/fUAMmQjq/Tlx6yfoJtkw8Bqoe/material-fUAMmQjq-thumb.png
   </image>
@@ -4163,7 +4163,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-127
@@ -4171,7 +4171,7 @@
   <title>
    Photoelectric effect
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/c6ZmnCQD/qNDmOSLcejgWLjJu/material-c6ZmnCQD-thumb.png
   </image>
@@ -4184,7 +4184,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+ <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-128
@@ -4192,7 +4192,7 @@
   <title>
    Energy Level Diagrams
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/RRFMyuxE/BZ7SjRRBJ7wR4rm7/material-RRFMyuxE-thumb.png
   </image>
@@ -4205,7 +4205,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+ <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-129
@@ -4213,7 +4213,7 @@
   <title>
    Hydrogen Atom Electron Energy Levels
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/xzsjvm4q/KtdyDMa1LUiulMk0/material-xzsjvm4q-thumb.png
   </image>
@@ -4226,7 +4226,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+ <author>Tom Walsh</author></simulation>
 <simulation>
   <id>
    js-004
@@ -4238,10 +4238,10 @@
    Shows how the Moon's rotation matches its revolution around Earth.
   </description>
   <image>
-   https://physicstjc.github.io/sls/earth-moon-system/earth-moon-system.png
+   ../earth-moon-system/earth-moon-system.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/earth-moon-system/index.html
+   ../earth-moon-system/index.html
   </url>
   <platform>
    JavaScript
@@ -4249,7 +4249,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-007
@@ -4261,10 +4261,10 @@
    Interactive Bohr model of atoms up to atomic number 20. Change element to view shell configuration.
   </description>
   <image>
-   https://physicstjc.github.io/sls/bohr-model/bohr-model.png
+   ../bohr-model/bohr-model.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/bohr-model/index.html
+   ../bohr-model/index.html
   </url>
   <platform>
    JavaScript
@@ -4272,7 +4272,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-008
@@ -4284,10 +4284,10 @@
    Math-based probability simulator for rolling one or two dice, with charts and result tracking.
   </description>
   <image>
-   https://physicstjc.github.io/sls/dice/dice.png
+   ../dice/dice.png
   </image>
   <url>
-   https://physicstjc.github.io/sls/dice/index.html
+   ../dice/index.html
   </url>
   <platform>
    JavaScript
@@ -4295,7 +4295,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     <simulation>
   <id>
    sim-131
@@ -4303,7 +4303,7 @@
   <title>
    Line of Best Fit
   </title>
-  <description/>
+  <description />
   <image>
    https://www.physicslens.com/wp-content/uploads/2025/09/simulation-line-of-best-fit.png
   </image>
@@ -4316,7 +4316,7 @@
   <topics>
    <topic>graphing-technique</topic>
   </topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-132
@@ -4324,7 +4324,7 @@
   <title>
    Least Squares Criterion
   </title>
-  <description/>
+  <description />
   <image>
    https://www.geogebra.org/resource/zHwQNvpW/UI4ZvgXeUVUGjnOC/material-zHwQNvpW-thumb.png
   </image>
@@ -4337,26 +4337,26 @@
   <topics>
    <topic>graphing-technique</topic>
   </topics>
- </simulation>
+ <author>tbki</author></simulation>
  
 <simulation>
  <id>js-019</id>
  <title>Sound Level Meter</title>
  <description>Use this sound level meter to measure the noise level in your class. The slider allows you to change the sensitivity of the meter. The sensitivity value ranges from -20 dB to 20 dB.</description>
- <image>https://physicstjc.github.io/sls/sound-level-meter/sound-level-meter.png</image>
- <url>https://physicstjc.github.io/sls/sound-level-meter/</url>
+ <image>../sound-level-meter/sound-level-meter.png</image>
+ <url>../sound-level-meter/</url>
  <platform>JavaScript</platform>
  <topics><topic>sound</topic></topics>
-</simulation>
+<author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>js-020</id>
   <title>Sound Frequency Analyser</title>
-  <description>This sound frequency analyser is able to pick up the dominant frequency from the microphone. Students can use it to investigate the effect on the frequency of sound by factors such as length or tension of a guitar string. For higher level Physics students, they can observe the frequencies of higher harmonics.</description><image>https://physicstjc.github.io/sls/sound-frequency-analyser/sound-frequency-analyser.png</image>
-  <url>https://physicstjc.github.io/sls/sound-frequency-analyser/</url>
+  <description>This sound frequency analyser is able to pick up the dominant frequency from the microphone. Students can use it to investigate the effect on the frequency of sound by factors such as length or tension of a guitar string. For higher level Physics students, they can observe the frequencies of higher harmonics.</description><image>../sound-frequency-analyser/sound-frequency-analyser.png</image>
+  <url>../sound-frequency-analyser/</url>
   <platform>JavaScript</platform>
   <topics><topic>sound</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
  
 
 
@@ -4364,59 +4364,59 @@
   <id>js-021</id>
    <title>Sound Generator</title>
   <description>The sound generator can be used to demonstrate the effect of frequency on the pitch of a sound. It can also be used to determine the audible frequency range of an individual.</description>
-  <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
-  <url>https://physicstjc.github.io/sls/sound-generator/</url>
+  <image>../sound-generator/sound-generator.png</image>
+  <url>../sound-generator/</url>
   <platform>JavaScript</platform>
-  <topics><topic>sound</topic></topics></simulation>
+  <topics><topic>sound</topic></topics><author>Tan Seng Kwang</author></simulation>
  
  
  <simulation> 
   <id>js-022</id>
   <title>Faraday's Experiment</title>
   <description>This simulation allows the user to explore the laws of electromagnetic induction (Faraday and Lenz) by dragging a magnet into and away from a coil.</description>
-  <image>https://physicstjc.github.io/simulations/images/screenshots/faradays-experiment.png</image>
-  <url>http://physicstjc.github.io/sls/faraday-experiment/index.html</url>
+  <image>../faraday-experiment/faraday-experiment.png</image>
+  <url>../faraday-experiment/index.html</url>
   <platform>JavaScript</platform>
   <topics><topic>electromagnetic-induction</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
 
  <simulation>
   <id>js-023</id>
   <title>Induced Magnetism</title>
   <description>Magnetic domains of an iron bar becomes aligned to the magnetic field of a magnet or electromagnet.</description>
-  <image>https://physicstjc.github.io/simulations/images/screenshots/magnetic-field.png</image>
+  <image>images/screenshots/magnetic-field.png</image>
   <url>https://physicstjc.github.io/ophysics/magnetism/induced-magnetism.html</url>
   <platform>JavaScript</platform>
   <topics><topic>magnetism</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-024</id>
   <title>A. C. Generator</title>
   <description>A rotating coil in a magnetic field produces an alternating emf. Changes to the rate of rotation changes the frequency and peak emf.</description>
-  <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
-  <url>https://physicstjc.github.io/sls/ac-generator/index.html</url>
+  <image>images/screenshots/ac-generator.png</image>
+  <url>../ac-generator/index.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetic-induction</topic></topics></simulation>
+  <topics><topic>electromagnetic-induction</topic></topics><author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-025</id>
   <title>Charging by Induction</title>
   <description>Explore how induced charging of a conductor can be done.</description>
-  <image>https://physicstjc.github.io/simulations/images/screenshots/static-electricity.png</image>
+  <image>images/screenshots/static-electricity.png</image>
   <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electric-fields</topic></topics></simulation>
+  <topics><topic>electric-fields</topic></topics><author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-026</id>
   <title>Temperature and Pressure</title>
   <description>Observe what happens at the particle level when temperature of a gas increases.</description>
-  <image>https://physicstjc.github.io/simulations/images/screenshots/temperature-and-pressure.png</image>
-  <url>https://physicstjc.github.io/sls/temperature-of-gas/index.html</url>
+  <image>images/screenshots/temperature-and-pressure.png</image>
+  <url>../temperature-of-gas/index.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
+  <topics><topic>kinetic-model-of-matter</topic></topics><author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-027</id>
@@ -4425,112 +4425,307 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/06/charging-two-conductors-by-induction-1.png</image>
   <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction-two-conductors.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electric-fields</topic></topics></simulation>
+  <topics><topic>electric-fields</topic></topics><author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-028</id>
   <title>Lennard Jones Potential</title>
   <description>Explore how intermolecular forces change from attractive to repulsive as particles get closer.</description>
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lennard-jones-potential.png</image>
-  <url>https://physicstjc.github.io/sls/lennard-jones-potential/</url>
+  <url>../lennard-jones-potential/</url>
   <platform>JavaScript</platform>
-  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
+  <topics><topic>kinetic-model-of-matter</topic></topics><author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-029</id>
   <title>Ray Diagram of Lens</title>
   <description>Observe how rays form an image. Includes infinitely far light source.</description>
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lens-ray-diagram.png</image>
-  <url>https://physicstjc.github.io/sls/lens-ray-diagram/</url>
+  <url>../lens-ray-diagram/</url>
   <platform>JavaScript</platform>
-  <topics><topic>light</topic></topics></simulation>
+  <topics><topic>light</topic></topics><author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-030</id>
   <title>Simulating Radioactive Decay Using Dice</title>
   <description>A simulation based on the casting of dice can be used to demonstrate the concept of half-life.</description>
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-radioactive-decay.png</image>
-  <url>https://physicstjc.github.io/sls/decay</url>
+  <url>../decay</url>
   <platform>JavaScript</platform>
-  <topics><topic>nuclear-physics</topic></topics></simulation>
+  <topics><topic>nuclear-physics</topic></topics><author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-031</id>
   <title>Displacement-Distance and Displacement-Time Graphs of a Wave</title>
   <description>Adjust amplitude, frequency, wavelength, and speed and watch how the wave’s behavior changes over time and space.</description>
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-displacement-distance-time-graphs-of-a-wave.png</image>
-  <url>https://physicstjc.github.io/sls/wave-graph/</url>
+  <url>../wave-graph/</url>
   <platform>JavaScript</platform>
-  <topics><topic>waves</topic></topics></simulation>
+  <topics><topic>waves</topic></topics><author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>js-032</id>
   <title>Metal Lattice Simulation</title>
   <description>At low temperature, ions vibrate less, so collisions are fewer and resistance is lower.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/resistance-and-temperature/</url>
+  <image>../resistance-and-temperature/resistance-and-temperature.png</image>
+  <url>../resistance-and-temperature/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-033</id>
   <title>Rheostat</title>
   <description>Interactive rheostat simulation showing how resistance changes with length.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/rheostat/</url>
+  <image>../rheostat/rheostat.png</image>
+  <url>../rheostat/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-034</id>
   <title>Projectile Physics Lab - Gorilla Edition</title>
   <description>Projectile motion simulation with gravity.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/gorilla-physics/</url>
+  <image>../gorilla-physics/gorilla-physics.png</image>
+  <url>../gorilla-physics/</url>
   <platform>JavaScript</platform>
   <topics><topic>kinematics</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-035</id>
   <title>Vector Scale Drawing App</title>
   <description>Vector scale drawing practice.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/vector-drawing/</url>
+  <image>../vector-drawing/vector-drawing.png</image>
+  <url>../vector-drawing/</url>
   <platform>JavaScript</platform>
   <topics><topic>measurement</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-036</id>
   <title>Electric Field Simulation</title>
   <description>Interactive simulation of a charge moving between two charged spheres.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/electric-field/</url>
+  <image>../electric-field/electric-field.png</image>
+  <url>../electric-field/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>js-037</id>
   <title>Electrostatic Precipitator Simulation</title>
   <description>Simulation of an electrostatic precipitator showing particles and electric field effects.</description>
-  <image>images/placeholder.svg</image>
-  <url>https://physicstjc.github.io/sls/electrostatic-precipitator/</url>
+  <image>../electrostatic-precipitator/electrostatic-precipitator.png</image>
+  <url>../electrostatic-precipitator/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>sim-136</id>
   <title>RC Circuit</title>
   <description>Which parameters affect the maximum charge held by the capacitor? Which parameters affect the maximum current provided by the discharging capacitor?</description>
-  <image>https://www.geogebra.org/resource/rFEV4HJx/material-rFEV4HJx-thumb.png</image>
+  <image>images/rc-circuit.png</image>
   <url>https://www.geogebra.org/m/rFEV4HJx</url>
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+ <author>Dave Nero</author></simulation>
     
- </simulations>
+ <simulation>
+  <id>js-038</id>
+  <title>Kinematics Explorer: 1D Motion</title>
+  <description>Interactive kinematics explorer for 1D motion visualization.</description>
+  <image>../1dkinematics/1dkinematics.png</image>
+  <url>../1dkinematics/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>kinematics</topic></topics>
+  <author>James Kua</author>
+ </simulation>
+
+ <simulation>
+  <id>js-039</id>
+  <title>Nuclear Radiation Simulation</title>
+  <description>Simulation of nuclear radiation including alpha, beta, and gamma rays.</description>
+  <image>../3radiation/3radiation.png</image>
+  <url>../3radiation/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>nuclear-physics</topic></topics>
+  <author>James Kua</author>
+ </simulation>
+
+ <simulation>
+  <id>js-040</id>
+  <title>3D Molecular Lattice Simulation</title>
+  <description>Simulates 3D molecular lattices and chemical structures.</description>
+  <image>../chem-structures/chem-structures.png</image>
+  <url>../chem-structures/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>general</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+
+ <simulation>
+  <id>js-041</id>
+  <title>Monsoon Simulator: African Climate Data</title>
+  <description>Visualizes monsoon patterns and African climate data.</description>
+  <image>../monsoon/monsoon.png</image>
+  <url>../monsoon/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>general</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+
+ <simulation>
+  <id>js-042</id>
+  <title>SG Urban Analytics - 1950-2020 Historical</title>
+  <description>Analyzes historical land use and urban development in Singapore.</description>
+  <image>../singapore-land-use/singapore-land-use.png</image>
+  <url>../singapore-land-use/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>general</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+
+ <simulation>
+  <id>js-043</id>
+  <title>AI Star Jump Tracker</title>
+  <description>Uses AI to track and count star jump exercises.</description>
+  <image>../starjump/starjump.png</image>
+  <url>../starjump/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>general</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+
+ <simulation>
+  <id>js-044</id>
+  <title>Interactive 3D DNA Structure</title>
+  <description>Interactive visualization of the 3D double helix structure of DNA.</description>
+  <image>../dna/dna.png</image>
+  <url>../dna/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>general</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+
+ <simulation>
+  <id>js-045</id>
+  <title>Capacitors in Combination</title>
+  <description>Interactive simulation to explore series and parallel capacitor arrangements.</description>
+  <image>../capacitance/capacitance.png</image>
+  <url>../capacitance/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electricity</topic></topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>
+   js-011
+  </id>
+  <title>
+   Dynamics Interactive
+  </title>
+  <description>
+   Explore the relationship between force, mass, and motion with multiple force vectors, v-t graphs, and motion diagrams.
+  </description>
+  <image>
+   ../dynamics/dynamics.png
+  </image>
+  <url>
+   ../dynamics/
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>dynamics</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>
+   js-012
+  </id>
+  <title>
+   Displacement-Time Graph Simulator
+  </title>
+  <description>
+   Observe how motion translates into displacement-time graphs, analyze velocity calculations, and test your knowledge in Quiz Mode.
+  </description>
+  <image>
+   ../displacement-graph/displacement-graph.png
+  </image>
+  <url>
+   ../displacement-graph/
+  </url>
+  <platform>
+   JavaScript
+  </platform>
+  <topics>
+   <topic>kinematics</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>js-046</id>
+  <title>Circuit Diagram Generator</title>
+  <description>Draw circuit diagrams using standard symbols. Add components, connect wires, and export your diagram as an image.</description>
+  <image>../circuit-diagram/circuit-diagram.png</image>
+  <url>../circuit-diagram/</url>
+  <platform>JavaScript</platform>
+  <topics>
+   <topic>electricity</topic>
+  </topics>
+  <author>Julienne Tan and Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>js-047</id>
+  <title>Slope + Pulley Lab</title>
+  <description>Explore the forces on a mass on a slope connected via a pulley to a hanging mass. Adjust masses and tilt angle; view free body diagrams and calculated net force and acceleration.</description>
+  <image>../slope-pulley/slope-pulley.png</image>
+  <url>../slope-pulley/</url>
+  <platform>JavaScript</platform>
+  <topics>
+   <topic>dynamics</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>js-048</id>
+  <title>Pressure</title>
+  <description>Explore pressure, force, and area relationships with an interactive simulation.</description>
+  <image>../pressure/pressure.png</image>
+  <url>../pressure/</url>
+  <platform>JavaScript</platform>
+  <topics>
+   <topic>pressure</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>js-049</id>
+  <title>Topple Test</title>
+  <description>Investigate stability and toppling by changing the centre of gravity and support conditions.</description>
+  <image>../cg/cg.png</image>
+  <url>../cg/</url>
+  <platform>JavaScript</platform>
+  <topics>
+   <topic>turning-effect-of-forces</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+ <simulation>
+  <id>js-050</id>
+  <title>Barometer</title>
+  <description>Interactive barometer simulation with selectable liquids, probe-based pressure readouts, and environment controls for altitude and planets.</description>
+  <image>../barometer/barometer.png</image>
+  <url>../barometer/</url>
+  <platform>JavaScript</platform>
+  <topics>
+   <topic>pressure</topic>
+  </topics>
+  <author>Tan Seng Kwang</author>
+ </simulation>
+</simulations>
