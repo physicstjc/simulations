@@ -22,7 +22,7 @@
     <main class="admin-shell">
         <section class="admin-panel" id="auth-panel">
             <h2>Admin Access</h2>
-            <p class="admin-subtext">Sign in with Google. Only <strong>wboson2007@gmail.com</strong> and accounts ending with <strong>@moe.edu.sg</strong> can access editing.</p>
+            <p class="admin-subtext">Sign in with Google. Only authorized accounts ending with <strong>@moe.edu.sg</strong> can access editing.</p>
             <div class="admin-toolbar">
                 <button type="button" id="google-login-button" class="admin-button">Sign In With Google</button>
             </div>
@@ -65,6 +65,13 @@
                         <div class="form-group">
                             <label for="description">Description</label>
                             <textarea id="description" name="description"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="image-upload">Upload Image</label>
+                            <input id="image-upload" type="file" accept="image/*">
+                            <p class="topics-input-hint">Upload a PNG, JPG, or GIF. This will be stored in Firebase and the URL will be auto-filled below.</p>
+                            <div id="upload-status"></div>
                         </div>
 
                         <div class="inline-fields">
