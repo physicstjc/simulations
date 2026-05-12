@@ -351,13 +351,34 @@ section h2 {
 /* Sidebar navigation styles */
 .nav-sidebar {
     display: block;
-    width: 260px;
+    width: 180px;
+    max-height: 78vh;
+    overflow-y: auto;
     background: #fff7c2;
     border: 3px solid var(--ink-strong);
     border-radius: 12px;
-    padding: 1.1rem 1.2rem 1.1rem 1.2rem;
+    padding: 1.1rem 0.7rem 1.1rem 0.7rem;
     margin-bottom: 2rem;
     box-shadow: 4px 4px 0 var(--ink-strong);
+    position: sticky;
+    top: 90px;
+    z-index: 1002;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.main-nav {
+    flex-shrink: 0;
+}
+
+#simulations-container {
+    flex: 1 1 0%;
+    max-width: 1180px;
+    margin-left: 2.2rem;
 }
 .nav-theme-title {
     display: block;
