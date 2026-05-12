@@ -192,7 +192,7 @@ header h1 {
 .nav-item {
     position: relative;
     width: 100%;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.25rem;
 }
 
 .nav-button {
@@ -309,6 +309,8 @@ section h2 {
     box-shadow: 4px 4px 0 var(--line);
     overflow: hidden;
     transition: transform 0.14s ease, box-shadow 0.14s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .simulation-card:hover {
@@ -330,6 +332,9 @@ section h2 {
 
 .card-content {
     padding: 0.68rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-content h3 {
@@ -356,6 +361,7 @@ section h2 {
     margin: 0;
     font-size: 0.86rem;
     color: #1f1f1f;
+    flex: 1;
 }
 
 .card-footer {
@@ -541,7 +547,7 @@ footer {
 
     .nav-item {
         width: 100%;
-        margin-bottom: 0.55rem;
+        margin-bottom: 0.25rem;
     }
 
     .nav-button {
