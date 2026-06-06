@@ -4485,7 +4485,7 @@
   <id>js-032</id>
   <title>Metal Lattice Simulation</title>
   <description>At low temperature, ions vibrate less, so collisions are fewer and resistance is lower.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/metal-lattice-simulation.png</image>
   <url>https://physicstjc.github.io/sls/resistance-and-temperature/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
@@ -4495,7 +4495,7 @@
   <id>js-033</id>
   <title>Rheostat</title>
   <description>Interactive rheostat simulation showing how resistance changes with length.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/rheostat.png</image>
   <url>https://physicstjc.github.io/sls/rheostat/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
