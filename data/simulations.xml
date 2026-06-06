@@ -4545,7 +4545,7 @@
   <id>sim-136</id>
   <title>RC Circuit</title>
   <description>Which parameters affect the maximum charge held by the capacitor? Which parameters affect the maximum current provided by the discharging capacitor?</description>
-  <image>https://www.geogebra.org/resource/rFEV4HJx/material-rFEV4HJx-thumb.png</image>
+  <image>https://physicstjc.github.io/simulations/images/rc-circuit.png</image>
   <url>https://www.geogebra.org/m/rFEV4HJx</url>
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
