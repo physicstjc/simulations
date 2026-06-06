@@ -20,7 +20,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>GreenMaths</author></simulation>
  <simulation>
   <id>
    sim-002
@@ -41,7 +41,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-003
@@ -62,7 +62,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-004
@@ -83,7 +83,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-005
@@ -104,7 +104,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-137
@@ -125,7 +125,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Keith Harrison</author></simulation>
  <simulation>
   <id>
    sim-138
@@ -146,7 +146,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-139
@@ -167,7 +167,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-140
@@ -188,7 +188,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-141
@@ -209,7 +209,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-010
@@ -232,7 +232,7 @@
   <topics>
    <topic>measurement</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-006
@@ -253,7 +253,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-007
@@ -274,7 +274,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-008
@@ -295,7 +295,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>andy1987</author></simulation>
  <simulation>
   <id>
    sim-009
@@ -316,7 +316,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-010
@@ -337,7 +337,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-011
@@ -358,7 +358,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-012
@@ -379,7 +379,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-013
@@ -400,7 +400,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-142
@@ -421,7 +421,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-143
@@ -442,7 +442,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-144
@@ -463,7 +463,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-145
@@ -484,7 +484,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-146
@@ -505,7 +505,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Gaetano Di Caprio</author></simulation>
  <simulation>
   <id>
    sim-147
@@ -526,7 +526,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-148
@@ -547,7 +547,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-149
@@ -568,7 +568,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-014
@@ -589,7 +589,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-017
@@ -610,7 +610,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-018
@@ -631,7 +631,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-001
@@ -654,7 +654,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-005
@@ -677,7 +677,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-009
@@ -700,7 +700,7 @@
   <topics>
    <topic>kinematics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-150
@@ -721,7 +721,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-015
@@ -742,7 +742,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-016
@@ -763,7 +763,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-151
@@ -784,7 +784,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-021
@@ -805,7 +805,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-022
@@ -826,7 +826,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-025
@@ -847,7 +847,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-026
@@ -868,7 +868,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    js-012
@@ -891,7 +891,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-018
@@ -914,7 +914,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>
@@ -936,7 +936,7 @@
   <topics>
    <topic>dynamics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -958,7 +958,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Dinesh</author></simulation>
 
 
     
@@ -982,7 +982,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Patrick Cobb</author></simulation>
  <simulation>
   <id>
    sim-020
@@ -1003,7 +1003,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-153
@@ -1024,7 +1024,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-154
@@ -1045,7 +1045,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-023
@@ -1066,7 +1066,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-024
@@ -1087,7 +1087,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-155
@@ -1108,7 +1108,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-156
@@ -1129,7 +1129,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-027
@@ -1150,7 +1150,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-028
@@ -1171,7 +1171,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-029
@@ -1192,7 +1192,7 @@
   <topics>
    <topic>pressure</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-030
@@ -1213,7 +1213,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Unknown</author></simulation>
 
 
 
@@ -1237,7 +1237,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  
  <simulation>
@@ -1260,7 +1260,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-032
@@ -1281,7 +1281,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-033
@@ -1302,7 +1302,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-015
@@ -1325,7 +1325,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     <simulation>
   <id>
    sim-044
@@ -1346,7 +1346,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-045
@@ -1367,7 +1367,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-046
@@ -1388,7 +1388,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-047
@@ -1409,7 +1409,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-048
@@ -1430,7 +1430,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-049
@@ -1451,7 +1451,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-050
@@ -1472,7 +1472,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-051
@@ -1493,7 +1493,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-052
@@ -1514,7 +1514,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-053
@@ -1535,7 +1535,7 @@
   <topics>
    <topic>motion-in-a-circle</topic>
   </topics>
- </simulation>
+  <author>rasheedgadir</author></simulation>
     <simulation>
   <id>
    sim-054
@@ -1556,7 +1556,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-055
@@ -1577,7 +1577,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-056
@@ -1598,7 +1598,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-057
@@ -1619,7 +1619,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-058
@@ -1640,7 +1640,7 @@
   <topics>
    <topic>gravitational-field</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -1664,7 +1664,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-034
@@ -1685,7 +1685,7 @@
   <topics>
    <topic>kinetic-model-of-matter</topic>
   </topics>
- </simulation>
+  <author>Michael Borcherds</author></simulation>
  <simulation>
   <id>
    js-011
@@ -1708,7 +1708,7 @@
   <topics>
    <topic>kinetic-model-of-matter</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-063
@@ -1729,7 +1729,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-064
@@ -1750,7 +1750,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-065
@@ -1771,7 +1771,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-066
@@ -1792,7 +1792,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-067
@@ -1813,7 +1813,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-068
@@ -1834,7 +1834,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-069
@@ -1855,7 +1855,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-070
@@ -1876,7 +1876,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-071
@@ -1897,7 +1897,7 @@
   <topics>
    <topic>oscillations</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
 
 
@@ -1922,7 +1922,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-036
@@ -1943,7 +1943,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-037
@@ -1964,7 +1964,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-038
@@ -1985,7 +1985,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-039
@@ -2006,7 +2006,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-040
@@ -2027,7 +2027,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-042
@@ -2048,7 +2048,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-002
@@ -2071,7 +2071,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-006
@@ -2094,7 +2094,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-017
@@ -2117,7 +2117,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-078
@@ -2138,7 +2138,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-079
@@ -2159,7 +2159,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-080
@@ -2180,7 +2180,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-081
@@ -2201,7 +2201,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-082
@@ -2222,7 +2222,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-083
@@ -2243,7 +2243,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-084
@@ -2264,7 +2264,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-085
@@ -2285,7 +2285,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-086
@@ -2306,7 +2306,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-087
@@ -2327,7 +2327,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>David Radcliffe</author></simulation>
  <simulation>
   <id>
    sim-088
@@ -2348,7 +2348,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-089
@@ -2369,7 +2369,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-090
@@ -2390,7 +2390,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-091
@@ -2411,7 +2411,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-092
@@ -2432,7 +2432,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-093
@@ -2453,7 +2453,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-094
@@ -2474,7 +2474,7 @@
   <topics>
    <topic>superposition</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-043
@@ -2495,7 +2495,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>GreenMaths</author></simulation>
  <simulation>
   <id>
    sim-157
@@ -2516,7 +2516,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>optowiki.info (Michael Schaefer)</author></simulation>
  <simulation>
   <id>
    sim-158
@@ -2537,7 +2537,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>GeoGebra Materials Team</author></simulation>
  <simulation>
   <id>
    sim-159
@@ -2558,7 +2558,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-160
@@ -2579,7 +2579,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-161
@@ -2600,7 +2600,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>mr.jsquiggle</author></simulation>
  <simulation>
   <id>
    sim-162
@@ -2621,7 +2621,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-163
@@ -2642,7 +2642,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-164
@@ -2663,7 +2663,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Sue Popelka</author></simulation>
  <simulation>
   <id>
    sim-165
@@ -2684,7 +2684,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-166
@@ -2705,7 +2705,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-167
@@ -2726,7 +2726,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-168
@@ -2747,7 +2747,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-169
@@ -2768,7 +2768,7 @@
   <topics>
    <topic>light</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-170
@@ -2789,7 +2789,7 @@
   <topics>
    <topic>electromagnetic-spectrum</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-171
@@ -2810,7 +2810,7 @@
   <topics>
    <topic>sound</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-059
@@ -2831,7 +2831,7 @@
   <topics>
    <topic>sound</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-095
@@ -2852,7 +2852,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-096
@@ -2873,7 +2873,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Dave Nero</author></simulation>
  <simulation>
   <id>
    sim-097
@@ -2894,7 +2894,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-098
@@ -2915,7 +2915,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Lenore Horner</author></simulation>
  <simulation>
   <id>
    sim-099
@@ -2936,7 +2936,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -2960,7 +2960,7 @@
   <topics>
    <topic>electric-fields</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>
@@ -2982,7 +2982,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Ray Tuck</author></simulation>
  <simulation>
   <id>
    sim-061
@@ -3003,7 +3003,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-100
@@ -3024,7 +3024,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-101
@@ -3045,7 +3045,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-102
@@ -3066,7 +3066,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-062
@@ -3087,7 +3087,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-172
@@ -3108,7 +3108,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-173
@@ -3129,7 +3129,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-174
@@ -3150,7 +3150,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-104
@@ -3171,7 +3171,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-107
@@ -3192,7 +3192,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-175
@@ -3213,7 +3213,7 @@
   <topics>
    <topic>electricity</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  
   <simulation>
@@ -3224,7 +3224,7 @@
   <url>https://www.geogebra.org/m/jkckp9pr</url>
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
-  </simulation>
+   <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3246,7 +3246,7 @@
   <topics>
    <topic>magnetism</topic>
   </topics>
- </simulation>
+  <author>olha0707</author></simulation>
  <simulation>
   <id>
    sim-177
@@ -3267,7 +3267,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-178
@@ -3288,7 +3288,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-179
@@ -3309,7 +3309,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-180
@@ -3330,7 +3330,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-072
@@ -3351,7 +3351,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  <simulation>
   <id>
    sim-108
@@ -3372,7 +3372,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-110
@@ -3393,7 +3393,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-112
@@ -3414,7 +3414,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-114
@@ -3435,7 +3435,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-115
@@ -3456,7 +3456,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-116
@@ -3477,7 +3477,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-117
@@ -3498,7 +3498,7 @@
   <topics>
    <topic>electromagnetism</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-118
@@ -3519,7 +3519,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-119
@@ -3540,7 +3540,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-120
@@ -3561,7 +3561,7 @@
   <topics>
    <topic>electromagnetic-induction</topic>
   </topics>
- </simulation>
+  <author>Abdul Latiff</author></simulation>
  
  
  <simulation>
@@ -3584,7 +3584,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-122
@@ -3605,7 +3605,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-123
@@ -3626,7 +3626,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-124
@@ -3647,7 +3647,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-125
@@ -3668,7 +3668,7 @@
   <topics>
    <topic>alternating-current</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3690,7 +3690,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-182
@@ -3711,7 +3711,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-183
@@ -3732,7 +3732,7 @@
   <topics>
    <topic>thermal-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-184
@@ -3753,7 +3753,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-185
@@ -3774,7 +3774,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
  <simulation>
   <id>
    sim-186
@@ -3795,7 +3795,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-187
@@ -3816,7 +3816,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-188
@@ -3837,7 +3837,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
   <simulation>
   <id>
@@ -3859,7 +3859,7 @@
   <topics>
    <topic>turning-effect-of-forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>
@@ -3881,7 +3881,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-190
@@ -3902,7 +3902,7 @@
   <topics>
    <topic>forces</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>
@@ -3924,7 +3924,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+  <author>Tim Brzezinski</author></simulation>
  
  
 
@@ -3948,7 +3948,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-073
@@ -3969,7 +3969,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>J. van Lück</author></simulation>
  <simulation>
   <id>
    sim-074
@@ -3990,7 +3990,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-075
@@ -4011,7 +4011,7 @@
   <topics>
    <topic>waves</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-192
@@ -4032,7 +4032,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-193
@@ -4053,7 +4053,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-194
@@ -4074,7 +4074,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Dave Nero</author></simulation>
  <simulation>
   <id>
    sim-195
@@ -4095,7 +4095,7 @@
   <topics>
    <topic>energy-work-power</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
     <simulation>
   <id>
@@ -4119,7 +4119,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-016
@@ -4142,7 +4142,7 @@
   <topics>
    <topic>nuclear-physics</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 <simulation>
   <id>
    sim-126
@@ -4163,7 +4163,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-127
@@ -4184,7 +4184,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+  <author>Chris Hamper</author></simulation>
  <simulation>
   <id>
    sim-128
@@ -4205,7 +4205,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+  <author>Barb Newitt</author></simulation>
  <simulation>
   <id>
    sim-129
@@ -4226,7 +4226,7 @@
   <topics>
    <topic>quantum-physics</topic>
   </topics>
- </simulation>
+  <author>Tom Walsh</author></simulation>
 <simulation>
   <id>
    js-004
@@ -4249,7 +4249,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-007
@@ -4272,7 +4272,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    js-008
@@ -4295,7 +4295,7 @@
   <topics>
    <topic>general</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     <simulation>
   <id>
    sim-131
@@ -4316,7 +4316,7 @@
   <topics>
    <topic>graphing-technique</topic>
   </topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  <simulation>
   <id>
    sim-132
@@ -4337,7 +4337,7 @@
   <topics>
    <topic>graphing-technique</topic>
   </topics>
- </simulation>
+  <author>tbki</author></simulation>
  
 <simulation>
  <id>js-019</id>
@@ -4347,7 +4347,7 @@
  <url>https://physicstjc.github.io/sls/sound-level-meter/</url>
  <platform>JavaScript</platform>
  <topics><topic>sound</topic></topics>
-</simulation>
+ <author>Tan Seng Kwang</author></simulation>
  
  <simulation>
   <id>js-020</id>
@@ -4356,7 +4356,7 @@
   <url>https://physicstjc.github.io/sls/sound-frequency-analyser/</url>
   <platform>JavaScript</platform>
   <topics><topic>sound</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
  
 
 
@@ -4367,7 +4367,7 @@
   <image>https://physicstjc.github.io/sls/sound-generator/sound-generator.png</image>
   <url>https://physicstjc.github.io/sls/sound-generator/</url>
   <platform>JavaScript</platform>
-  <topics><topic>sound</topic></topics></simulation>
+  <topics><topic>sound</topic></topics> <author>Tan Seng Kwang</author></simulation>
  
  
  <simulation> 
@@ -4378,7 +4378,7 @@
   <url>http://physicstjc.github.io/sls/faraday-experiment/index.html</url>
   <platform>JavaScript</platform>
   <topics><topic>electromagnetic-induction</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
 
  <simulation>
@@ -4389,7 +4389,7 @@
   <url>https://physicstjc.github.io/ophysics/magnetism/induced-magnetism.html</url>
   <platform>JavaScript</platform>
   <topics><topic>magnetism</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-024</id>
@@ -4398,7 +4398,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
   <url>https://physicstjc.github.io/sls/acgenerator/</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetic-induction</topic></topics></simulation>
+  <topics><topic>electromagnetic-induction</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-051</id>
@@ -4407,7 +4407,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/split-or-slip-rings.png</image>
   <url>https://physicstjc.github.io/sls/split-or-slip-rings/</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetism</topic></topics></simulation>
+  <topics><topic>electromagnetism</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-052</id>
@@ -4416,7 +4416,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/magnetic-force.png</image>
   <url>https://physicstjc.github.io/sls/magnetic-force/sim.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetism</topic></topics></simulation>
+  <topics><topic>electromagnetism</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-025</id>
@@ -4425,7 +4425,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/static-electricity.png</image>
   <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electric-fields</topic></topics></simulation>
+  <topics><topic>electric-fields</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-026</id>
@@ -4434,7 +4434,7 @@
   <image>https://physicstjc.github.io/simulations/images/screenshots/temperature-and-pressure.png</image>
   <url>https://physicstjc.github.io/sls/temperature-of-gas/index.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
+  <topics><topic>kinetic-model-of-matter</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-027</id>
@@ -4443,7 +4443,7 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/06/charging-two-conductors-by-induction-1.png</image>
   <url>https://physicstjc.github.io/ophysics/static-electricity/charging-by-induction-two-conductors.html</url>
   <platform>JavaScript</platform>
-  <topics><topic>electric-fields</topic></topics></simulation>
+  <topics><topic>electric-fields</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-028</id>
@@ -4452,7 +4452,7 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lennard-jones-potential.png</image>
   <url>https://physicstjc.github.io/sls/lennard-jones-potential/</url>
   <platform>JavaScript</platform>
-  <topics><topic>kinetic-model-of-matter</topic></topics></simulation>
+  <topics><topic>kinetic-model-of-matter</topic></topics> <author>Tan Seng Kwang</author></simulation>
 
 <simulation>
   <id>js-029</id>
@@ -4461,7 +4461,7 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-lens-ray-diagram.png</image>
   <url>https://physicstjc.github.io/sls/lens-ray-diagram/</url>
   <platform>JavaScript</platform>
-  <topics><topic>light</topic></topics></simulation>
+  <topics><topic>light</topic></topics> <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-030</id>
@@ -4470,7 +4470,7 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-radioactive-decay.png</image>
   <url>https://physicstjc.github.io/sls/decay</url>
   <platform>JavaScript</platform>
-  <topics><topic>nuclear-physics</topic></topics></simulation>
+  <topics><topic>nuclear-physics</topic></topics> <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-031</id>
@@ -4479,7 +4479,7 @@
   <image>https://www.physicslens.com/wp-content/uploads/2025/09/simulation-displacement-distance-time-graphs-of-a-wave.png</image>
   <url>https://physicstjc.github.io/sls/wave-graph/</url>
   <platform>JavaScript</platform>
-  <topics><topic>waves</topic></topics></simulation>
+  <topics><topic>waves</topic></topics> <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>js-032</id>
@@ -4489,7 +4489,7 @@
   <url>https://physicstjc.github.io/sls/resistance-and-temperature/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-033</id>
@@ -4499,7 +4499,7 @@
   <url>https://physicstjc.github.io/sls/rheostat/</url>
   <platform>JavaScript</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-034</id>
@@ -4509,7 +4509,7 @@
   <url>https://physicstjc.github.io/sls/gorilla-physics/</url>
   <platform>JavaScript</platform>
   <topics><topic>kinematics</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>js-035</id>
@@ -4519,7 +4519,7 @@
   <url>https://physicstjc.github.io/sls/vector-drawing/</url>
   <platform>JavaScript</platform>
   <topics><topic>measurement</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
 <simulation>
   <id>js-036</id>
@@ -4529,7 +4529,7 @@
   <url>https://physicstjc.github.io/sls/electric-field/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
     
  <simulation>
   <id>js-037</id>
@@ -4539,7 +4539,7 @@
   <url>https://physicstjc.github.io/sls/electrostatic-precipitator/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
- </simulation>
+  <author>Tan Seng Kwang</author></simulation>
 
  <simulation>
   <id>sim-136</id>
@@ -4549,7 +4549,7 @@
   <url>https://www.geogebra.org/m/rFEV4HJx</url>
   <platform>GeoGebra</platform>
   <topics><topic>electricity</topic></topics>
- </simulation>
+  <author>Dave Nero</author></simulation>
 
  <simulation>
   <id>js-050</id>
@@ -4559,6 +4559,6 @@
   <url>https://physicstjc.github.io/sls/barometer/</url>
   <platform>JavaScript</platform>
   <topics><topic>pressure</topic></topics>
- </simulation>
+ <author>Tan Seng Kwang</author></simulation>
 
  </simulations>
