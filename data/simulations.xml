@@ -4410,6 +4410,15 @@
   <topics><topic>electromagnetism</topic></topics></simulation>
 
  <simulation>
+  <id>js-052</id>
+  <title>Magnetic Force Experiment Simulation</title>
+  <description>Investigate the magnetic force on a current-carrying conductor in a magnetic field by changing the current and observing the force direction.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/magnetic-force.png</image>
+  <url>https://physicstjc.github.io/sls/magnetic-force/sim.html</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electromagnetism</topic></topics></simulation>
+
+ <simulation>
   <id>js-025</id>
   <title>Charging by Induction</title>
   <description>Explore how induced charging of a conductor can be done.</description>
