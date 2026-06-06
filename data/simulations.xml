@@ -4505,7 +4505,7 @@
   <id>js-034</id>
   <title>Projectile Physics Lab - Gorilla Edition</title>
   <description>Projectile motion simulation with gravity.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/projectile-physics-lab-gorilla.png</image>
   <url>https://physicstjc.github.io/sls/gorilla-physics/</url>
   <platform>JavaScript</platform>
   <topics><topic>kinematics</topic></topics>
@@ -4515,7 +4515,7 @@
   <id>js-035</id>
   <title>Vector Scale Drawing App</title>
   <description>Vector scale drawing practice.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/vector-scale-drawing-app.png</image>
   <url>https://physicstjc.github.io/sls/vector-drawing/</url>
   <platform>JavaScript</platform>
   <topics><topic>measurement</topic></topics>
