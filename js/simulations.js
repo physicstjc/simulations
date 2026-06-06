@@ -1,4 +1,13 @@
-import { collection, getDocs, orderBy, query } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import {
+    collection,
+    doc,
+    getDocs,
+    increment,
+    orderBy,
+    query,
+    serverTimestamp,
+    setDoc
+} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 import { db } from "./firebase-config.js";
 
 const THEMES = {
@@ -11,6 +20,9 @@ const THEMES = {
 };
 
 window.simulationsData = [];
+window.simulationStats = {};
+
+const LIKED_SIMULATIONS_KEY = 'physicsLensLikedSimulations';
 
 function normalizeTopicId(topic) {
     return String(topic || '').trim().toLowerCase().replace(/[,\s]+/g, '-');
@@ -45,9 +57,13 @@ async function loadSimulations() {
 
     try {
         const simulationsRef = collection(db, 'simulations');
-        const snapshot = await getDocs(query(simulationsRef, orderBy('sortOrder', 'asc')));
+        const [snapshot, statsSnapshot] = await Promise.all([
+            getDocs(query(simulationsRef, orderBy('sortOrder', 'asc'))),
+            loadSimulationStats()
+        ]);
 
         const simulations = snapshot.docs.map(doc => normalizeSimulation(doc));
+        window.simulationStats = statsSnapshot;
         window.simulationsData = simulations;
         processSimulations(simulations);
     } catch (error) {
@@ -55,6 +71,23 @@ async function loadSimulations() {
         navContainer.className = 'nav-menu';
         navContainer.innerHTML = '<li class="nav-item"><button class="nav-button" type="button">Load Error</button></li>';
         container.innerHTML = '<div class="no-results"><h2>Unable to load simulations</h2><p>Check Firestore configuration, rules, and network access.</p></div>';
+    }
+}
+
+async function loadSimulationStats() {
+    try {
+        const snapshot = await getDocs(collection(db, 'simulationStats'));
+        return snapshot.docs.reduce((stats, statsDoc) => {
+            const data = statsDoc.data();
+            stats[statsDoc.id] = {
+                totalLaunches: Number(data.totalLaunches || 0),
+                likes: Number(data.likes || 0)
+            };
+            return stats;
+        }, {});
+    } catch (error) {
+        console.error('Error loading simulation stats:', error);
+        return {};
     }
 }
 
@@ -156,8 +189,11 @@ function processSimulations(simulations) {
 function createSimulationCard(sim) {
     const card = document.createElement('div');
     card.className = 'simulation-card';
+    card.dataset.simId = sim.id;
 
     const imageUrl = sim.image || 'images/placeholder.svg';
+    const stats = getSimulationStats(sim.id);
+    const liked = isSimulationLiked(sim.id);
 
     card.innerHTML = `
         <div class="card-image">
@@ -167,14 +203,122 @@ function createSimulationCard(sim) {
             <h3>${sim.title}</h3>
             ${sim.author ? `<div class="author-info">by ${sim.author}</div>` : ''}
             <p class="description">${sim.description}</p>
+            <div class="card-stats" aria-live="polite">
+                <span class="stat-item"><span class="stat-count" data-stat="launches">${formatCount(stats.totalLaunches)}</span> launches</span>
+                <span class="stat-item"><span class="stat-count" data-stat="likes">${formatCount(stats.likes)}</span> likes</span>
+            </div>
             <div class="card-footer">
                 <span class="platform">${sim.platform}</span>
-                <a href="${sim.url}" target="_blank" class="button">Launch</a>
+                <div class="card-actions">
+                    <button type="button" class="like-button${liked ? ' liked' : ''}" data-action="like" ${liked ? 'disabled' : ''}>${liked ? 'Liked' : 'Like'}</button>
+                    <a href="${sim.url}" target="_blank" class="button launch-button" data-action="launch" rel="noopener">Launch</a>
+                </div>
             </div>
         </div>
     `;
 
+    const launchLink = card.querySelector('[data-action="launch"]');
+    const likeButton = card.querySelector('[data-action="like"]');
+
+    launchLink?.addEventListener('click', () => {
+        recordSimulationLaunch(sim.id);
+    });
+
+    likeButton?.addEventListener('click', () => {
+        recordSimulationLike(sim.id, likeButton, card);
+    });
+
     return card;
+}
+
+function getSimulationStats(simId) {
+    return window.simulationStats?.[simId] || { totalLaunches: 0, likes: 0 };
+}
+
+function formatCount(value) {
+    return Number(value || 0).toLocaleString();
+}
+
+function getLikedSimulationIds() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(LIKED_SIMULATIONS_KEY) || '[]');
+        return Array.isArray(parsed) ? parsed : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function isSimulationLiked(simId) {
+    return getLikedSimulationIds().includes(simId);
+}
+
+function saveSimulationLiked(simId) {
+    const likedIds = new Set(getLikedSimulationIds());
+    likedIds.add(simId);
+    localStorage.setItem(LIKED_SIMULATIONS_KEY, JSON.stringify(Array.from(likedIds)));
+}
+
+async function recordSimulationLaunch(simId) {
+    incrementLocalStat(simId, 'totalLaunches');
+    try {
+        await setDoc(doc(db, 'simulationStats', simId), {
+            totalLaunches: increment(1),
+            updatedAt: serverTimestamp()
+        }, { merge: true });
+    } catch (error) {
+        console.error('Error recording launch:', error);
+    }
+}
+
+async function recordSimulationLike(simId, button, card) {
+    if (isSimulationLiked(simId)) {
+        return;
+    }
+
+    saveSimulationLiked(simId);
+    updateAllLikeButtons(simId);
+    incrementLocalStat(simId, 'likes');
+    updateCardStat(card, 'likes', getSimulationStats(simId).likes);
+
+    try {
+        await setDoc(doc(db, 'simulationStats', simId), {
+            likes: increment(1),
+            updatedAt: serverTimestamp()
+        }, { merge: true });
+    } catch (error) {
+        console.error('Error recording like:', error);
+    }
+}
+
+function updateAllLikeButtons(simId) {
+    document.querySelectorAll(`.simulation-card[data-sim-id="${CSS.escape(simId)}"] [data-action="like"]`).forEach(button => {
+        button.textContent = 'Liked';
+        button.classList.add('liked');
+        button.disabled = true;
+    });
+}
+
+function incrementLocalStat(simId, fieldName) {
+    const stats = getSimulationStats(simId);
+    window.simulationStats[simId] = {
+        ...stats,
+        [fieldName]: Number(stats[fieldName] || 0) + 1
+    };
+    updateAllCardStats(simId, fieldName, window.simulationStats[simId][fieldName]);
+}
+
+function updateAllCardStats(simId, fieldName, value) {
+    document.querySelectorAll(`.simulation-card[data-sim-id="${CSS.escape(simId)}"]`).forEach(card => {
+        updateCardStat(card, fieldName, value);
+    });
+}
+
+function updateCardStat(card, fieldName, value) {
+    const statName = fieldName === 'totalLaunches' ? 'launches' : 'likes';
+    const statElement = card?.querySelector(`[data-stat="${statName}"]`);
+    if (statElement) {
+        statElement.textContent = formatCount(value);
+    }
 }
 
 function initializeSearch() {

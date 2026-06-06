@@ -15,6 +15,18 @@
 //           );
 //       }
 //
+//       match /simulationStats/{simId} {
+//         allow read: if true;              // public launch/like counts
+//         allow create, update: if
+//           request.resource.data.keys().hasOnly(['totalLaunches', 'likes', 'updatedAt'])
+//           && (!request.resource.data.keys().hasAny(['totalLaunches'])
+//             || (request.resource.data.totalLaunches is int && request.resource.data.totalLaunches >= 0))
+//           && (!request.resource.data.keys().hasAny(['likes'])
+//             || (request.resource.data.likes is int && request.resource.data.likes >= 0))
+//           && request.resource.data.updatedAt is timestamp;
+//         allow delete: if false;
+//       }
+//
 //       match /auditLogs/{logId} {
 //         allow create: if request.auth != null
 //           && (
@@ -30,10 +42,28 @@
 //       }
 //     }
 //   }
+//
+// Required Firebase Storage rules (set in Firebase Console -> Storage -> Rules):
+//
+//   rules_version = '2';
+//   service firebase.storage {
+//     match /b/{bucket}/o {
+//       match /simulations/screenshots/{allPaths=**} {
+//         allow read: if true;              // public read
+//         allow write: if request.auth != null
+//           && (
+//             request.auth.token.email == 'wboson2007@gmail.com'
+//             || request.auth.token.email.matches('.*@moe\\.edu\\.sg$')
+//           )
+//           && request.resource.size < 10 * 1024 * 1024;  // max 10 MB
+//       }
+//     }
+//   }
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyB5yRAy0P8fm3ntdnAT8GMMRLShy1mCGk0",
@@ -48,3 +78,4 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+export const storage = getStorage(app);

@@ -1,0 +1,77 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthorizedEditor() {
+      return request.auth != null
+        && (
+          request.auth.token.email == 'wboson2007@gmail.com'
+          || request.auth.token.email.matches('.*@moe\\.edu\\.sg$')
+        );
+    }
+
+    function hasValidStatsShape() {
+      return request.resource.data.keys().hasOnly(['totalLaunches', 'likes', 'updatedAt'])
+        && request.resource.data.updatedAt is timestamp
+        && (
+          !request.resource.data.keys().hasAny(['totalLaunches'])
+          || (request.resource.data.totalLaunches is int && request.resource.data.totalLaunches >= 0)
+        )
+        && (
+          !request.resource.data.keys().hasAny(['likes'])
+          || (request.resource.data.likes is int && request.resource.data.likes >= 0)
+        );
+    }
+
+    function createsSmallStatsIncrement() {
+      return hasValidStatsShape()
+        && (
+          !request.resource.data.keys().hasAny(['totalLaunches'])
+          || request.resource.data.totalLaunches == 1
+        )
+        && (
+          !request.resource.data.keys().hasAny(['likes'])
+          || request.resource.data.likes == 1
+        );
+    }
+
+    function incrementsCounterByOne(fieldName) {
+      return (
+        !resource.data.keys().hasAny([fieldName])
+        && request.resource.data[fieldName] == 1
+      ) || (
+        resource.data.keys().hasAny([fieldName])
+        && request.resource.data[fieldName] == resource.data[fieldName] + 1
+      );
+    }
+
+    function updatesOnlyStatsIncrement() {
+      return hasValidStatsShape()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['totalLaunches', 'likes', 'updatedAt'])
+        && (
+          !request.resource.data.diff(resource.data).affectedKeys().hasAny(['totalLaunches'])
+          || incrementsCounterByOne('totalLaunches')
+        )
+        && (
+          !request.resource.data.diff(resource.data).affectedKeys().hasAny(['likes'])
+          || incrementsCounterByOne('likes')
+        );
+    }
+
+    match /simulations/{simId} {
+      allow read: if true;
+      allow write: if isAuthorizedEditor();
+    }
+
+    match /simulationStats/{simId} {
+      allow read: if true;
+      allow create: if createsSmallStatsIncrement();
+      allow update: if updatesOnlyStatsIncrement();
+      allow delete: if false;
+    }
+
+    match /auditLogs/{logId} {
+      allow create, read: if isAuthorizedEditor();
+      allow update, delete: if false;
+    }
+  }
+}

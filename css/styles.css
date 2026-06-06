@@ -334,6 +334,31 @@ section h2 {
     flex: 1;
 }
 
+.card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.38rem;
+    margin-top: 0.58rem;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    font-weight: 700;
+}
+
+.stat-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.18rem;
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 0.16rem 0.38rem;
+}
+
+.stat-count {
+    color: #111111;
+    font-weight: 900;
+}
+
 .card-footer {
     margin-top: 0.56rem;
     display: flex;
@@ -355,6 +380,12 @@ section h2 {
     padding: 0.18rem 0.42rem;
 }
 
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
 .button {
     display: inline-block;
     text-decoration: none;
@@ -373,6 +404,32 @@ section h2 {
     background: #fff08a;
     transform: translate(-1px, -1px);
     box-shadow: 3px 3px 0 var(--line);
+}
+
+.like-button {
+    appearance: none;
+    color: #111111;
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 2px 2px 0 var(--line);
+    padding: 0.36rem 0.58rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+}
+
+.like-button:hover:not(:disabled) {
+    background: #e0f2fe;
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--line);
+}
+
+.like-button.liked,
+.like-button:disabled {
+    background: #dcfce7;
+    cursor: default;
 }
 
 .no-results {
