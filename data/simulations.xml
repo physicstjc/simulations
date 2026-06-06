@@ -4393,10 +4393,19 @@
 
  <simulation>
   <id>js-024</id>
-  <title>A. C. Generator</title>
+  <title>AC Generator</title>
   <description>A rotating coil in a magnetic field produces an alternating emf. Changes to the rate of rotation changes the frequency and peak emf.</description>
   <image>https://physicstjc.github.io/simulations/images/screenshots/ac-generator.png</image>
-  <url>https://physicstjc.github.io/sls/ac-generator/index.html</url>
+  <url>https://physicstjc.github.io/sls/acgenerator/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electromagnetic-induction</topic></topics></simulation>
+
+ <simulation>
+  <id>js-051</id>
+  <title>Split or Slip Rings</title>
+  <description>Compare split-ring and slip-ring commutators in a rotating coil, and observe how the current direction and magnetic force change.</description>
+  <image>https://physicstjc.github.io/simulations/images/screenshots/split-or-slip-rings.png</image>
+  <url>https://physicstjc.github.io/sls/split-or-slip-rings/</url>
   <platform>JavaScript</platform>
   <topics><topic>electromagnetic-induction</topic></topics></simulation>
 
