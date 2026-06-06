@@ -12,6 +12,23 @@ const THEMES = {
 
 window.simulationsData = [];
 
+function normalizeTopicId(topic) {
+    return String(topic || '').trim().toLowerCase().replace(/[,\s]+/g, '-');
+}
+
+function formatTopicLabel(topic) {
+    return String(topic || '')
+        .replace(/-/g, ' ')
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+
+function getVisibleSimulations(simulations) {
+    const isJavaScriptPage = window.location.pathname.includes('javascript.html');
+    return simulations.filter(sim => !isJavaScriptPage || sim.platform === 'JavaScript');
+}
+
 document.addEventListener('DOMContentLoaded', async function() {
     initializeMobileMenu();
     initializeSearch();
@@ -65,28 +82,22 @@ function processSimulations(simulations) {
     if (!container || !navContainer) return;
     container.innerHTML = '';
 
-    const isJavaScriptPage = window.location.pathname.includes('javascript.html');
     const topicsMap = new Map();
     const seenTopics = new Set();
     const orderedTopics = [];
     const topics = {};
 
-    simulations.forEach(sim => {
-        if (isJavaScriptPage && sim.platform !== 'JavaScript') return;
+    getVisibleSimulations(simulations).forEach(sim => {
         const addedToTopics = new Set();
         sim.topics.forEach(rawTopic => {
-            const id = rawTopic.toLowerCase().replace(/[\,\s]+/g, '-');
+            const id = normalizeTopicId(rawTopic);
             if (!topics[id]) topics[id] = [];
             if (!addedToTopics.has(id)) {
                 topics[id].push(sim);
                 addedToTopics.add(id);
             }
             if (!seenTopics.has(id)) {
-                const displayText = rawTopic
-                    .replace(/-/g, ' ')
-                    .split(' ')
-                    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-                    .join(' ');
+                const displayText = formatTopicLabel(rawTopic);
                 topicsMap.set(id, displayText);
                 seenTopics.add(id);
                 orderedTopics.push([id, displayText]);
@@ -96,10 +107,12 @@ function processSimulations(simulations) {
 
     // Build a single grouped topic dropdown for reliable navigation.
     let optionGroupsHTML = '<option value="">Jump to a topic...</option>';
+    const availableTopicIds = new Set(orderedTopics.map(([id]) => id));
     Object.entries(THEMES).forEach(([themeName, themeTopics]) => {
-        const availableTopics = themeTopics.filter(topicId => orderedTopics.some(([id]) => id === topicId));
+        const availableTopics = themeTopics.filter(topicId => availableTopicIds.has(topicId));
         if (availableTopics.length > 0) {
             optionGroupsHTML += `<optgroup label="${themeName}">`;
+            optionGroupsHTML += `<option value="category:${themeName}">All ${themeName}</option>`;
             availableTopics.forEach(topicId => {
                 optionGroupsHTML += `<option value="${topicId}">${topicsMap.get(topicId)}</option>`;
             });
@@ -111,6 +124,7 @@ function processSimulations(simulations) {
     const otherTopics = orderedTopics.filter(([id]) => !categorizedTopics.has(id));
     if (otherTopics.length > 0) {
         optionGroupsHTML += '<optgroup label="Other Topics">';
+        optionGroupsHTML += '<option value="category:Other Topics">All Other Topics</option>';
         otherTopics.forEach(([id, display]) => {
             optionGroupsHTML += `<option value="${id}">${display}</option>`;
         });
@@ -198,7 +212,7 @@ function resetTopicFilter() {
 }
 
 function performSearch(queryText) {
-    const simulations = window.simulationsData || [];
+    const simulations = getVisibleSimulations(window.simulationsData || []);
     const container = document.getElementById('simulations-container');
 
     if (!container) {
@@ -247,8 +261,14 @@ function setupNavigationHandlers() {
             return;
         }
 
-        const topicName = dropdown.options[dropdown.selectedIndex]?.text || topicId;
-        filterByTopic(topicId, topicName);
+        const selectedOption = dropdown.options[dropdown.selectedIndex];
+        const topicName = selectedOption?.text || topicId;
+
+        if (topicId.startsWith('category:')) {
+            filterByCategory(topicId.replace('category:', ''), topicName);
+        } else {
+            filterByTopic(topicId, topicName);
+        }
 
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const mainNav = document.getElementById('main-nav');
@@ -261,7 +281,7 @@ function setupNavigationHandlers() {
 }
 
 function filterByTopic(topicId, topicName) {
-    const simulations = window.simulationsData || [];
+    const simulations = getVisibleSimulations(window.simulationsData || []);
     const container = document.getElementById('simulations-container');
 
     if (!container) {
@@ -270,7 +290,7 @@ function filterByTopic(topicId, topicName) {
 
     container.innerHTML = '';
     const matchingSimulations = simulations.filter(sim =>
-        sim.topics.some(topic => topic.toLowerCase().replace(/[,\s]+/g, '-') === topicId)
+        sim.topics.some(topic => normalizeTopicId(topic) === topicId)
     );
 
     if (matchingSimulations.length === 0) {
@@ -284,6 +304,53 @@ function filterByTopic(topicId, topicName) {
     const grid = section.querySelector('.simulation-grid');
     matchingSimulations.forEach(sim => grid.appendChild(createSimulationCard(sim)));
     container.appendChild(section);
+}
+
+function filterByCategory(categoryName, categoryLabel) {
+    const simulations = getVisibleSimulations(window.simulationsData || []);
+    const container = document.getElementById('simulations-container');
+
+    if (!container) {
+        return;
+    }
+
+    const categoryTopics = categoryName === 'Other Topics'
+        ? getOtherTopicIds(simulations)
+        : THEMES[categoryName] || [];
+    const topicSet = new Set(categoryTopics);
+    const matchingSimulations = simulations.filter(sim =>
+        sim.topics.some(topic => topicSet.has(normalizeTopicId(topic)))
+    );
+
+    container.innerHTML = '';
+
+    if (matchingSimulations.length === 0) {
+        container.innerHTML = `<div class="no-results"><h2>No simulations found for "${categoryLabel}"</h2><p>Try browsing other categories.</p></div>`;
+        return;
+    }
+
+    const section = document.createElement('section');
+    section.innerHTML = `<h2>${categoryLabel} (${matchingSimulations.length} simulations)</h2><div class="simulation-grid"></div>`;
+
+    const grid = section.querySelector('.simulation-grid');
+    matchingSimulations.forEach(sim => grid.appendChild(createSimulationCard(sim)));
+    container.appendChild(section);
+}
+
+function getOtherTopicIds(simulations) {
+    const categorizedTopics = new Set(Object.values(THEMES).flat());
+    const topicIds = new Set();
+
+    simulations.forEach(sim => {
+        sim.topics.forEach(topic => {
+            const topicId = normalizeTopicId(topic);
+            if (!categorizedTopics.has(topicId)) {
+                topicIds.add(topicId);
+            }
+        });
+    });
+
+    return Array.from(topicIds);
 }
 
 function initializeMobileMenu() {
