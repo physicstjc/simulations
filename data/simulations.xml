@@ -4402,12 +4402,12 @@
 
  <simulation>
   <id>js-051</id>
-  <title>Split or Slip Rings</title>
+  <title>DC Motor (3D)</title>
   <description>Compare split-ring and slip-ring commutators in a rotating coil, and observe how the current direction and magnetic force change.</description>
   <image>https://physicstjc.github.io/simulations/images/screenshots/split-or-slip-rings.png</image>
   <url>https://physicstjc.github.io/sls/split-or-slip-rings/</url>
   <platform>JavaScript</platform>
-  <topics><topic>electromagnetic-induction</topic></topics></simulation>
+  <topics><topic>electromagnetism</topic></topics></simulation>
 
  <simulation>
   <id>js-025</id>
