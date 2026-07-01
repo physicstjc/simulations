@@ -4525,7 +4525,7 @@
   <id>js-036</id>
   <title>Electric Field Simulation</title>
   <description>Interactive simulation of a charge moving between two charged spheres.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://firebasestorage.googleapis.com/v0/b/simulations-8798d.firebasestorage.app/o/simulations%2Fscreenshots%2Felectric-field.png?alt=media</image>
   <url>https://physicstjc.github.io/sls/electric-field/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
@@ -4535,7 +4535,7 @@
   <id>js-037</id>
   <title>Electrostatic Precipitator Simulation</title>
   <description>Simulation of an electrostatic precipitator showing particles and electric field effects.</description>
-  <image>images/placeholder.svg</image>
+  <image>https://firebasestorage.googleapis.com/v0/b/simulations-8798d.firebasestorage.app/o/simulations%2Fscreenshots%2Felectrostatic-precipitator.png?alt=media</image>
   <url>https://physicstjc.github.io/sls/electrostatic-precipitator/</url>
   <platform>JavaScript</platform>
   <topics><topic>electric-fields</topic></topics>
@@ -4560,5 +4560,35 @@
   <platform>JavaScript</platform>
   <topics><topic>pressure</topic></topics>
  <author>Tan Seng Kwang</author></simulation>
+
+ <simulation>
+  <id>js-053</id>
+  <title>Geiger Muller Counter Simulation</title>
+  <description>Explore real-time pulse counting, shielding, distance, and rate changes in a Geiger-Müller counter experiment.</description>
+  <image>../images/screenshots/gm-counter.png</image>
+  <url>https://physicstjc.github.io/sls/gm-counter/3d.html</url>
+  <platform>JavaScript</platform>
+  <topics><topic>nuclear-physics</topic></topics>
+  <author>Tan Seng Kwang</author></simulation>
+
+ <simulation>
+  <id>js-054</id>
+  <title>Biomechanical Center of Gravity Estimator</title>
+  <description>Use your webcam to estimate body center of mass in real time with a biomechanical model and live pose tracking.</description>
+  <image>../cgbody/cgbody.png</image>
+  <url>https://physicstjc.github.io/sls/cgbody/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>biomechanics</topic></topics>
+  <author>Tan Seng Kwang</author></simulation>
+
+ <simulation>
+  <id>js-055</id>
+  <title>Newton's Nightmare</title>
+  <description>Investigate Lenz's law and eddy currents in a 3D interactive simulator with magnetic field lines and motion graphs.</description>
+  <image>../images/screenshots/newtonnightmare.png</image>
+  <url>https://physicstjc.github.io/sls/newtonnightmare/</url>
+  <platform>JavaScript</platform>
+  <topics><topic>electromagnetism</topic></topics>
+  <author>Tan Seng Kwang</author></simulation>
 
  </simulations>
